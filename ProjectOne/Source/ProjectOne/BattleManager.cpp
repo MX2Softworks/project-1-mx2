@@ -14,7 +14,26 @@ UBattleManager::UBattleManager()
 
 
 	EntitiesComingIn.Init(nullptr, 2);
-	EntitiesComingIn[0] = GetWorld()->GetFirstPlayerController(); 
+	EntitiesComingIn[0];
+
+	if (!GetWorld())
+	{
+		UE_LOG(LogTemp, Error, TEXT("No WOrld"));
+	}
+	else
+	{
+		if (GetWorld() && GetWorld()->GetFirstPlayerController())
+		{
+			EntitiesComingIn[0] = GetWorld()->GetFirstPlayerController();
+			UE_LOG(LogTemp, Warning, TEXT("got player controller successfully"));
+		}
+		else 
+		{
+			UE_LOG(LogTemp, Error, TEXT("World exists. But no player controller."));
+		}
+		
+	}
+
 	//TODO: Get reference for sluagh to add to EntitiesComingIn
 	// ...
 }
@@ -42,7 +61,7 @@ TArray<AActor*> UBattleManager::InitializeTurnOrder()
 	TurnOrder.Init(nullptr, 10);
 
 
-
+	return TurnOrder; 
 }
 
 // Called when the game starts
