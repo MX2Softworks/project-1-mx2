@@ -12,9 +12,38 @@ UBattleManager::UBattleManager()
 	bWantsBeginPlay = true;
 	PrimaryComponentTick.bCanEverTick = true;
 
+
+	EntitiesComingIn.Init(nullptr, 2);
+	EntitiesComingIn[0] = GetWorld()->GetFirstPlayerController(); 
+	//TODO: Get reference for sluagh to add to EntitiesComingIn
 	// ...
 }
 
+//TODO: Implement Engagement System
+//Constructor that will take an array of actors in combat to create the turn order. 
+UBattleManager::UBattleManager(TArray<AActor*> EntitiesInCombat) 
+{
+
+	// ...
+
+}
+
+//TODO: Make this work with the Engagement System
+TArray<AActor*> UBattleManager::InitializeTurnOrder()
+{
+	//Initialize TArray of size 10 to nullptr
+	//For each entity reference:
+		//get the speed
+		//for each index of the turn order array:
+			//if index % speed is 0 insert reference into index
+		
+	//return initialized TurnOrderList
+
+	TurnOrder.Init(nullptr, 10);
+
+
+
+}
 
 // Called when the game starts
 void UBattleManager::BeginPlay()
