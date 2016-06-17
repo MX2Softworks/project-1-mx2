@@ -24,7 +24,7 @@ UBattleManager::UBattleManager()
 	{
 		if (GetWorld() && GetWorld()->GetFirstPlayerController())
 		{
-			EntitiesComingIn[0] = GetWorld()->GetFirstPlayerController();
+			//EntitiesComingIn[0] = GetWorld()->GetFirstPlayerController();
 			UE_LOG(LogTemp, Warning, TEXT("got player controller successfully"));
 		}
 		else 
@@ -34,13 +34,16 @@ UBattleManager::UBattleManager()
 		
 	}
 
-	//TODO: Get reference for sluagh to add to EntitiesComingIn
-	// ...
+
+	//TODO: Use Actor Iterator to get two of the actors in the world and use them to test the battle system. 
+
+
+	InitializeTurnOrder(); 
 }
 
 //TODO: Implement Engagement System
 //Constructor that will take an array of actors in combat to create the turn order. 
-UBattleManager::UBattleManager(TArray<AActor*> EntitiesInCombat) 
+UBattleManager::UBattleManager(TArray<AGameCharacter*> EntitiesInCombat) 
 {
 
 	// ...
@@ -48,7 +51,7 @@ UBattleManager::UBattleManager(TArray<AActor*> EntitiesInCombat)
 }
 
 //TODO: Make this work with the Engagement System
-TArray<AActor*> UBattleManager::InitializeTurnOrder()
+TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 {
 	//Initialize TArray of size 10 to nullptr
 	//For each entity reference:
@@ -59,7 +62,38 @@ TArray<AActor*> UBattleManager::InitializeTurnOrder()
 	//return initialized TurnOrderList
 
 	TurnOrder.Init(nullptr, 10);
+	int EntitySpeed; 
+	for (AGameCharacter* Entity : EntitiesComingIn)
+	{
+		if (Entity != nullptr)
+		{
+			
+			EntitySpeed = Entity->GetSpeed(); 
+			for (int Index = 0; Index < TurnOrder.Num(); Index++)
+			{
+				if (Index%EntitySpeed == 0)
+				{
+					if (TurnOrder[Index] == nullptr)
+					{
+						TurnOrder[Index] = Entity;
+					}
+					else
+					{
+						TurnOrder.Insert(Entity, Index + 1);
+					}
+				}
+			}
+		}
+	}
 
+	for (int Index = 0; Index < TurnOrder.Num(); Index++)
+	{
+		AGameCharacter* PrintCharacter = TurnOrder[Index];
+		if (PrintCharacter != nullptr)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Round: %d\tEntity: %s"), Index, *PrintCharacter->GetName())
+		}
+	}
 
 	return TurnOrder; 
 }
