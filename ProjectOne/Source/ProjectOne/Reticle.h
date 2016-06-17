@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Pawn.h"
+#include "PaperSpriteComponent.h"
 #include "Reticle.generated.h"
 
 UCLASS()
@@ -23,6 +24,8 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
-	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Reticle", meta = (AllowPrivateAccess = "true"))
+	UPaperSpriteComponent* ReticleSprite;
+
 	
 };
