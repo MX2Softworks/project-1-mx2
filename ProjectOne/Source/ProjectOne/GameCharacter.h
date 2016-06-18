@@ -23,6 +23,11 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
-	
-	
+	int GetSpeed();
+
+	void SetSpeed(int NewSpeed); 
+
+private:
+
+	int Speed;
 };
