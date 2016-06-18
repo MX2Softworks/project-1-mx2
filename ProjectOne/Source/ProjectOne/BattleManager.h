@@ -7,6 +7,14 @@
 #include "EngineUtils.h"
 #include "BattleManager.generated.h"
 
+UENUM(BlueprintType)
+enum class ECombatPhase : uint8
+{
+	Decision UMETA(DisplayName="Decision"),
+	Action UMETA(DisplayName = "Action"),
+	Victory UMETA(DisplayName = "Victory"),
+	Defeat UMETA(DisplayName = "Defeat")
+};
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class PROJECTONE_API UBattleManager : public UActorComponent
@@ -26,9 +34,20 @@ public:
 
 	TArray<AGameCharacter*> InitializeTurnOrder();
 
+	//set up initial EntitiesComingIn for the prototype
+	void DebugSetEntitiesComingIn();
+
 private:
 
 	TArray<AGameCharacter*> EntitiesComingIn;
 	TArray<AGameCharacter*> TurnOrder;
+	
+	bool bIsTurnActive = false;
+	bool bIsTurnOver = false;
+
+	int TurnCounter = 0; 
+	int RoundCounter = 1; 
+
+	ECombatPhase CombatPhase; 
 	
 };
