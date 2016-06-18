@@ -9,8 +9,11 @@ AGameCharacter::AGameCharacter()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	Speed = 4; 
 }
+
+int   AGameCharacter::GetSpeed(){ return Speed; }
+void  AGameCharacter::SetSpeed(int NewSpeed) { Speed = NewSpeed; }
 
 // Called when the game starts or when spawned
 void AGameCharacter::BeginPlay()
