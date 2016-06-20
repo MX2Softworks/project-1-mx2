@@ -27,6 +27,10 @@ public:
 
 	void SetSpeed(int NewSpeed); 
 
+	//Possible debug function for getting entities in game to attack in the prototype
+	UFUNCTION(BlueprintCallable, Category="Attack")
+	bool Attack();
+
 private:
 
 	UPROPERTY(EditAnywhere)

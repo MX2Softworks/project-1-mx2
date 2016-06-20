@@ -37,6 +37,13 @@ public:
 	//set up initial EntitiesComingIn for the prototype
 	void DebugSetEntitiesComingIn();
 
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	void SetAttackOccurred(bool bDidAttackOccur);
+
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	bool GetAttackOccurred();
+	
+
 private:
 
 	TArray<AGameCharacter*> EntitiesComingIn;
@@ -44,6 +51,8 @@ private:
 	
 	bool bIsTurnActive = false;
 	bool bIsTurnOver = false;
+
+	bool bAttackOccurred = false; 
 
 	int TurnCounter = 0; 
 	int RoundCounter = 1; 

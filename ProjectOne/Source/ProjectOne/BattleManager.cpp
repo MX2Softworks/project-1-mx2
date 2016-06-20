@@ -47,6 +47,11 @@ UBattleManager::UBattleManager(TArray<AGameCharacter*> EntitiesInCombat)
 
 }
 
+
+//Getter and Setter for bAttackOccurred
+void UBattleManager::SetAttackOccurred(bool bDidAttackOccur) { bAttackOccurred = bDidAttackOccur; }
+bool UBattleManager::GetAttackOccurred() { return bAttackOccurred; }
+
 //TODO: Make this work with the Engagement System
 TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 {
@@ -132,18 +137,45 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 		case ECombatPhase::Action:
 			if (TurnOrder[TurnCounter] != nullptr)
+			{	
+				//debug logic to give beck a turn in combat allowing him to make a move. 
+				if (TurnOrder[TurnCounter]->GetName().Equals("Beck"))
+				{
+
+					//check to see if the attack occurred. 
+					if (bAttackOccurred == true)
+					{
+						TurnCounter++;
+						if (TurnCounter == TurnOrder.Num())
+						{
+							RoundCounter++;
+						}
+						TurnCounter %= TurnOrder.Num();
+						CombatPhase = ECombatPhase::Decision;
+						bAttackOccurred = false; 
+						break; 
+					}
+					else
+					{
+						
+						break; 
+					}
+				}
+			}
+			else 
 			{
-				UE_LOG(LogTemp, Warning, TEXT("%s attacks!"), *TurnOrder[TurnCounter]->GetName());
+				bAttackOccurred = false; 
+				TurnOrder[TurnCounter]->Attack();
+				TurnCounter++;
+				if (TurnCounter == TurnOrder.Num())
+				{
+					RoundCounter++;
+				}
+				TurnCounter %= TurnOrder.Num(); 
+				CombatPhase = ECombatPhase::Decision;
+				break;
 			}
 			
-			TurnCounter++;
-			if (TurnCounter == TurnOrder.Num())
-			{
-				RoundCounter++;
-			}
-			TurnCounter %= TurnOrder.Num(); 
-			CombatPhase = ECombatPhase::Decision;
-			break;
 
 		case ECombatPhase::Defeat:
 			break;
