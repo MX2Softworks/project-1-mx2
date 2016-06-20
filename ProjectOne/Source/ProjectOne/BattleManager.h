@@ -4,6 +4,7 @@
 
 #include "Components/ActorComponent.h"
 #include "GameCharacter.h"
+#include "MainCharacter.h"
 #include "EngineUtils.h"
 #include "BattleManager.generated.h"
 

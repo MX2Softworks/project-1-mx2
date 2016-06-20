@@ -152,6 +152,12 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 				{
 					GetWorld()->GetTimerManager().SetTimer(LoopTimerHandle, this, &UBattleManager::TimerEnd, 1.f, false);
 				}
+				else if (TurnOrder[TurnCounter]->GetName().Equals("Beck"))
+				{
+					AMainCharacter* MC = Cast<AMainCharacter>(TurnOrder[TurnCounter]); 
+					check(MC);
+					MC->ResetFear();
+				}
 			}
 			CombatPhase = ECombatPhase::Action;
 			break;
@@ -162,6 +168,25 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 				//debug logic to give beck a turn in combat allowing him to make a move. 
 				if (TurnOrder[TurnCounter]->GetName().Equals("Beck"))
 				{
+					AMainCharacter* MC = Cast<AMainCharacter>(TurnOrder[TurnCounter]);
+					check(MC);
+
+					if (MC->GetCurrentFear() <= 0)
+					{
+						bCanDisplayMessage = false;
+						TurnCounter++;
+						if (TurnCounter == TurnOrder.Num())
+						{
+							RoundCounter++;
+						}
+						TurnCounter %= TurnOrder.Num();
+						CombatPhase = ECombatPhase::Decision;
+						bAttackOccurred = false;
+						bIsPlayerTurnActive = false;
+						break;
+					}
+
+					MC->SetCurrentFear(MC->GetCurrentFear() - DeltaTime);
 					bIsPlayerTurnActive = true; 
 					//check to see if the attack occurred. 
 					if (bAttackOccurred == true)
@@ -216,8 +241,6 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 			CombatPhase = ECombatPhase::Decision;
 			break;
 			
-			
-
 		case ECombatPhase::Defeat:
 			break;
 
