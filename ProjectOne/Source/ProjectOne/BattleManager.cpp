@@ -52,6 +52,10 @@ UBattleManager::UBattleManager(TArray<AGameCharacter*> EntitiesInCombat)
 void UBattleManager::SetAttackOccurred(bool bDidAttackOccur) { bAttackOccurred = bDidAttackOccur; }
 bool UBattleManager::GetAttackOccurred() { return bAttackOccurred; }
 
+//Getter and Setter for bIsPlayerTurnActive
+void UBattleManager::SetIsPlayerTurn(bool bIsTurnActive) { bIsPlayerTurnActive = bIsTurnActive; }
+bool UBattleManager::GetIsPlayerTurn() { return bIsPlayerTurnActive; }
+
 //TODO: Make this work with the Engagement System
 TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 {
@@ -106,14 +110,25 @@ void UBattleManager::DebugSetEntitiesComingIn()
 	} 
 }
 
+//this function is used to create a timer for message output to screen when another entity attacks besides the player.
+//this function is internal and is called using the settimer function. 
+void UBattleManager::TimerEnd()
+{ 
+	bCanDisplayMessage = true; 
+}
+
 // Called when the game starts
 void UBattleManager::BeginPlay()
 {
 	Super::BeginPlay();
-
 	DebugSetEntitiesComingIn();
 	InitializeTurnOrder(); 
+
+	//initialize our combat phase. 
 	CombatPhase = ECombatPhase::Decision;
+
+	//initialize our timer. 
+	GetWorld()->GetTimerManager().SetTimer(LoopTimerHandle, this, &UBattleManager::TimerEnd, 1.f, false);
 }
 
 // Called every frame
@@ -131,6 +146,12 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 			if (TurnOrder[TurnCounter] != nullptr)
 			{
 				UE_LOG(LogTemp, Warning, TEXT("Round: %d\tEntity: %s"), RoundCounter, *TurnOrder[TurnCounter]->GetName());
+				
+				//uses timer in the event that entity deciding is a sluagh
+				if(TurnOrder[TurnCounter]->GetName().Equals("Sluagh"))
+				{
+					GetWorld()->GetTimerManager().SetTimer(LoopTimerHandle, this, &UBattleManager::TimerEnd, 1.f, false);
+				}
 			}
 			CombatPhase = ECombatPhase::Action;
 			break;
@@ -141,10 +162,11 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 				//debug logic to give beck a turn in combat allowing him to make a move. 
 				if (TurnOrder[TurnCounter]->GetName().Equals("Beck"))
 				{
-
+					bIsPlayerTurnActive = true; 
 					//check to see if the attack occurred. 
 					if (bAttackOccurred == true)
 					{
+						bCanDisplayMessage = false; 
 						TurnCounter++;
 						if (TurnCounter == TurnOrder.Num())
 						{
@@ -152,29 +174,48 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						}
 						TurnCounter %= TurnOrder.Num();
 						CombatPhase = ECombatPhase::Decision;
-						bAttackOccurred = false; 
+						bAttackOccurred = false;
+						bIsPlayerTurnActive = false; 
 						break; 
 					}
 					else
 					{
-						
 						break; 
 					}
 				}
-			}
-			else 
-			{
-				bAttackOccurred = false; 
-				TurnOrder[TurnCounter]->Attack();
-				TurnCounter++;
-				if (TurnCounter == TurnOrder.Num())
+				//if the entity is a sluagh
+				else 
 				{
-					RoundCounter++;
+					if (bCanDisplayMessage)
+					{
+						bAttackOccurred = false; 
+						TurnOrder[TurnCounter]->Attack();
+						bCanDisplayMessage = false;
+						TurnCounter++;
+						if (TurnCounter == TurnOrder.Num())
+						{
+							RoundCounter++;
+						}
+						TurnCounter %= TurnOrder.Num();
+						CombatPhase = ECombatPhase::Decision;
+						break;
+					}
+					else
+					{
+						break;
+					}
+					
 				}
-				TurnCounter %= TurnOrder.Num(); 
-				CombatPhase = ECombatPhase::Decision;
-				break;
 			}
+			TurnCounter++;
+			if (TurnCounter == TurnOrder.Num())
+			{
+				RoundCounter++;
+			}
+			TurnCounter %= TurnOrder.Num();
+			CombatPhase = ECombatPhase::Decision;
+			break;
+			
 			
 
 		case ECombatPhase::Defeat:
