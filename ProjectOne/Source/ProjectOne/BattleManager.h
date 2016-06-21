@@ -53,8 +53,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Timer")
 	void TimerEnd(); 
 
-	
-
 private:
 
 	TArray<AGameCharacter*> EntitiesComingIn;
