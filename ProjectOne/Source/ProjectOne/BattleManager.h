@@ -4,6 +4,7 @@
 
 #include "Components/ActorComponent.h"
 #include "GameCharacter.h"
+#include "MainCharacter.h"
 #include "EngineUtils.h"
 #include "BattleManager.generated.h"
 
@@ -37,17 +38,39 @@ public:
 	//set up initial EntitiesComingIn for the prototype
 	void DebugSetEntitiesComingIn();
 
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	void SetAttackOccurred(bool bDidAttackOccur);
+
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	bool GetAttackOccurred();
+
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	bool GetIsPlayerTurn();
+
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	void SetIsPlayerTurn(bool bIsTurnActive);
+
+	UFUNCTION(BlueprintCallable, Category = "Timer")
+	void TimerEnd(); 
+
+	
+
 private:
 
 	TArray<AGameCharacter*> EntitiesComingIn;
 	TArray<AGameCharacter*> TurnOrder;
 	
-	bool bIsTurnActive = false;
-	bool bIsTurnOver = false;
+	UPROPERTY()
+	bool bIsPlayerTurnActive = false;
+
+	bool bAttackOccurred = false; 
+	bool bCanDisplayMessage = false; 
 
 	int TurnCounter = 0; 
 	int RoundCounter = 1; 
 
 	ECombatPhase CombatPhase; 
+	
+	FTimerHandle LoopTimerHandle;
 	
 };
