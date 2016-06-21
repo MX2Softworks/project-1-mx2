@@ -15,6 +15,18 @@ AGameCharacter::AGameCharacter()
 int   AGameCharacter::GetSpeed(){ return Speed; }
 void  AGameCharacter::SetSpeed(int NewSpeed) { Speed = NewSpeed; }
 
+//Debug function called to get entities to attack in the combat prototype.
+bool AGameCharacter::Attack()
+{
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("%s Attacks!"), *this->GetName()));
+	}
+
+	return true;
+}
+
+
 // Called when the game starts or when spawned
 void AGameCharacter::BeginPlay()
 {
