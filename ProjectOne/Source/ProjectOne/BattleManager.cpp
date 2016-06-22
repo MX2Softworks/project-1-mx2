@@ -151,12 +151,14 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 				if(TurnOrder[TurnCounter]->GetName().Equals("Sluagh"))
 				{
 					GetWorld()->GetTimerManager().SetTimer(LoopTimerHandle, this, &UBattleManager::TimerEnd, 1.f, false);
+					///switches game state to defense. 
 				}
 				else if (TurnOrder[TurnCounter]->GetName().Equals("Beck"))
 				{
 					AMainCharacter* MC = Cast<AMainCharacter>(TurnOrder[TurnCounter]); 
 					check(MC);
-					MC->ResetFear();
+					MC->ResetFear();	
+					///switch gamestate to Attack
 				}
 			}
 			CombatPhase = ECombatPhase::Action;

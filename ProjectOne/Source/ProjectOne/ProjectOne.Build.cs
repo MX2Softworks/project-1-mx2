@@ -11,8 +11,8 @@ public class ProjectOne : ModuleRules
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
         //comment out below lines if we start to notice slower compile times once we have more than 20+ header and source files. 
-        MinFilesUsingPrecompiledHeaderOverride = 1;
-        bFasterWithoutUnity = true;
+        //MinFilesUsingPrecompiledHeaderOverride = 1;
+        //bFasterWithoutUnity = true;
 
 
         // Uncomment if you are using Slate UI
