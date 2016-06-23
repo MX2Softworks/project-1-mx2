@@ -135,7 +135,7 @@ void UBattleManager::BeginPlay()
 void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
-	if (RoundCounter >= 5)
+	if (RoundCounter >= 2)
 	{
 		return;
 	}
