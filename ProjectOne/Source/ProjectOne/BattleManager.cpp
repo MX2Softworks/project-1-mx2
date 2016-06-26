@@ -225,6 +225,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						}
 						TurnCounter %= TurnOrder.Num();
 						CombatPhase = ECombatPhase::Decision;
+						OnDefense.Broadcast(); 
 						break;
 					}
 					else

@@ -8,6 +8,8 @@
 #include "EngineUtils.h"
 #include "BattleManager.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDefense);
+
 UENUM(BlueprintType)
 enum class ECombatPhase : uint8
 {
@@ -53,6 +55,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Timer")
 	void TimerEnd(); 
 
+	UPROPERTY(BlueprintAssignable)
+	FOnDefense OnDefense;
+
 private:
 
 	TArray<AGameCharacter*> EntitiesComingIn;
@@ -70,5 +75,4 @@ private:
 	ECombatPhase CombatPhase; 
 	
 	FTimerHandle LoopTimerHandle;
-	
 };
