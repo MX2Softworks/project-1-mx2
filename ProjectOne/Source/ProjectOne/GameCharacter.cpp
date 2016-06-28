@@ -3,7 +3,6 @@
 #include "ProjectOne.h"
 #include "GameCharacter.h"
 
-
 // Sets default values
 AGameCharacter::AGameCharacter()
 {
