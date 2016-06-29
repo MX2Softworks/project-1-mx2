@@ -56,6 +56,12 @@ bool UBattleManager::GetAttackOccurred() { return bAttackOccurred; }
 void UBattleManager::SetIsPlayerTurn(bool bIsTurnActive) { bIsPlayerTurnActive = bIsTurnActive; }
 bool UBattleManager::GetIsPlayerTurn() { return bIsPlayerTurnActive; }
 
+//Getter for TurnOrder
+TArray<AGameCharacter*> UBattleManager::GetTurnOrder() { return TurnOrder; };
+
+//Getter for TurnCounter
+int UBattleManager::GetTurnCounter() { return TurnCounter; };
+
 //TODO: Make this work with the Engagement System
 TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 {
