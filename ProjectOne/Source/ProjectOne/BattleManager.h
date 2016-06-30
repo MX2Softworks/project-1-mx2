@@ -55,6 +55,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Timer")
 	void TimerEnd(); 
 
+	UFUNCTION(BlueprintCallable, Category = "Turn Order")
+	TArray<AGameCharacter*> GetTurnOrder();
+
+	UFUNCTION(BlueprintCallable, Category = "Turn Order")
+	int GetTurnCounter();
+
 	UPROPERTY(BlueprintAssignable)
 	FOnDefense OnDefense;
 
