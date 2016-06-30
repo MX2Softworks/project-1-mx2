@@ -25,7 +25,9 @@ public:
 
 	int GetSpeed();
 
-	void SetSpeed(int NewSpeed); 
+	void SetSpeed(int NewSpeed);
+
+	void DelayTest();
 
 	//Possible debug function for getting entities in game to attack in the prototype
 	UFUNCTION(BlueprintCallable, Category="Attack")
