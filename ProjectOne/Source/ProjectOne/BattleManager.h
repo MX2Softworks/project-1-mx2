@@ -61,6 +61,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Turn Order")
 	int GetTurnCounter();
 
+	UFUNCTION(BlueprintCallable, Category = "Turn Order")
+	void SetAttackOccurredBP(bool bDidAttackOccurBP);
+
+	UFUNCTION(BlueprintCallable, Category = "Turn Order")
+	bool GetAttackOccurredBP();
+
 	UPROPERTY(BlueprintAssignable)
 	FOnDefense OnDefense;
 
@@ -72,6 +78,7 @@ private:
 	UPROPERTY()
 	bool bIsPlayerTurnActive = false;
 
+	bool bAttackOccurredBP = false;
 	bool bAttackOccurred = false; 
 	bool bCanDisplayMessage = false; 
 
