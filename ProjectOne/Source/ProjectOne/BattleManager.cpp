@@ -56,6 +56,10 @@ bool UBattleManager::GetAttackOccurred() { return bAttackOccurred; }
 void UBattleManager::SetIsPlayerTurn(bool bIsTurnActive) { bIsPlayerTurnActive = bIsTurnActive; }
 bool UBattleManager::GetIsPlayerTurn() { return bIsPlayerTurnActive; }
 
+// Getter and Setter for bAttackOccurredBP
+void UBattleManager::SetAttackOccurredBP(bool bDidAttackOccurBP) { bAttackOccurredBP = bDidAttackOccurBP; }
+bool UBattleManager::GetAttackOccurredBP() { return bAttackOccurredBP; }
+
 //Getter for TurnOrder
 TArray<AGameCharacter*> UBattleManager::GetTurnOrder() { return TurnOrder; };
 
@@ -151,6 +155,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 			if (TurnOrder[TurnCounter] != nullptr)
 			{
+
 				UE_LOG(LogTemp, Warning, TEXT("Round: %d\tEntity: %s"), RoundCounter, *TurnOrder[TurnCounter]->GetName());
 				
 				//uses timer in the event that entity deciding is a sluagh
@@ -191,6 +196,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						CombatPhase = ECombatPhase::Decision;
 						bAttackOccurred = false;
 						bIsPlayerTurnActive = false;
+						bAttackOccurredBP = true;
 						break;
 					}
 
@@ -209,6 +215,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						CombatPhase = ECombatPhase::Decision;
 						bAttackOccurred = false;
 						bIsPlayerTurnActive = false; 
+						bAttackOccurredBP = true;
 						break; 
 					}
 					else
@@ -232,6 +239,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						TurnCounter %= TurnOrder.Num();
 						CombatPhase = ECombatPhase::Decision;
 						OnDefense.Broadcast(); 
+						bAttackOccurredBP = true;
 						break;
 					}
 					else
