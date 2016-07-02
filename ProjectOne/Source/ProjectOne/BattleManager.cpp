@@ -69,14 +69,6 @@ int UBattleManager::GetTurnCounter() { return TurnCounter; };
 //TODO: Make this work with the Engagement System
 TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 {
-	//Initialize TArray of size 10 to nullptr
-	//For each entity reference:
-		//get the speed
-		//for each index of the turn order array:
-			//if index % speed is 0 insert reference into index
-		
-	//return initialized TurnOrderList
-
 	TurnOrder.Init(nullptr, 22);
 	int EntitySpeed; 
 	for (AGameCharacter* Entity : EntitiesComingIn)
@@ -145,25 +137,40 @@ void UBattleManager::BeginPlay()
 void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
+
+
+	//short circuit the round counter for the prototype to stop after first round. 
 	if (RoundCounter >= 2)
 	{
 		return;
 	}
+
+
+	//On each turn, the switch statement selects the current character in the turn order, prepares their state and then 
+	//executes their action. Currently in the prototype, names are used to find entities, but in the future some other implementation will be used. 
 	switch (CombatPhase)
 	{
+
+		/* the decision phase is when characters will make decisions for their turn: 
+			1)	The round and entity are displayed during this phase 
+			2)  The combat phase is switched to the action phase of the character 
+			
+			Notes: Decision phase should be renamed to 'Preparation' 
+		*/
 		case ECombatPhase::Decision:
 
 			if (TurnOrder[TurnCounter] != nullptr)
 			{
-
+				//displays a message about the round and entity to the log
 				UE_LOG(LogTemp, Warning, TEXT("Round: %d\tEntity: %s"), RoundCounter, *TurnOrder[TurnCounter]->GetName());
 				
-				//uses timer in the event that entity deciding is a sluagh
+				//uses timer in the event that entity deciding is a sluagh to display a message after a delay.
 				if(TurnOrder[TurnCounter]->GetName().Equals("Sluagh"))
 				{
 					GetWorld()->GetTimerManager().SetTimer(LoopTimerHandle, this, &UBattleManager::TimerEnd, 1.f, false);
-					///switches game state to defense. 
+
 				}
+				//resets the current fear timer of Beck so that he has full time at the beginning of the round. 
 				else if (TurnOrder[TurnCounter]->GetName().Equals("Beck"))
 				{
 					AMainCharacter* MC = Cast<AMainCharacter>(TurnOrder[TurnCounter]); 
@@ -175,6 +182,14 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 			CombatPhase = ECombatPhase::Action;
 			break;
 
+		/*
+			During this phase of combat: 
+			1)		if the player is the one going, their fear will act a timer for their turn. The action phase waits for a 
+					response from the player before it finishes or waits until the timer reaches 0. 
+			2)		If the slaugh is the one going, the phase waits until the message can be displayed and the timer runs out 
+					before ending the phase and going to the next character in the turn order. An OrbPattern is also to be spawned. 
+		*/
+
 		case ECombatPhase::Action:
 			if (TurnOrder[TurnCounter] != nullptr)
 			{	
@@ -184,9 +199,12 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 					AMainCharacter* MC = Cast<AMainCharacter>(TurnOrder[TurnCounter]);
 					check(MC);
 
+					//checks to make sure the fear timer has ended so the turn can be ended.
 					if (MC->GetCurrentFear() <= 0)
 					{
+						//resets the slaugh's message timer
 						bCanDisplayMessage = false;
+						
 						TurnCounter++;
 						if (TurnCounter == TurnOrder.Num())
 						{
@@ -195,13 +213,18 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						TurnCounter %= TurnOrder.Num();
 						CombatPhase = ECombatPhase::Decision;
 						bAttackOccurred = false;
+					
 						bIsPlayerTurnActive = false;
+
+						//variables used for the turn order display widget. 
 						bAttackOccurredBP = true;
 						break;
 					}
 
+					//decriments the character's fear by delta time
 					MC->SetCurrentFear(MC->GetCurrentFear() - DeltaTime);
 					bIsPlayerTurnActive = true; 
+
 					//check to see if the attack occurred. 
 					if (bAttackOccurred == true)
 					{
@@ -215,6 +238,8 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						CombatPhase = ECombatPhase::Decision;
 						bAttackOccurred = false;
 						bIsPlayerTurnActive = false; 
+
+						//variables used for the turn order display widget. 
 						bAttackOccurredBP = true;
 						break; 
 					}
@@ -228,9 +253,15 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 				{
 					if (bCanDisplayMessage)
 					{
+						//spawn an OrbPattern. 
+						//OnDefense.Broadcast(); 
 						bAttackOccurred = false; 
+
+						//attack 
 						TurnOrder[TurnCounter]->Attack();
 						bCanDisplayMessage = false;
+
+						//incriment turn counter
 						TurnCounter++;
 						if (TurnCounter == TurnOrder.Num())
 						{
@@ -238,7 +269,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						}
 						TurnCounter %= TurnOrder.Num();
 						CombatPhase = ECombatPhase::Decision;
-						OnDefense.Broadcast(); 
+
 						bAttackOccurredBP = true;
 						break;
 					}

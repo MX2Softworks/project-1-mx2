@@ -5,6 +5,10 @@
 #include "GameFramework/Pawn.h"
 #include "GameCharacter.generated.h"
 
+//delegate that will broadcast event for each character's attack.
+//TODO: Move to enemy class and implement there.
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnOrbAttack);
+
 UCLASS()
 class PROJECTONE_API AGameCharacter : public APawn
 {
@@ -31,7 +35,11 @@ public:
 
 	//Possible debug function for getting entities in game to attack in the prototype
 	UFUNCTION(BlueprintCallable, Category="Attack")
-	bool Attack();
+	virtual bool Attack();
+
+	//On defense event for each enemy
+	UPROPERTY(BlueprintAssignable)
+	FOnOrbAttack OnOrbAttack;
 
 private:
 

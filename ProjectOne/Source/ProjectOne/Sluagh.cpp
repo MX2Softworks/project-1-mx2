@@ -4,5 +4,9 @@
 #include "Sluagh.h"
 
 
+bool ASluagh::Attack()
+{
 
+	return true; 
+}
 

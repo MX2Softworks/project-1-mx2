@@ -13,7 +13,7 @@ class PROJECTONE_API ASluagh : public AMob
 {
 	GENERATED_BODY()
 	
-	
+		virtual bool Attack() override; 
 	
 	
 };

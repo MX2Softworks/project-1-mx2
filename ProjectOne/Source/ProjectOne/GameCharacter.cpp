@@ -21,7 +21,7 @@ bool AGameCharacter::Attack()
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("%s Attacks!"), *this->GetName()));
 	}
-
+	OnOrbAttack.Broadcast(); 
 	return true;
 }
 

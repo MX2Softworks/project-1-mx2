@@ -8,7 +8,7 @@
 #include "EngineUtils.h"
 #include "BattleManager.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDefense);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDefense); 
 
 UENUM(BlueprintType)
 enum class ECombatPhase : uint8
