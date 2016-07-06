@@ -18,13 +18,12 @@ UBattleManager::UBattleManager()
 
 	if (!GetWorld())
 	{
-		UE_LOG(LogTemp, Error, TEXT("No WOrld"));
+		UE_LOG(LogTemp, Warning, TEXT("No World"));
 	}
 	else
 	{
 		if (GetWorld() && GetWorld()->GetFirstPlayerController())
 		{
-			//EntitiesComingIn[0] = GetWorld()->GetFirstPlayerController();
 			UE_LOG(LogTemp, Warning, TEXT("got player controller successfully"));
 		}
 		else 
@@ -33,9 +32,6 @@ UBattleManager::UBattleManager()
 		}
 		
 	}
-
-
-	//TODO: Use Actor Iterator to get two of the actors in the world and use them to test the battle system. 
 }
 
 //TODO: Implement Engagement System
@@ -275,7 +271,6 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						TurnOrder[TurnCounter]->Attack();
 						bAttackOccurred = TurnOrder[TurnCounter]->GetIsAttacking(); 
 						bWaitForAttackToFinish = true; 
-						GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString::Printf(TEXT("Attack")));
 					}
 					//assuming an attack has already occurred, when the sluagh's attack ends, it will stop waiting and end its turn. 
 					if (bWaitForAttackToFinish == true && TurnOrder[TurnCounter]->GetIsAttacking() == false)
@@ -301,10 +296,6 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 					//if the orb pattern animation is currently playing or the sluagh is waiting for the message timer to end. 
 					else
 					{
-						if (GEngine)
-						{
-							//GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("Break")));
-						}
 						break;
 					}
 					
