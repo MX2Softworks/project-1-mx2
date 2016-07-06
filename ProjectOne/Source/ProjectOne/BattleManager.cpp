@@ -275,11 +275,10 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						TurnOrder[TurnCounter]->Attack();
 						bAttackOccurred = TurnOrder[TurnCounter]->GetIsAttacking(); 
 						bWaitForAttackToFinish = true; 
-						UE_LOG(LogTemp, Warning, TEXT("Attack Started"));
+						GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString::Printf(TEXT("Attack")));
 					}
-
 					//assuming an attack has already occurred, when the sluagh's attack ends, it will stop waiting and end its turn. 
-					else if (bWaitForAttackToFinish == true && TurnOrder[TurnCounter]->GetIsAttacking() == false)
+					if (bWaitForAttackToFinish == true && TurnOrder[TurnCounter]->GetIsAttacking() == false)
 					{
 						bAttackOccurred = false;
 						bWaitForAttackToFinish = false;
@@ -295,13 +294,17 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						CombatPhase = ECombatPhase::Preparation;
 
 						bAttackOccurredBP = true;
-						UE_LOG(LogTemp, Warning, TEXT("Attack Finished"));
+						GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString::Printf(TEXT("Attack Finished")));
 						break;
 					}
-
+					
 					//if the orb pattern animation is currently playing or the sluagh is waiting for the message timer to end. 
 					else
 					{
+						if (GEngine)
+						{
+							//GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("Break")));
+						}
 						break;
 					}
 					

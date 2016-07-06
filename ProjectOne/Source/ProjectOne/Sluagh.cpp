@@ -19,7 +19,7 @@ void ASluagh::AttackTimerEnd()
 	SetIsAttacking(false);
 	if (GEngine)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("Attack Timer Up.")));
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, FString::Printf(TEXT("Attack Timer Up.")));
 	}
 }
 
