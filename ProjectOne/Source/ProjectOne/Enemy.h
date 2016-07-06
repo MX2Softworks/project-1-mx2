@@ -12,4 +12,5 @@ UCLASS()
 class PROJECTONE_API AEnemy : public AGameCharacter
 {
 	GENERATED_BODY()
+
 };
