@@ -70,23 +70,44 @@ int UBattleManager::GetTurnCounter() { return TurnCounter; };
 */
 TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 {
+
+	TMultiMap<int32, AGameCharacter*> TurnOrderMap;
+	int32 EntitySpeed;
+	for (AGameCharacter* Entity : EntitiesComingIn)
+	{
+		if (Entity != nullptr)
+		{
+			EntitySpeed = Entity->GetSpeed();
+			TurnOrderMap.Add(EntitySpeed, Entity);
+		}
+	}
+	
+	for (auto KeyValPair = TurnOrderMap.CreateConstIterator(); KeyValPair; ++KeyValPair)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%d, %s"), KeyValPair.Key(), *KeyValPair.Value()->GetName()); 
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("%s %d"), *KeyValPair.Value()->GetName(), KeyValPair.Key()));
+	}
+	
+
+  
 	TurnOrder.Init(nullptr, 22);
-	int32 EntitySpeed; 
+	//int EntitySpeed; 
 	for (AGameCharacter* Entity : EntitiesComingIn)
 	{
 		if (Entity != nullptr)
 		{
 			EntitySpeed = Entity->GetSpeed(); 
-			for (int32 Index = 0; Index < TurnOrder.Num(); Index++)
+			for (int Index = 0; Index < TurnOrder.Num(); Index++)
 			{
-				if ((Index+((RoundCounter-1)*TurnOrder.Num()))%EntitySpeed == 0)
+				if (Index%EntitySpeed == 0)
 				{
-					if (TurnOrder[Index] == nullptr){ TurnOrder[Index] = Entity; }
-					else{ TurnOrder.Insert(Entity, Index + 1); }
+					if (TurnOrder[Index] == nullptr){TurnOrder[Index] = Entity;}
+					else{TurnOrder.Insert(Entity, Index + 1);}
 				}
 			}
 		} 
 	}
+
 	return TurnOrder; 
 }
 
@@ -144,7 +165,8 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 	{
 		return;
 	}
-	
+
+
 	//On each turn, the switch statement selects the current character in the turn order, prepares their state and then 
 	//executes their action. Currently in the prototype, names are used to find entities, but in the future some other implementation will be used. 
 	switch (CombatPhase)
@@ -236,7 +258,6 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 						//ends turn.
 						TurnCounter++;
-						
 						if (TurnCounter == TurnOrder.Num())
 						{
 							RoundCounter++;
@@ -298,6 +319,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 					{
 						break;
 					}
+					
 				}
 			}
 
