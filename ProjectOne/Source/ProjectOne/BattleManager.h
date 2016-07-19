@@ -47,6 +47,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Attack")
 	bool GetAttackOccurred();
 
+	//a function written to attempt to delegate turn order initialization to the battlegamemode_BP blueprint. 
+	UFUNCTION(BlueprintCallable, Category = "Turn Order")
+	TArray<AGameCharacter*> GetEntitiesComingIn();
+
 	//is player turn is used in teh battle manager's tick function to figure out whether its the player's turn or not. 
 	UFUNCTION(BlueprintCallable, Category = "Attack")
 	bool GetIsPlayerTurn();
@@ -63,14 +67,13 @@ public:
 
 	//this function returns the turn counter variable which is used as index of the turn order
 	UFUNCTION(BlueprintCallable, Category = "Turn Order")
-	int GetTurnCounter();
+	int32 GetTurnCounter();
 
 	//these functions are used by the turn order widget to animate
 	UFUNCTION(BlueprintCallable, Category = "Turn Order")
 	void SetAttackOccurredBP(bool bDidAttackOccurBP);
 	UFUNCTION(BlueprintCallable, Category = "Turn Order")
 	bool GetAttackOccurredBP();
-
 
 private:
 
@@ -97,10 +100,10 @@ private:
 	bool bCanDisplayMessage = false; 
 
 	//used as an index in the turnOrder TArray to keep track of who's turn it is. 
-	int TurnCounter = 0; 
+	int32 TurnCounter = 0; 
 
 	//a derived counter used to keep track of how many times through the array the manager has looped through
-	int RoundCounter = 1; 
+	int32 RoundCounter = 1; 
 
 	//an enumerated type used to determine the combat phase 
 	ECombatPhase CombatPhase; 
