@@ -5,6 +5,10 @@
 #include "GameFramework/Pawn.h"
 #include "GameCharacter.generated.h"
 
+//delegate that will broadcast event for each character's attack.
+//TODO: Move to enemy class and implement there.
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnAttack);
+
 UCLASS()
 class PROJECTONE_API AGameCharacter : public APawn
 {
@@ -23,16 +27,31 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
+	// Speed is used for turn order in battle 
 	int GetSpeed();
+	void SetSpeed(int NewSpeed);
 
-	void SetSpeed(int NewSpeed); 
+	// IsAttacking is used as a flag for when Orb Patterns or attacks are active
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	bool GetIsAttacking(); 
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	void SetIsAttacking(bool isAttacking);
 
-	//Possible debug function for getting entities in game to attack in the prototype
+	// Inheritable function that contains the attack of a character
 	UFUNCTION(BlueprintCallable, Category="Attack")
-	bool Attack();
+	virtual bool Attack();
+
+	// Multicast Delegate used to trigger the character's first attack
+	UPROPERTY(BlueprintAssignable)
+	FOnAttack OnAttack_1;
 
 private:
 
+	// Speed is used for turn order in battle, the lower the number the more frequent a character goes
 	UPROPERTY(EditAnywhere)
 	int Speed;
+
+	// IsAttacking is used as a flag to tell the manager and other classes that an attack is active
+	UPROPERTY(EditAnywhere)
+	bool bIsAttacking = false;
 };
