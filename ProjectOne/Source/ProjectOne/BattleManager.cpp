@@ -48,6 +48,9 @@ UBattleManager::UBattleManager(TArray<AGameCharacter*> EntitiesInCombat)
 void UBattleManager::SetAttackOccurred(bool bDidAttackOccur) { bAttackOccurred = bDidAttackOccur; }
 bool UBattleManager::GetAttackOccurred() { return bAttackOccurred; }
 
+//Getter for EntitesComingIn
+TArray<AGameCharacter*> UBattleManager::GetEntitiesComingIn(){ return EntitiesComingIn; }
+
 //Getter and Setter for bIsPlayerTurnActive
 void UBattleManager::SetIsPlayerTurn(bool bIsTurnActive) { bIsPlayerTurnActive = bIsTurnActive; }
 bool UBattleManager::GetIsPlayerTurn() { return bIsPlayerTurnActive; }
@@ -70,6 +73,9 @@ int UBattleManager::GetTurnCounter() { return TurnCounter; };
 */
 TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 {
+
+	///working but incorrect turn order algorithm
+	/*
 	TurnOrder.Init(nullptr, 22);
 	int32 EntitySpeed; 
 	for (AGameCharacter* Entity : EntitiesComingIn)
@@ -86,7 +92,73 @@ TArray<AGameCharacter*> UBattleManager::InitializeTurnOrder()
 				}
 			}
 		} 
+	} */
+
+
+	/*
+	
+	Turn Order Algorithm:
+
+	1) Create a two-dimensional nested array where each column is a time and each row is a entity that goes at that time
+	2) For each entity, get their speed and trace along the columns of the array, if the column % speed = 0 with respect to current round, 
+	   add them to the end of the column
+	3) Trace through the timeline and grab entites one column at a time
+	4) For each entity in the column add them to the turn order array
+
+	*/
+
+	//makes a 2d timeline where each frame is the entities that go during that time.
+	TArray<TArray<AGameCharacter*>> Timeline; 
+	TArray<AGameCharacter*> TempArray; 
+	int32 EntitySpeed; 
+	TempArray.Init(nullptr, 1);
+	Timeline.Init(TempArray, 10);
+	for (AGameCharacter* Entity : EntitiesComingIn)
+	{
+		if (Entity != nullptr)
+		{
+			EntitySpeed = Entity->GetSpeed(); 
+			for (int32 Index = 0; Index < Timeline.Num(); Index++)
+			{
+				if ((Index + ((RoundCounter - 1)*Timeline.Num())) == 0) {}
+				else if ((Index + ((RoundCounter - 1)*Timeline.Num())) % EntitySpeed == 0)
+				{
+					TArray<AGameCharacter*> Frame = Timeline[Index];
+					Frame.Emplace(Entity);
+					Timeline[Index] = Frame; 
+				}
+				
+			}
+		}
 	}
+
+	//adds to turn order. 
+	TurnOrder.Reset(1); 
+	for (TArray<AGameCharacter*> Frame : Timeline)
+	{
+		for (AGameCharacter* Entity : Frame)
+		{
+			TurnOrder.Add(Entity);
+		}
+	}
+
+	//checks turn order
+	
+	for (int32 Index = 0; Index < Timeline.Num(); Index++)
+	{
+		TArray<AGameCharacter*> Frame = Timeline[Index];
+		for (AGameCharacter* Entity : Frame)
+		{
+			if (Entity != nullptr)
+			{
+				if (GEngine)
+				{
+					GEngine->AddOnScreenDebugMessage(-1, 12.f, FColor::Green, FString::Printf(TEXT("Time: %d, Entity: %s"), (Index + ((RoundCounter - 1)*Timeline.Num())), *Entity->GetName()));
+				}
+			}
+		}
+	}
+
 	return TurnOrder; 
 }
 
@@ -124,6 +196,7 @@ void UBattleManager::BeginPlay()
 {
 	Super::BeginPlay();
 	DebugSetEntitiesComingIn();
+	TurnOrder.Init(nullptr, 1); 
 	InitializeTurnOrder(); 
 
 	//initialize our combat phase. 
@@ -140,7 +213,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 
 	//short circuit the round counter for the prototype to stop after first round. 
-	if (RoundCounter >= 2)
+	if (RoundCounter >= 3)
 	{
 		return;
 	}
@@ -207,21 +280,35 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						//resets the slaugh's message timer
 						bCanDisplayMessage = false;
 						
-						//ends turn. 
 						TurnCounter++;
+						///if there is a new round
 						if (TurnCounter == TurnOrder.Num())
 						{
 							RoundCounter++;
-						}
-						TurnCounter %= TurnOrder.Num();
-						CombatPhase = ECombatPhase::Preparation;
-						bAttackOccurred = false;
-					
-						bIsPlayerTurnActive = false;
+							TurnCounter %= TurnOrder.Num();
+							InitializeTurnOrder(); ///recalculates turn order
+							CombatPhase = ECombatPhase::Preparation;
+							bAttackOccurred = false;
 
-						//flags the turn order widget to animate
-						bAttackOccurredBP = true;
-						break;
+							bIsPlayerTurnActive = false;
+
+							//flags the turn order widget to animate
+							bAttackOccurredBP = true;
+							break;
+						}
+						else 
+						{
+							TurnCounter %= TurnOrder.Num();
+							CombatPhase = ECombatPhase::Preparation;
+							bAttackOccurred = false;
+
+							bIsPlayerTurnActive = false;
+
+							//flags the turn order widget to animate
+							bAttackOccurredBP = true;
+							break;
+						}
+						break; 
 					}
 
 					//decriments the character's fear by delta time
@@ -236,19 +323,33 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 						//ends turn.
 						TurnCounter++;
-						
+						///if there is a new round
 						if (TurnCounter == TurnOrder.Num())
 						{
 							RoundCounter++;
-						}
-						TurnCounter %= TurnOrder.Num();
-						CombatPhase = ECombatPhase::Preparation;
-						bAttackOccurred = false;
-						bIsPlayerTurnActive = false; 
+							TurnCounter %= TurnOrder.Num();
+							InitializeTurnOrder(); ///recalculates turn order
+							CombatPhase = ECombatPhase::Preparation;
+							bAttackOccurred = false;
+							bIsPlayerTurnActive = false;
 
-						//variables used for the turn order display widget. 
-						bAttackOccurredBP = true;
-						break; 
+							//variables used for the turn order display widget. 
+							bAttackOccurredBP = true;
+							break;
+						}
+						else
+						{
+							TurnCounter %= TurnOrder.Num();
+							CombatPhase = ECombatPhase::Preparation;
+							bAttackOccurred = false;
+							bIsPlayerTurnActive = false;
+
+							//variables used for the turn order display widget. 
+							bAttackOccurredBP = true;
+							break;
+						}
+						break;
+						
 					}
 					//if the player has not yet made an attack
 					else
@@ -272,7 +373,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 						bAttackOccurred = TurnOrder[TurnCounter]->GetIsAttacking(); 
 						bWaitForAttackToFinish = true; 
 					}
-					//assuming an attack has already occurred, when the sluagh's attack ends, it will stop waiting and end its turn. 
+					//assuming an attack has already been initiated, when the sluagh's attack ends, it will stop waiting and end its turn. 
 					if (bWaitForAttackToFinish == true && TurnOrder[TurnCounter]->GetIsAttacking() == false)
 					{
 						bAttackOccurred = false;
@@ -281,15 +382,26 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 						//incriment turn counter
 						TurnCounter++;
+						///if there is a new round
 						if (TurnCounter == TurnOrder.Num())
 						{
 							RoundCounter++;
-						}
-						TurnCounter %= TurnOrder.Num();
-						CombatPhase = ECombatPhase::Preparation;
+							TurnCounter %= TurnOrder.Num();
+							InitializeTurnOrder(); ///recalculates turn order
+							CombatPhase = ECombatPhase::Preparation;
 
-						bAttackOccurredBP = true;
-						GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString::Printf(TEXT("Attack Finished")));
+							bAttackOccurredBP = true;
+							GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString::Printf(TEXT("Attack Finished")));
+							break;
+						}
+						else
+						{
+							TurnCounter %= TurnOrder.Num();
+							CombatPhase = ECombatPhase::Preparation;
+							bAttackOccurredBP = true;
+							GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Green, FString::Printf(TEXT("Attack Finished")));
+							break;
+						}
 						break;
 					}
 					
@@ -306,9 +418,17 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 			if (TurnCounter == TurnOrder.Num())
 			{
 				RoundCounter++;
+				TurnCounter %= TurnOrder.Num();
+				InitializeTurnOrder(); ///recalculates turn order
+				CombatPhase = ECombatPhase::Preparation;
+				break;
 			}
-			TurnCounter %= TurnOrder.Num();
-			CombatPhase = ECombatPhase::Preparation;
+			else
+			{
+				TurnCounter %= TurnOrder.Num();
+				CombatPhase = ECombatPhase::Preparation;
+				break;
+			}
 			break;
 			
 		case ECombatPhase::Defeat:
