@@ -11,8 +11,8 @@ AGameCharacter::AGameCharacter()
 	Speed = 4; 
 }
 
-int   AGameCharacter::GetSpeed(){ return Speed; }
-void  AGameCharacter::SetSpeed(int NewSpeed) { Speed = NewSpeed; }
+int32   AGameCharacter::GetSpeed(){ return Speed; }
+void  AGameCharacter::SetSpeed(int32 NewSpeed) { Speed = NewSpeed; }
 bool  AGameCharacter::GetIsAttacking() { return bIsAttacking; }
 void  AGameCharacter::SetIsAttacking(bool IsAttacking) { bIsAttacking = IsAttacking; }
 
