@@ -5,6 +5,9 @@
 #include "Components/ActorComponent.h"
 #include "GameCharacter.h"
 #include "MainCharacter.h"
+#include "Mob.h"
+#include "Enemy.h"
+#include "Sluagh.h"
 #include "EngineUtils.h"
 #include "BattleManager.generated.h"
 
@@ -23,54 +26,82 @@ class PROJECTONE_API UBattleManager : public UActorComponent
 	GENERATED_BODY()
 
 public:	
-	// Sets default values for this component's properties
-	UBattleManager();
+
+	///===============================================================================================
+	/// Constructors
+	///===============================================================================================
+
+		// Sets default values for this component's properties
+		UBattleManager();
 	
-	//will be used in the future to initialize EntitiesComingIn array
-	UBattleManager(TArray<AGameCharacter*> EntitiesInCombat);
+		//will be used in the future to initialize EntitiesComingIn array
+		UBattleManager(TArray<AGameCharacter*> EntitiesInCombat);
 
-	// Called when the game starts
-	virtual void BeginPlay() override;
+	///===============================================================================================
+	/// Inheritied
+	///===============================================================================================
+
+		// Called when the game starts
+		virtual void BeginPlay() override;
 	
-	// Called every frame
-	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
+		// Called every frame
+		virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 
-	TArray<AGameCharacter*> InitializeTurnOrder();
+	///===============================================================================================
+	/// Getters and Setters
+	///===============================================================================================
 
-	//set up initial EntitiesComingIn for the prototype
-	void DebugSetEntitiesComingIn();
+		//attack occurred is used in the battle manager's tick function to figure out whether an attack was initiated. 
+		UFUNCTION(BlueprintCallable, Category = "Attack")
+		void SetAttackOccurred(bool bDidAttackOccur);
+		UFUNCTION(BlueprintCallable, Category = "Attack")
+		bool GetAttackOccurred();
 
+		//a function written to attempt to delegate turn order initialization to the battlegamemode_BP blueprint. 
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		TArray<AGameCharacter*> GetEntitiesComingIn();
+		//set up initial EntitiesComingIn for the prototype
+		UFUNCTION(BlueprintCallable, Category = "DEBUG Turn Order")
+		void DebugSetEntitiesComingIn();
 
-	//attack occurred is used in the battle manager's tick function to figure out whether an attack was initiated. 
-	UFUNCTION(BlueprintCallable, Category = "Attack")
-	void SetAttackOccurred(bool bDidAttackOccur);
-	UFUNCTION(BlueprintCallable, Category = "Attack")
-	bool GetAttackOccurred();
+		//is player turn is used in the battle manager's tick function to figure out whether its the player's turn or not. 
+		UFUNCTION(BlueprintCallable, Category = "Attack")
+		bool GetIsPlayerTurn();
+		UFUNCTION(BlueprintCallable, Category = "Attack")
+		void SetIsPlayerTurn(bool bIsTurnActive);
 
-	//is player turn is used in teh battle manager's tick function to figure out whether its the player's turn or not. 
-	UFUNCTION(BlueprintCallable, Category = "Attack")
-	bool GetIsPlayerTurn();
-	UFUNCTION(BlueprintCallable, Category = "Attack")
-	void SetIsPlayerTurn(bool bIsTurnActive);
+		//this function returns the turn order of the characters in combat. 
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		TArray<AGameCharacter*> GetTurnOrder();
 
-	//this function is used as a message timer to create a delay between the end of the player's turn and the beginning of the enemy's
-	UFUNCTION(BlueprintCallable, Category = "Timer")
-	void TimerEnd(); 
+		//this function returns the turn counter variable which is used as index of the turn order
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		int32 GetTurnCounter();
 
-	//this function returns the turn order of the characters in combat. 
-	UFUNCTION(BlueprintCallable, Category = "Turn Order")
-	TArray<AGameCharacter*> GetTurnOrder();
+		//these functions are used by the turn order widget to animate
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		void SetAttackOccurredBP(bool bDidAttackOccurBP);
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		bool GetAttackOccurredBP();
 
-	//this function returns the turn counter variable which is used as index of the turn order
-	UFUNCTION(BlueprintCallable, Category = "Turn Order")
-	int GetTurnCounter();
+	///===============================================================================================
+	/// Internal Exposed Functions
+	///===============================================================================================
+			
+		//this function is used as a message timer to create a delay between the end of the player's turn and the beginning of the enemy's
+		UFUNCTION(BlueprintCallable, Category = "Timer")
+		void TimerEnd(); 
 
-	//these functions are used by the turn order widget to animate
-	UFUNCTION(BlueprintCallable, Category = "Turn Order")
-	void SetAttackOccurredBP(bool bDidAttackOccurBP);
-	UFUNCTION(BlueprintCallable, Category = "Turn Order")
-	bool GetAttackOccurredBP();
+		//Used to recalculate turn order in battle manager at the end of rounds and beginning of the game. 
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		TArray<AGameCharacter*> CalculateTurnOrder();
 
+	///===============================================================================================
+	/// Helpers
+	///===============================================================================================
+
+		//this function is called inside the tick component to do the reptitive operations of incrimenting turn order and checking to see if its a new round
+		void NextTurn();
 
 private:
 
@@ -97,10 +128,10 @@ private:
 	bool bCanDisplayMessage = false; 
 
 	//used as an index in the turnOrder TArray to keep track of who's turn it is. 
-	int TurnCounter = 0; 
+	int32 TurnCounter = 0; 
 
 	//a derived counter used to keep track of how many times through the array the manager has looped through
-	int RoundCounter = 1; 
+	int32 RoundCounter = 1; 
 
 	//an enumerated type used to determine the combat phase 
 	ECombatPhase CombatPhase; 

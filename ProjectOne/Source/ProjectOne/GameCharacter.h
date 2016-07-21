@@ -28,8 +28,10 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
 	// Speed is used for turn order in battle 
-	int GetSpeed();
-	void SetSpeed(int NewSpeed);
+	UFUNCTION(BlueprintCallable, Category = "Speed")
+	int32 GetSpeed();
+	UFUNCTION(BlueprintCallable, Category = "Speed")
+	void SetSpeed(int32 NewSpeed);
 
 	// IsAttacking is used as a flag for when Orb Patterns or attacks are active
 	UFUNCTION(BlueprintCallable, Category = "Attack")
@@ -49,7 +51,7 @@ private:
 
 	// Speed is used for turn order in battle, the lower the number the more frequent a character goes
 	UPROPERTY(EditAnywhere)
-	int Speed;
+	int32 Speed;
 
 	// IsAttacking is used as a flag to tell the manager and other classes that an attack is active
 	UPROPERTY(EditAnywhere)
