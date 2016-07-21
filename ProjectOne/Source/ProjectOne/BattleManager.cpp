@@ -73,42 +73,8 @@ int UBattleManager::GetTurnCounter() { return TurnCounter; };
 */
 TArray<AGameCharacter*> UBattleManager::CalculateTurnOrder()
 {
-
-	///working but incorrect turn order algorithm
-	/*
-	TurnOrder.Init(nullptr, 22);
-	int32 EntitySpeed; 
-	for (AGameCharacter* Entity : EntitiesComingIn)
-	{
-		if (Entity != nullptr)
-		{
-			EntitySpeed = Entity->GetSpeed(); 
-			for (int32 Index = 0; Index < TurnOrder.Num(); Index++)
-			{
-				if ((Index+((RoundCounter-1)*TurnOrder.Num()))%EntitySpeed == 0)
-				{
-					if (TurnOrder[Index] == nullptr){ TurnOrder[Index] = Entity; }
-					else{ TurnOrder.Insert(Entity, Index + 1); }
-				}
-			}
-		} 
-	} */
-
-
-	/*
-	
-	Turn Order Algorithm:
-
-	1) Create a two-dimensional nested array where each column is a time and each row is a entity that goes at that time
-	2) For each entity, get their speed and trace along the columns of the array, if the column % speed = 0 with respect to current round, 
-	   add them to the end of the column
-	3) Trace through the timeline and grab entites one column at a time
-	4) For each entity in the column add them to the turn order array
-
-	*/
-
 	//makes a 2d timeline where each frame is the entities that go during that time.
-	TArray<TArray<AGameCharacter*>> Timeline; 
+	/*TArray<TArray<AGameCharacter*>> Timeline; 
 	TArray<AGameCharacter*> TempArray; 
 	int32 EntitySpeed; 
 	TempArray.Init(nullptr, 1);
@@ -140,21 +106,18 @@ TArray<AGameCharacter*> UBattleManager::CalculateTurnOrder()
 		{
 			TurnOrder.Add(Entity);
 		}
-	}
+	}*/
 
-	//checks turn order
-	
-	for (int32 Index = 0; Index < Timeline.Num(); Index++)
+	int32 EntitySpeed; 
+
+	for (AGameCharacter* Entity : EntitiesComingIn)
 	{
-		TArray<AGameCharacter*> Frame = Timeline[Index];
-		for (AGameCharacter* Entity : Frame)
+		if (Entity != nullptr)
 		{
-			if (Entity != nullptr)
+			EntitySpeed = Entity->GetSpeed(); 
+			if (EntitySpeed % RoundTime == 0)
 			{
-				if (GEngine)
-				{
-					GEngine->AddOnScreenDebugMessage(-1, 12.f, FColor::Green, FString::Printf(TEXT("Time: %d, Entity: %s"), (Index + ((RoundCounter - 1)*Timeline.Num())), *Entity->GetName()));
-				}
+				TurnOrder.Add(Entity);
 			}
 		}
 	}
@@ -207,6 +170,7 @@ void UBattleManager::NextTurn()
 	TurnCounter++;
 	if (TurnCounter == TurnOrder.Num())
 	{
+		RoundTime++; 
 		RoundCounter++;
 		TurnCounter %= TurnOrder.Num();
 		CalculateTurnOrder(); ///recalculates turn order
@@ -228,7 +192,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 
 	//short circuit the round counter for the prototype to stop after first round. 
-	if (RoundCounter >= 3)
+	if (RoundCounter >= 20)
 	{
 		return;
 	}

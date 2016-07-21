@@ -138,4 +138,7 @@ private:
 	
 	//a timer handle used to create a delay for the enemy's action
 	FTimerHandle LoopTimerHandle;
+
+	//holds the current combat time for speed. A character's speed determines how many combat units they have to wait before going
+	int32 RoundTime = 1; 
 };
