@@ -193,12 +193,12 @@ void UBattleManager::NextTurn()
 TArray<AGameCharacter*> UBattleManager::PopulateTurnOrderWidgetArray()
 {
 	TurnOrderWidgetArray.Reset(1);
-	TurnOrderWidgetArray.Init(nullptr, 6);
+	TurnOrderWidgetArray.Init(nullptr, 7);
 
 	int32 TempTurnCounter = TurnCounter; 
 	int32 TempRoundCounter = RoundCounter;
 	int32 Index = 0; 
-	while (TempTurnCounter < TurnOrder.Num() && Index < 6)
+	while (TempTurnCounter < TurnOrder.Num() && Index < 7)
 	{
 		AGameCharacter* Entity = TurnOrder[TempTurnCounter];
 		if (Entity)
@@ -209,7 +209,7 @@ TArray<AGameCharacter*> UBattleManager::PopulateTurnOrderWidgetArray()
 		TempTurnCounter++;
 	}
 
-	while (Index < 6)
+	while (Index < 7)
 	{
 		int32 EntitySpeed = 0;
 		TempRoundCounter++; 
