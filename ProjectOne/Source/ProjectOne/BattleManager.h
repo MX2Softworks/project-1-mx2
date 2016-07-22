@@ -74,6 +74,11 @@ public:
 		UFUNCTION(BlueprintCallable, Category = "Turn Order")
 		TArray<AGameCharacter*> GetTurnOrder();
 
+
+		//this functigon returns the turn order widget array
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		TArray<AGameCharacter*> GetTurnOrderWidgetArray(); 
+
 		//this function returns the turn counter variable which is used as index of the turn order
 		UFUNCTION(BlueprintCallable, Category = "Turn Order")
 		int32 GetTurnCounter();
@@ -95,6 +100,9 @@ public:
 		//Used to recalculate turn order in battle manager at the end of rounds and beginning of the game. 
 		UFUNCTION(BlueprintCallable, Category = "Turn Order")
 		TArray<AGameCharacter*> CalculateTurnOrder();
+
+		UFUNCTION(BlueprintCallable, Category = "Turn Order")
+		TArray<AGameCharacter*> PopulateTurnOrderWidgetArray(); 
 
 	///===============================================================================================
 	/// Helpers
@@ -138,4 +146,7 @@ private:
 	
 	//a timer handle used to create a delay for the enemy's action
 	FTimerHandle LoopTimerHandle;
+
+	//an array of entites for the turn order widget
+	TArray<AGameCharacter*> TurnOrderWidgetArray;
 };
