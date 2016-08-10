@@ -62,8 +62,11 @@ bool UBattleManager::GetAttackOccurredBP() { return bAttackOccurredBP; }
 //Getter for TurnOrder
 TArray<AGameCharacter*> UBattleManager::GetTurnOrder() { return TurnOrder; };
 
+//Getter for TurnOrderWidgetArray
+TArray<AGameCharacter*> UBattleManager::GetTurnOrderWidgetArray() { return TurnOrderWidgetArray; };
+
 //Getter for TurnCounter
-int UBattleManager::GetTurnCounter() { return TurnCounter; };
+int32 UBattleManager::GetTurnCounter() { return TurnCounter; };
 
 //TODO: Make this work with the Engagement System
 /*
@@ -73,42 +76,8 @@ int UBattleManager::GetTurnCounter() { return TurnCounter; };
 */
 TArray<AGameCharacter*> UBattleManager::CalculateTurnOrder()
 {
-
-	///working but incorrect turn order algorithm
-	/*
-	TurnOrder.Init(nullptr, 22);
-	int32 EntitySpeed; 
-	for (AGameCharacter* Entity : EntitiesComingIn)
-	{
-		if (Entity != nullptr)
-		{
-			EntitySpeed = Entity->GetSpeed(); 
-			for (int32 Index = 0; Index < TurnOrder.Num(); Index++)
-			{
-				if ((Index+((RoundCounter-1)*TurnOrder.Num()))%EntitySpeed == 0)
-				{
-					if (TurnOrder[Index] == nullptr){ TurnOrder[Index] = Entity; }
-					else{ TurnOrder.Insert(Entity, Index + 1); }
-				}
-			}
-		} 
-	} */
-
-
-	/*
-	
-	Turn Order Algorithm:
-
-	1) Create a two-dimensional nested array where each column is a time and each row is a entity that goes at that time
-	2) For each entity, get their speed and trace along the columns of the array, if the column % speed = 0 with respect to current round, 
-	   add them to the end of the column
-	3) Trace through the timeline and grab entites one column at a time
-	4) For each entity in the column add them to the turn order array
-
-	*/
-
 	//makes a 2d timeline where each frame is the entities that go during that time.
-	TArray<TArray<AGameCharacter*>> Timeline; 
+	/*TArray<TArray<AGameCharacter*>> Timeline; 
 	TArray<AGameCharacter*> TempArray; 
 	int32 EntitySpeed; 
 	TempArray.Init(nullptr, 1);
@@ -140,25 +109,23 @@ TArray<AGameCharacter*> UBattleManager::CalculateTurnOrder()
 		{
 			TurnOrder.Add(Entity);
 		}
-	}
+	}*/
 
-	//checks turn order
-	
-	for (int32 Index = 0; Index < Timeline.Num(); Index++)
+	int32 EntitySpeed = 0; 
+	TurnOrder.Reset(1);
+	for (AGameCharacter* Entity : EntitiesComingIn)
 	{
-		TArray<AGameCharacter*> Frame = Timeline[Index];
-		for (AGameCharacter* Entity : Frame)
+		if (Entity != nullptr)
 		{
-			if (Entity != nullptr)
+			EntitySpeed = Entity->GetSpeed(); 
+			if (RoundCounter % EntitySpeed == 0)
 			{
-				if (GEngine)
-				{
-					GEngine->AddOnScreenDebugMessage(-1, 12.f, FColor::Green, FString::Printf(TEXT("Time: %d, Entity: %s"), (Index + ((RoundCounter - 1)*Timeline.Num())), *Entity->GetName()));
-				}
+				TurnOrder.Emplace(Entity);
+				GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Yellow, FString::Printf(TEXT("Added %s"), *Entity->GetName()));
 			}
 		}
 	}
-
+	TurnOrder.Add(nullptr); 
 	return TurnOrder; 
 }
 
@@ -192,7 +159,9 @@ void UBattleManager::BeginPlay()
 	Super::BeginPlay();
 	DebugSetEntitiesComingIn();
 	TurnOrder.Init(nullptr, 1); 
-	CalculateTurnOrder(); 
+	TurnOrderWidgetArray.Init(nullptr, 1);
+	CalculateTurnOrder();
+	PopulateTurnOrderWidgetArray();
 
 	//initialize our combat phase. 
 	CombatPhase = ECombatPhase::Preparation;
@@ -205,20 +174,69 @@ void UBattleManager::BeginPlay()
 void UBattleManager::NextTurn()
 {
 	TurnCounter++;
-	if (TurnCounter == TurnOrder.Num())
+	if (TurnCounter >= TurnOrder.Num())
 	{
 		RoundCounter++;
-		TurnCounter %= TurnOrder.Num();
+		TurnCounter = 0; 
 		CalculateTurnOrder(); ///recalculates turn order
 		CombatPhase = ECombatPhase::Preparation;
 		return;
 	}
 	else
 	{
-		TurnCounter %= TurnOrder.Num();
 		CombatPhase = ECombatPhase::Preparation;
 		return;
 	}
+}
+
+//this function is called every turn to make sure the turn order widget always has atleast 6 entites for its display, even if it means calculating forward rounds.
+TArray<AGameCharacter*> UBattleManager::PopulateTurnOrderWidgetArray()
+{
+	TurnOrderWidgetArray.Reset(1);
+	TurnOrderWidgetArray.Init(nullptr, 7);
+
+	int32 TempTurnCounter = TurnCounter; 
+	int32 TempRoundCounter = RoundCounter;
+	int32 Index = 0; 
+	while (TempTurnCounter < TurnOrder.Num() && Index < 7)
+	{
+		AGameCharacter* Entity = TurnOrder[TempTurnCounter];
+		if (Entity)
+		{
+			TurnOrderWidgetArray[Index] = Entity;
+			Index++;
+		}
+		TempTurnCounter++;
+	}
+
+	while (Index < 7)
+	{
+		int32 EntitySpeed = 0;
+		TempRoundCounter++; 
+		for (AGameCharacter* Entity : EntitiesComingIn)
+		{
+			if (Entity != nullptr)
+			{
+				EntitySpeed = Entity->GetSpeed();
+				if (TempRoundCounter % EntitySpeed == 0)
+				{
+					if (TurnOrderWidgetArray.IsValidIndex(Index))
+					{
+						TurnOrderWidgetArray[Index] = Entity;
+						Index++;
+					}
+					
+				}
+			}
+		}
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::Red, FString::Printf(TEXT("==============================")));
+	for (int I = 0; I < TurnOrderWidgetArray.Num(); I++)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Entity #:%d: Entity Name: %s"), I, *TurnOrderWidgetArray[I]->GetName());
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::Red, FString::Printf(TEXT("==============================")));
+	return TurnOrderWidgetArray;
 }
 
 // Called every frame
@@ -228,7 +246,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 
 
 	//short circuit the round counter for the prototype to stop after first round. 
-	if (RoundCounter >= 3)
+	if (RoundCounter >= 20)
 	{
 		return;
 	}
@@ -243,13 +261,16 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 			2)  The combat phase is switched to the action phase of the character 
 			
 		*/
+		
 		case ECombatPhase::Preparation:
 
-			if (TurnOrder[TurnCounter] != nullptr)
+			if (TurnOrder.IsValidIndex(TurnCounter) && TurnOrder[TurnCounter] != nullptr)
 			{
 				//displays a message about the round and entity to the log
 				UE_LOG(LogTemp, Warning, TEXT("Round: %d\tEntity: %s"), RoundCounter, *TurnOrder[TurnCounter]->GetName());
-				
+
+				PopulateTurnOrderWidgetArray(); 
+
 				//uses timer in the event that entity deciding is a sluagh to display a message after a delay.
 				if(Cast<AMob>(TurnOrder[TurnCounter]))
 				{
@@ -280,7 +301,7 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 		*/
 
 		case ECombatPhase::Action:
-			if (TurnOrder[TurnCounter] != nullptr)
+			if (TurnOrder.IsValidIndex(TurnCounter) && TurnOrder[TurnCounter] != nullptr)
 			{	
 				///debug logic to give beck a turn in combat allowing him to make a move. 
 				if(Cast<AMainCharacter>(TurnOrder[TurnCounter]))
