@@ -1,0 +1,652 @@
+﻿Log file open, 08/18/16 13:22:18
+LogInit:Display: Running engine for game: ProjectOne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1145837268) SRandInit(-1145837267).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.193244
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.18-17.22.18:326][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-17.22.18:326][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.18-17.22.18:383][  0]LogInit: Computer: FAHAD-PC
+[2016.08.18-17.22.18:383][  0]LogInit: User: Fahad
+[2016.08.18-17.22.18:383][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.18-17.22.18:383][  0]LogInit: High frequency timer resolution =3.215352 MHz
+[2016.08.18-17.22.18:383][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.18-17.22.18:383][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-17.22.18:383][  0]LogMemory: Process Physical Memory: 314.42 MB used, 314.42 MB peak
+[2016.08.18-17.22.18:383][  0]LogMemory: Process Virtual Memory: 314.88 MB used, 314.88 MB peak
+[2016.08.18-17.22.18:383][  0]LogMemory: Physical Memory: 4291.55 MB used, 8174.67 MB total
+[2016.08.18-17.22.18:383][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.18-17.22.19:019][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.18-17.22.19:700][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.18-17.22.19:725][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.18-17.22.19:725][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.18-17.22.19:774][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.18-17.22.19:774][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.18-17.22.19:774][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.18-17.22.19:778][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.18-17.22.19:778][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.18-17.22.19:779][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.18-17.22.19:779][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.18-17.22.19:779][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.18-17.22.19:794][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.18-17.22.20:284][  0]LogShaderCompilers: Guid format shader working directory is -48 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/6448/).
+[2016.08.18-17.22.20:284][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/FE31A3E7461D8A1937653AAF3EF1BD47/'.
+[2016.08.18-17.22.20:284][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.18-17.22.25:981][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.18-17.22.25:989][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.18-17.22.25:996][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.18-17.22.26:003][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.18-17.22.26:019][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.18-17.22.26:026][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.18-17.22.26:031][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.18-17.22.26:036][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.18-17.22.26:041][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.18-17.22.26:046][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.18-17.22.26:051][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.18-17.22.26:061][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.18-17.22.26:061][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.18-17.22.26:063][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.18-17.22.26:123][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.18-17.22.26:126][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.18-17.22.26:161][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.18-17.22.26:206][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.18-17.22.26:229][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.18-17.22.26:229][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.18-17.22.26:797][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.18-17.22.27:217][  0]LogDerivedDataCache: Loaded boot cache 0.42s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.18-17.22.27:217][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.08.18-17.22.27:218][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.18-17.22.27:218][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.18-17.22.27:218][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.18-17.22.27:218][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.18-17.22.27:249][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.18-17.22.27:262][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.18-17.22.33:716][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-17.22.33:717][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.18-17.22.33:841][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.08.18-17.22.34:015][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.18-17.22.34:015][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.18-17.22.34:015][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.18-17.22.34:539][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.08.18-17.22.34:539][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.08.18-17.22.34:539][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.18-17.22.34:550][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.18-17.22.35:353][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-17.22.35:353][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-17.22.38:225][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.18-17.22.38:225][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.18-17.22.38:225][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.18-17.22.38:225][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.18-17.22.38:225][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.18-17.22.38:225][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.18-17.22.44:088][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.18-17.22.44:163][  0]LogTemp:Warning: No World
+[2016.08.18-17.22.44:507][  0]LogAssetRegistry: FAssetRegistry took 0.0217 seconds to start up
+[2016.08.18-17.22.44:893][  0]SourceControl: Info Source control is disabled
+[2016.08.18-17.22.45:356][  0]SourceControl: Info Source control is disabled
+[2016.08.18-17.22.45:371][  0]SourceControl: Info Source control is disabled
+[2016.08.18-17.22.45:403][  0]SourceControl: Info Source control is disabled
+[2016.08.18-17.22.45:800][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2016.08.18-17.22.45:956][  0]LogEngine: Initializing Engine...
+[2016.08.18-17.22.47:333][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.18-17.22.47:365][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.18-17.22.47:385][  0]LogInit: FAudioDevice initialized.
+[2016.08.18-17.22.47:452][  0]LogDerivedDataCache: Saved boot cache 0.07s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.18-17.22.47:461][  0]LogInit: Texture streaming: Enabled
+[2016.08.18-17.22.47:499][  0]LogInit: Transaction tracking system initialized
+[2016.08.18-17.22.47:584][  0]BlueprintLog: New page: Editor Load
+[2016.08.18-17.22.47:989][  0]LocalizationService: Info Localization service is disabled
+[2016.08.18-17.22.48:397][  0]LogConsoleResponse:Display: 
+[2016.08.18-17.22.48:690][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.18-17.22.48:690][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.18-17.22.48:690][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.08.18-17.22.48:842][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/' took 0.02s
+[2016.08.18-17.22.48:843][  0]SourceControl: Info Source control is disabled
+[2016.08.18-17.22.48:843][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.18-17.22.48:843][  0]LightingResults: New page: Lighting Build
+[2016.08.18-17.22.48:847][  0]MapCheck: New page: Map Check
+[2016.08.18-17.22.48:847][  0]LightingResults: New page: Lighting Build
+[2016.08.18-17.22.49:418][  0]LogTemp:Warning: No World
+[2016.08.18-17.22.49:434][  0]LogTemp:Warning: No World
+[2016.08.18-17.22.49:445][  0]LogTemp:Warning: No World
+[2016.08.18-17.22.49:747][  0]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.18-17.22.49:793][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.18-17.22.49:793][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.18-17.22.49:895][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 101.767ms to complete.
+[2016.08.18-17.22.49:895][  0]LogFileHelpers: Loading map 'OverworldLevel' took 1.052
+[2016.08.18-17.22.50:086][  0]LogCollectionManager: Loaded 1 collections in 0.005366 seconds
+[2016.08.18-17.22.50:129][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Collections/' took 0.01s
+[2016.08.18-17.22.50:129][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Developers/Fahad/Collections/' took 0.01s
+[2016.08.18-17.22.50:129][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Collections/' took 0.01s
+[2016.08.18-17.22.50:129][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000009 seconds
+[2016.08.18-17.22.50:129][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2016.08.18-17.22.50:138][  0]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 1988 classes and 347 folders.
+[2016.08.18-17.22.50:143][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.08.18-17.22.50:143][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.18-17.22.50:145][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0019 seconds. Added 12 classes and 0 folders.
+[2016.08.18-17.22.50:153][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2016.08.18-17.22.50:181][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2016.08.18-17.22.50:443][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2016.08.18-17.22.50:509][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.18-17.22.50:517][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.18-17.22.50:548][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0019 seconds. Added 1 classes and 2 folders.
+[2016.08.18-17.22.50:549][  0]LogLoad: Full Startup: 35.36 seconds (BP compile: 0.47 seconds)
+[2016.08.18-17.22.50:549][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.18-17.22.50:549][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.18-17.22.50:890][  0]LogOcInput: OculusInput pre-init called
+[2016.08.18-17.22.50:974][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.08.18-17.22.51:144][  0]LogRenderer: Reallocating scene render targets to support 1248x636 (Frame:2).
+[2016.08.18-17.22.51:233][  1]LogAssetRegistry: Asset discovery search completed in 6.7477 seconds
+[2016.08.18-17.22.51:233][  1]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000002 seconds (found 0 objects)
+[2016.08.18-17.22.51:233][  1]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000028 seconds (updated 0 objects)
+[2016.08.18-17.22.53:250][  8]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.18-17.22.53:250][  8]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.18-17.22.53:257][  8]PIE: New page: PIE session: OverworldLevel (Aug 18, 2016, 8:22:53 AM)
+[2016.08.18-17.22.53:257][  8]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_OverworldLevel
+[2016.08.18-17.22.53:271][  8]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013673s)
+[2016.08.18-17.22.53:272][  8]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.18-17.22.53:272][  8]LogPlayLevel: PIE: World Init took: (0.000736s)
+[2016.08.18-17.22.53:272][  8]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/OverworldLevel.OverworldLevel to /Game/Levels/UEDPIE_0_OverworldLevel.OverworldLevel (0.014905s)
+[2016.08.18-17.22.53:309][  8]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.18-17.22.53:316][  8]LogInit: FAudioDevice initialized.
+[2016.08.18-17.22.53:411][  8]LogWorld: Game class is 'BattleGameMode_BP_C'
+[2016.08.18-17.22.53:415][  8]LogWorld: Bringing World /Game/Levels/UEDPIE_0_OverworldLevel.OverworldLevel up for play (max tick rate 0) at 2016.08.18-13.22.53
+[2016.08.18-17.22.53:416][  8]LogWorld: Bringing up level for play took: 0.004017
+[2016.08.18-17.22.53:423][  8]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0020 seconds. Added 9 classes and 0 folders.
+[2016.08.18-17.22.53:424][  8]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_OverworldLevel -0.188
+[2016.08.18-17.22.53:424][  8]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.18-17.22.58:527][607]LogBlueprintUserMessages: [MeleeDrawer_52] Hit Max Length
+[2016.08.18-17.23.05:188][405]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.18-17.23.05:231][405]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.18-17.23.08:568][762]LogTemp:Warning: No World
+[2016.08.18-17.23.08:752][762]LogSavePackage: Save=192.46ms
+[2016.08.18-17.23.08:752][762]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevelBA4FC2E74696A4A3082C8281FD918257.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.23.08:755][762]LogSavePackage: Total save time: 236.30ms
+[2016.08.18-17.23.08:755][762]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.23.26:850][501]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0024 seconds. Added 108 classes and 0 folders.
+[2016.08.18-17.23.49:809][888]BlueprintLog: New page: Compile MeleeDrawer_BP
+[2016.08.18-17.23.50:040][888]BlueprintEditorCompileResults: Info [0094.85] Compile of MeleeDrawer_BP successful! [in 231 ms]
+[2016.08.18-17.23.51:037][918]LogSavePackage: Save=524.52ms
+[2016.08.18-17.23.51:037][918]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/MeleeDrawer_BP5C2DE62B479CCFC72F9C3E81DF05B763.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/MeleeDrawer_BP.uasset'
+[2016.08.18-17.23.51:043][918]LogSavePackage: Total save time: 574.17ms
+[2016.08.18-17.23.51:043][918]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/MeleeDrawer_BP.uasset
+[2016.08.18-17.23.53:342][161]LogTemp:Warning: No World
+[2016.08.18-17.23.53:512][161]LogSavePackage: Save=178.72ms
+[2016.08.18-17.23.53:512][161]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelBB8FA3B6403A54327CAB119F7A0F5D4C.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.23.53:516][161]LogSavePackage: Total save time: 219.95ms
+[2016.08.18-17.23.53:517][161]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.23.55:213][305]LogTemp:Warning: No World
+[2016.08.18-17.23.55:383][305]LogSavePackage: Save=178.69ms
+[2016.08.18-17.23.55:383][305]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel591E00054EF3A460FF327A9153C3BE8C.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.23.55:386][305]LogSavePackage: Total save time: 218.61ms
+[2016.08.18-17.23.55:386][305]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.23.59:042][715]LogEditorViewport: Clicking on Actor (LMB): Sluagh (Sluagh)
+[2016.08.18-17.23.59:760][795]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.08.18-17.25.56:786][699]BlueprintLog: New page: Compile SoulOrb_BP
+[2016.08.18-17.25.56:918][699]BlueprintEditorCompileResults: Info [0221.73] Compile of SoulOrb_BP successful! [in 132 ms]
+[2016.08.18-17.25.57:646][758]LogSavePackage: Save=71.97ms
+[2016.08.18-17.25.57:646][758]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BP0AA037F64B87B809DECB3A95E31E6149.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.25.57:650][758]LogSavePackage: Total save time: 116.95ms
+[2016.08.18-17.25.57:650][758]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.25.59:181][894]LogTemp:Warning: No World
+[2016.08.18-17.25.59:356][894]LogSavePackage: Save=183.73ms
+[2016.08.18-17.25.59:356][894]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel34EFB360480654C812C28784B1077E4B.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.25.59:359][894]LogSavePackage: Total save time: 224.88ms
+[2016.08.18-17.25.59:359][894]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.26.36:851][333]BlueprintLog: New page: Compile SoulOrb_BP
+[2016.08.18-17.26.36:974][333]BlueprintEditorCompileResults: Info [0261.79] Compile of SoulOrb_BP successful! [in 122 ms]
+[2016.08.18-17.26.37:507][361]LogSavePackage: Save=72.29ms
+[2016.08.18-17.26.37:507][361]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BP4DF6EF9442FE1E8DE81D6EBFBA08AD40.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.26.37:512][361]LogSavePackage: Total save time: 114.40ms
+[2016.08.18-17.26.37:512][361]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.26.38:612][431]LogTemp:Warning: No World
+[2016.08.18-17.26.38:783][431]LogSavePackage: Save=179.52ms
+[2016.08.18-17.26.38:783][431]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel071BA7EB4D2821B5A7623CB8E53E87DF.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.26.38:786][431]LogSavePackage: Total save time: 220.53ms
+[2016.08.18-17.26.38:786][431]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.27.05:424][289]LogSavePackage: Save=74.05ms
+[2016.08.18-17.27.05:425][289]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BPF1DC7DE84A8980AEE36B09B0D8050A5C.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.27.05:429][289]LogSavePackage: Total save time: 116.14ms
+[2016.08.18-17.27.05:429][289]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.27.37:154][666]BlueprintLog: New page: Compile SoulOrb_BP
+[2016.08.18-17.27.37:385][666]BlueprintEditorCompileResults: Info [0322.20] Compile of SoulOrb_BP successful! [in 229 ms]
+[2016.08.18-17.27.37:828][686]LogSavePackage: Save=72.41ms
+[2016.08.18-17.27.37:828][686]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BP93A6B07A44E95CF5CAEC4DB64658B526.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.27.37:832][686]LogSavePackage: Total save time: 114.86ms
+[2016.08.18-17.27.37:832][686]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.27.38:562][718]LogTemp:Warning: No World
+[2016.08.18-17.27.38:734][718]LogSavePackage: Save=181.13ms
+[2016.08.18-17.27.38:734][718]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel2F597BCA443FC1AAD67A86A1BC3BFCEA.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.27.38:737][718]LogSavePackage: Total save time: 221.36ms
+[2016.08.18-17.27.38:737][718]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.28.43:551][432]BlueprintLog: New page: Compile EnemyAttackEventHandler_BP
+[2016.08.18-17.28.43:661][432]BlueprintEditorCompileResults: Info [0388.48] Compile of EnemyAttackEventHandler_BP successful! [in 110 ms]
+[2016.08.18-17.28.44:097][458]LogSavePackage: Save=36.70ms
+[2016.08.18-17.28.44:097][458]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/EnemyAttackEventHandler_BP6FADA24A4061BA0859742BA5B33D372F.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/EnemyAttackEventHandler_BP.uasset'
+[2016.08.18-17.28.44:101][458]LogSavePackage: Total save time: 81.07ms
+[2016.08.18-17.28.44:101][458]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/EnemyAttackEventHandler_BP.uasset
+[2016.08.18-17.28.45:279][544]LogTemp:Warning: No World
+[2016.08.18-17.28.45:451][544]LogSavePackage: Save=179.64ms
+[2016.08.18-17.28.45:451][544]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel8A8A15A04A07E837E2F40CBC53F6B777.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.28.45:453][544]LogSavePackage: Total save time: 222.49ms
+[2016.08.18-17.28.45:453][544]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.29.12:958][453]BlueprintLog: New page: Compile EnemyAttackEventHandler_BP
+[2016.08.18-17.29.13:050][453]BlueprintEditorCompileResults: Info [0417.86] Compile of EnemyAttackEventHandler_BP successful! [in 91 ms]
+[2016.08.18-17.29.13:517][483]LogSavePackage: Save=43.54ms
+[2016.08.18-17.29.13:517][483]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/EnemyAttackEventHandler_BP4208E8E64A1ED85CCBB54C990ACA4424.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/EnemyAttackEventHandler_BP.uasset'
+[2016.08.18-17.29.13:521][483]LogSavePackage: Total save time: 85.70ms
+[2016.08.18-17.29.13:521][483]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/EnemyAttackEventHandler_BP.uasset
+[2016.08.18-17.29.14:246][526]LogTemp:Warning: No World
+[2016.08.18-17.29.14:440][526]LogSavePackage: Save=201.76ms
+[2016.08.18-17.29.14:440][526]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel6C7A9E3F4CD11E8DB83EBA8F2B2267B6.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.29.14:443][526]LogSavePackage: Total save time: 242.70ms
+[2016.08.18-17.29.14:443][526]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.29.43:031][ 15]LogTemp:Warning: No World
+[2016.08.18-17.29.43:206][ 15]LogSavePackage: Save=183.92ms
+[2016.08.18-17.29.43:206][ 15]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelD6C8FF8145653E92D01697B5CE8F9F95.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.29.43:210][ 15]LogSavePackage: Total save time: 226.20ms
+[2016.08.18-17.29.43:211][ 15]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.30.27:012][746]BlueprintLog: New page: Compile OrbPattern_Sluagh1_BP
+[2016.08.18-17.30.27:151][746]BlueprintEditorCompileResults: Info [0491.97] Compile of OrbPattern_Sluagh1_BP successful! [in 138 ms]
+[2016.08.18-17.30.37:398][872]LogSavePackage: Save=202.55ms
+[2016.08.18-17.30.37:398][872]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OrbPattern_Sluagh1_BP76E4E9C14D281B4C9A503698B50701C0.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset'
+[2016.08.18-17.30.37:403][872]LogSavePackage: Total save time: 248.14ms
+[2016.08.18-17.30.37:404][872]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset
+[2016.08.18-17.30.48:000][949]BlueprintLog: New page: Compile OrbPattern_Sluagh1_BP
+[2016.08.18-17.30.48:137][949]BlueprintEditorCompileResults: Info [0512.95] Compile of OrbPattern_Sluagh1_BP successful! [in 136 ms]
+[2016.08.18-17.30.48:886][986]LogSavePackage: Save=197.30ms
+[2016.08.18-17.30.48:886][986]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OrbPattern_Sluagh1_BP2723D01A4006BA161A4F8EB3E78AAB46.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset'
+[2016.08.18-17.30.48:891][986]LogSavePackage: Total save time: 240.72ms
+[2016.08.18-17.30.48:891][986]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset
+[2016.08.18-17.30.56:577][791]BlueprintLog: New page: Compile EnemyAttackEventHandler_BP
+[2016.08.18-17.30.56:668][791]BlueprintEditorCompileResults: Info [0521.48] Compile of EnemyAttackEventHandler_BP successful! [in 91 ms]
+[2016.08.18-17.30.57:255][833]LogSavePackage: Save=33.81ms
+[2016.08.18-17.30.57:255][833]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/EnemyAttackEventHandler_BPF55013184FE2A786BAAE48AB8BA2A4B5.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/EnemyAttackEventHandler_BP.uasset'
+[2016.08.18-17.30.57:259][833]LogSavePackage: Total save time: 75.36ms
+[2016.08.18-17.30.57:259][833]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/EnemyAttackEventHandler_BP.uasset
+[2016.08.18-17.30.58:336][914]LogTemp:Warning: No World
+[2016.08.18-17.30.58:515][914]LogSavePackage: Save=186.96ms
+[2016.08.18-17.30.58:515][914]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel11DE149041C5CDB0A64794B7E2B003E7.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.30.58:517][914]LogSavePackage: Total save time: 227.56ms
+[2016.08.18-17.30.58:517][914]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.31.34:116][632]LogSavePackage: Save=208.65ms
+[2016.08.18-17.31.34:116][632]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OrbPattern_Sluagh1_BP32599E3B473DF26C73EE8F86EA00272B.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset'
+[2016.08.18-17.31.34:120][632]LogSavePackage: Total save time: 250.60ms
+[2016.08.18-17.31.34:120][632]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset
+[2016.08.18-17.31.35:114][706]LogTemp:Warning: No World
+[2016.08.18-17.31.35:294][706]LogSavePackage: Save=188.04ms
+[2016.08.18-17.31.35:294][706]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevelC6D87E6D4E514F46BAB720AC69BEE6A1.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.31.35:297][706]LogSavePackage: Total save time: 228.85ms
+[2016.08.18-17.31.35:297][706]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.32.14:502][ 56]LogSavePackage: Save=211.06ms
+[2016.08.18-17.32.14:502][ 56]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OrbPattern_Sluagh1_BP7BCB07DC4EF006B541A738ADA9C0533A.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset'
+[2016.08.18-17.32.14:505][ 56]LogSavePackage: Total save time: 252.56ms
+[2016.08.18-17.32.14:505][ 56]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset
+[2016.08.18-17.32.15:700][159]LogTemp:Warning: No World
+[2016.08.18-17.32.15:875][159]LogSavePackage: Save=183.70ms
+[2016.08.18-17.32.15:875][159]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevelCB99A240462AC66FDB675A9EFF39AE8E.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.32.15:878][159]LogSavePackage: Total save time: 224.66ms
+[2016.08.18-17.32.15:878][159]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.32.51:238][462]LogSavePackage: Save=200.44ms
+[2016.08.18-17.32.51:238][462]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OrbPattern_Sluagh1_BP8158D92B4AD1218485433CA789E63C6F.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset'
+[2016.08.18-17.32.51:241][462]LogSavePackage: Total save time: 240.97ms
+[2016.08.18-17.32.51:241][462]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset
+[2016.08.18-17.33.06:497][ 86]BlueprintLog: New page: Compile OrbPattern_Sluagh1_BP
+[2016.08.18-17.33.06:635][ 86]BlueprintEditorCompileResults: Info [0651.45] Compile of OrbPattern_Sluagh1_BP successful! [in 137 ms]
+[2016.08.18-17.33.07:333][123]LogSavePackage: Save=196.82ms
+[2016.08.18-17.33.07:333][123]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OrbPattern_Sluagh1_BP5A874CA948EAC0E0611378B2F328F9FE.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset'
+[2016.08.18-17.33.07:338][123]LogSavePackage: Total save time: 238.96ms
+[2016.08.18-17.33.07:338][123]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset
+[2016.08.18-17.33.23:708][741]BlueprintLog: New page: Compile SoulOrb_BP
+[2016.08.18-17.33.23:840][741]BlueprintEditorCompileResults: Info [0668.66] Compile of SoulOrb_BP successful! [in 132 ms]
+[2016.08.18-17.33.24:317][767]LogSavePackage: Save=72.91ms
+[2016.08.18-17.33.24:317][767]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BPE42775BC4A7CFD63966C88B556B8810B.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.33.24:321][767]LogSavePackage: Total save time: 118.26ms
+[2016.08.18-17.33.24:321][767]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.33.28:204][892]LogSavePackage: Save=198.21ms
+[2016.08.18-17.33.28:205][892]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OrbPattern_Sluagh1_BP214B02EE4B9BC0561271779D20B8568D.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset'
+[2016.08.18-17.33.28:209][892]LogSavePackage: Total save time: 240.82ms
+[2016.08.18-17.33.28:209][892]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/OrbPatterns/OrbPattern_Sluagh1_BP.uasset
+[2016.08.18-17.33.28:365][892]LogTemp:Warning: No World
+[2016.08.18-17.33.28:537][892]LogSavePackage: Save=181.43ms
+[2016.08.18-17.33.28:538][892]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel758BF780470D26BB0D8298BC6EBE8048.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.33.28:540][892]LogSavePackage: Total save time: 221.34ms
+[2016.08.18-17.33.28:540][892]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.34.52:416][870]LogSavePackage: Save=71.87ms
+[2016.08.18-17.34.52:416][870]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BP74CCF8404A1176722AAEA6ADEA5FF019.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.34.52:420][870]LogSavePackage: Total save time: 113.63ms
+[2016.08.18-17.34.52:420][870]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.34.53:267][925]LogTemp:Warning: No World
+[2016.08.18-17.34.53:445][925]LogSavePackage: Save=186.93ms
+[2016.08.18-17.34.53:445][925]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel650041F740AF766B07D78B919B9870BC.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.34.53:448][925]LogSavePackage: Total save time: 229.88ms
+[2016.08.18-17.34.53:448][925]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.35.26:430][ 36]LogSavePackage: Save=72.65ms
+[2016.08.18-17.35.26:430][ 36]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BP1527D909412B9F1AADF47997B7701B15.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.35.26:433][ 36]LogSavePackage: Total save time: 114.20ms
+[2016.08.18-17.35.26:433][ 36]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.35.26:581][ 36]LogTemp:Warning: No World
+[2016.08.18-17.35.26:753][ 36]LogSavePackage: Save=181.12ms
+[2016.08.18-17.35.26:753][ 36]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel5A4822A048C32ACE34690F8CEF3D5C66.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.35.26:756][ 36]LogSavePackage: Total save time: 221.73ms
+[2016.08.18-17.35.26:756][ 36]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.35.36:331][287]BlueprintLog: New page: Compile SoulOrb_BP
+[2016.08.18-17.35.36:458][287]BlueprintEditorCompileResults: Info [0801.27] Compile of SoulOrb_BP successful! [in 126 ms]
+[2016.08.18-17.35.41:482][654]LogSavePackage: Save=72.15ms
+[2016.08.18-17.35.41:482][654]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/SoulOrb_BP5D577F8744A9160D7EBF1BAD474B2118.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset'
+[2016.08.18-17.35.41:485][654]LogSavePackage: Total save time: 113.20ms
+[2016.08.18-17.35.41:486][654]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/SoulOrbs/SoulOrb_BP.uasset
+[2016.08.18-17.35.41:632][654]LogTemp:Warning: No World
+[2016.08.18-17.35.41:809][654]LogSavePackage: Save=185.28ms
+[2016.08.18-17.35.41:809][654]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevelF99EF52042DE6D9810A829831683F496.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.35.41:812][654]LogSavePackage: Total save time: 225.57ms
+[2016.08.18-17.35.41:812][654]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.36.45:720][  8]LogTemp:Warning: No World
+[2016.08.18-17.36.45:895][  8]LogSavePackage: Save=184.24ms
+[2016.08.18-17.36.45:896][  8]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevel00FCE23C480B25A52D7017984D3D6980.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.36.45:900][  8]LogSavePackage: Total save time: 226.21ms
+[2016.08.18-17.36.45:900][  8]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.37.00:295][689]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.08.18-17.37.01:672][852]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.08.18-17.37.22:654][450]LogTemp:Warning: No World
+[2016.08.18-17.37.22:829][450]LogSavePackage: Save=183.11ms
+[2016.08.18-17.37.22:829][450]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel17D63F1840230EF8041A66AE791B3F2C.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.37.22:832][450]LogSavePackage: Total save time: 223.75ms
+[2016.08.18-17.37.22:832][450]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.37.44:206][639]BlueprintLog: New page: Compile MeleeDrawer_BP
+[2016.08.18-17.37.44:429][639]BlueprintEditorCompileResults: Info [0929.24] Compile of MeleeDrawer_BP successful! [in 223 ms]
+[2016.08.18-17.37.45:553][669]LogSavePackage: Save=544.47ms
+[2016.08.18-17.37.45:553][669]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/MeleeDrawer_BPAD56F819409C81224C49E28BCDD16195.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/MeleeDrawer_BP.uasset'
+[2016.08.18-17.37.45:558][669]LogSavePackage: Total save time: 600.83ms
+[2016.08.18-17.37.45:558][669]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Blueprints/MeleeDrawer_BP.uasset
+[2016.08.18-17.37.46:255][712]LogTemp:Warning: No World
+[2016.08.18-17.37.46:427][712]LogSavePackage: Save=180.81ms
+[2016.08.18-17.37.46:428][712]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel88676762446B13E51986AF8CC7628260.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.37.46:430][712]LogSavePackage: Total save time: 220.74ms
+[2016.08.18-17.37.46:430][712]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.38.05:499][164]LogTemp:Warning: No World
+[2016.08.18-17.38.05:673][164]LogSavePackage: Save=183.12ms
+[2016.08.18-17.38.05:673][164]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelC89CC9674A1E0C5DF3F6288177C5EF16.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.38.05:677][164]LogSavePackage: Total save time: 223.60ms
+[2016.08.18-17.38.05:677][164]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.38.23:668][ 87]LogTemp:Warning: No World
+[2016.08.18-17.38.23:842][ 87]LogSavePackage: Save=183.12ms
+[2016.08.18-17.38.23:843][ 87]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevel5394FFDB45D336A3BAA26093AB9F88A3.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.38.23:847][ 87]LogSavePackage: Total save time: 224.44ms
+[2016.08.18-17.38.23:847][ 87]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.38.24:802][141]LogTemp:Warning: No World
+[2016.08.18-17.38.24:978][141]LogSavePackage: Save=185.43ms
+[2016.08.18-17.38.24:978][141]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevel9FD7EF8B46A46D191842A2A0916F7B94.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.38.24:981][141]LogSavePackage: Total save time: 225.05ms
+[2016.08.18-17.38.24:981][141]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.39.13:032][517]LogTemp:Warning: No World
+[2016.08.18-17.39.13:207][517]LogSavePackage: Save=183.81ms
+[2016.08.18-17.39.13:208][517]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevel67B56F22495E302D05D7608483A51D18.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.39.13:210][517]LogSavePackage: Total save time: 223.66ms
+[2016.08.18-17.39.13:210][517]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.39.51:353][997]LogTemp:Warning: No World
+[2016.08.18-17.39.51:529][997]LogSavePackage: Save=184.76ms
+[2016.08.18-17.39.51:529][997]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevel5182988C43D688AB48BC7BBC0640D098.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.39.51:532][997]LogSavePackage: Total save time: 224.52ms
+[2016.08.18-17.39.51:532][997]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.39.58:120][690]LogTemp:Warning: No World
+[2016.08.18-17.39.58:294][690]LogSavePackage: Save=183.03ms
+[2016.08.18-17.39.58:294][690]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelFA8145234BBC753DA64955A304CC0ED3.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.39.58:298][690]LogSavePackage: Total save time: 226.80ms
+[2016.08.18-17.39.58:298][690]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.39.59:453][760]LogTemp:Warning: No World
+[2016.08.18-17.39.59:628][760]LogSavePackage: Save=183.88ms
+[2016.08.18-17.39.59:628][760]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevelE2A425CD4A40AF0D3E72C492D0CD4EB3.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.18-17.39.59:631][760]LogSavePackage: Total save time: 223.76ms
+[2016.08.18-17.39.59:631][760]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.18-17.40.30:903][ 95]LogTemp:Warning: No World
+[2016.08.18-17.40.31:078][ 95]LogSavePackage: Save=183.79ms
+[2016.08.18-17.40.31:078][ 95]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelDE2F09D2440148539646F984DE58C55D.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.18-17.40.31:081][ 95]LogSavePackage: Total save time: 223.37ms
+[2016.08.18-17.40.31:081][ 95]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.18-17.43.57:471][250]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.08.18-17.43.57:521][250]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.08.18-17.43.57:569][250]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-17.43.57:791][251]Cmd: QUIT_EDITOR
+[2016.08.18-17.43.58:103][251]LogExit: Preparing to exit.
+[2016.08.18-17.43.58:583][251]LogExit: Editor shut down
+[2016.08.18-17.43.58:588][251]LogExit: Transaction tracking system shut down
+[2016.08.18-17.43.58:735][251]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.18-17.43.58:735][251]LogExit: Object subsystem successfully closed.
+[2016.08.18-17.43.58:757][251]LogD3D11RHI: Shutdown
+[2016.08.18-17.43.58:757][251]LogD3D11RHI: CleanupD3DDevice
+[2016.08.18-17.43.58:822][251]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.18-17.43.58:898][251]LogDerivedDataCache: Shutdown
+[2016.08.18-17.43.58:898][251]LogModuleManager: Shutting down and abandoning module BlueprintGraph (207)
+[2016.08.18-17.43.58:898][251]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (206)
+[2016.08.18-17.43.58:898][251]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (205)
+[2016.08.18-17.43.58:898][251]LogModuleManager: Shutting down and abandoning module CrashTracker (204)
+[2016.08.18-17.43.58:898][251]LogModuleManager: Shutting down and abandoning module SuperSearch (203)
+[2016.08.18-17.43.58:898][251]LogModuleManager: Shutting down and abandoning module WidgetCarousel (202)
+[2016.08.18-17.43.58:898][251]LogModuleManager: Shutting down and abandoning module AddContentDialog (201)
+[2016.08.18-17.43.58:899][251]LogModuleManager: Shutting down and abandoning module GameplayTags (200)
+[2016.08.18-17.43.58:899][251]LogModuleManager: Shutting down and abandoning module EditorWidgets (199)
+[2016.08.18-17.43.58:899][251]LogModuleManager: Shutting down and abandoning module CollectionManager (198)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module StatsViewer (196)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module FoliageEdit (195)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module LandscapeEditor (194)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module ActorPickerMode (193)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module GeometryMode (192)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module TextureAlignMode (191)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module BspMode (190)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module PlacementMode (189)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module AutomationWorker (188)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module CharacterAI (187)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module SmartSnapping (186)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module ViewportSnapping (185)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module LogVisualizer (184)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (183)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module IntroTutorials (182)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (181)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (180)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (179)
+[2016.08.18-17.43.58:900][251]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (178)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (177)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (176)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (175)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module MergeActors (174)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module SizeMap (173)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module TreeMap (172)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module ReferenceViewer (171)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module LocalizationService (170)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (169)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module HardwareTargeting (168)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (167)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module UndoHistory (166)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module UserFeedback (165)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module XmlParser (164)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module Blutility (163)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (162)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (161)
+[2016.08.18-17.43.59:492][251]LogModuleManager: Shutting down and abandoning module InputBindingEditor (160)
+[2016.08.18-17.43.59:493][251]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (159)
+[2016.08.18-17.43.59:493][251]LogModuleManager: Shutting down and abandoning module SettingsEditor (158)
+[2016.08.18-17.43.59:493][251]LogModuleManager: Shutting down and abandoning module ProjectLauncher (157)
+[2016.08.18-17.43.59:493][251]LogModuleManager: Shutting down and abandoning module SessionFrontend (156)
+[2016.08.18-17.43.59:493][251]LogModuleManager: Shutting down and abandoning module ProfilerClient (155)
+[2016.08.18-17.43.59:493][251]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (154)
+[2016.08.18-17.43.59:493][251]LogModuleManager: Shutting down and abandoning module DeviceManager (153)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module AutomationController (152)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module AutomationWindow (151)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module Layers (150)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (149)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module DetailCustomizations (148)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module PackagesDialog (147)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module Persona (146)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module Kismet (145)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module GraphEditor (144)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module ClassViewer (143)
+[2016.08.18-17.43.59:534][251]LogModuleManager: Shutting down and abandoning module Toolbox (142)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module ModuleUI (141)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module MovieSceneTools (140)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module OutputLog (139)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module GammaUI (138)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module Documentation (137)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (136)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module AnalyticsET (135)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module Analytics (134)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module PortalServices (133)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module PortalRpc (132)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module MessagingRpc (131)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module AITestSuite (130)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module GameplayDebugger (129)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module AIModule (128)
+[2016.08.18-17.43.59:535][251]LogModuleManager: Shutting down and abandoning module ProfilerService (127)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module TaskGraph (126)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module SteamVR (123)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module OculusInput (120)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (119)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module CableComponent (118)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (117)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (116)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module HTML5Networking (115)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.08.18-17.43.59:753][251]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.08.18-17.43.59:754][251]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.08.18-17.43.59:754][251]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.08.18-17.43.59:754][251]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.08.18-17.43.59:754][251]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.08.18-17.43.59:755][251]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.08.18-17.43.59:755][251]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.08.18-17.43.59:755][251]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
+[2016.08.18-17.43.59:756][251]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
+[2016.08.18-17.43.59:935][251]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
+[2016.08.18-17.43.59:935][251]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
+[2016.08.18-17.43.59:936][251]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
+[2016.08.18-17.43.59:936][251]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.08.18-17.44.00:037][251]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.18-17.44.00:039][251]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.08.18-17.44.00:040][251]LogDerivedDataCache: Shutdown
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.18-17.44.00:040][251]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.18-17.44.01:041][251]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.18-17.44.01:041][251]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.18-17.44.01:041][251]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.18-17.44.01:041][251]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.18-17.44.01:041][251]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.18-17.44.01:041][251]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.18-17.44.01:041][251]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.18-17.44.01:044][251]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.18-17.44.01:045][251]LogExit: Exiting.
+[2016.08.18-17.44.01:047][251]Log file closed, 08/18/16 13:44:01

@@ -1,0 +1,1470 @@
+﻿Log file open, 08/18/16 17:08:43
+LogInit:Display: Running engine for game: ProjectOne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-406467222) SRandInit(-406467219).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.085162
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.18-21.08.43:822][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-21.08.43:822][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.18-21.08.43:825][  0]LogInit: Computer: FAHAD-PC
+[2016.08.18-21.08.43:825][  0]LogInit: User: Fahad
+[2016.08.18-21.08.43:825][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.18-21.08.43:825][  0]LogInit: High frequency timer resolution =3.215352 MHz
+[2016.08.18-21.08.43:825][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.18-21.08.43:825][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-21.08.43:825][  0]LogMemory: Process Physical Memory: 313.64 MB used, 313.64 MB peak
+[2016.08.18-21.08.43:825][  0]LogMemory: Process Virtual Memory: 314.88 MB used, 314.88 MB peak
+[2016.08.18-21.08.43:825][  0]LogMemory: Physical Memory: 6757.94 MB used, 8174.67 MB total
+[2016.08.18-21.08.43:825][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.18-21.08.43:879][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.18-21.08.44:284][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.18-21.08.44:310][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.18-21.08.44:310][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.18-21.08.44:312][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.18-21.08.44:312][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.18-21.08.44:312][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.18-21.08.44:317][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.18-21.08.44:317][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.18-21.08.44:317][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.18-21.08.44:317][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.18-21.08.44:317][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.18-21.08.44:331][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.18-21.08.44:806][  0]LogShaderCompilers: Guid format shader working directory is -48 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/9204/).
+[2016.08.18-21.08.44:806][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/DE44122B421F482F48584991B660B8B3/'.
+[2016.08.18-21.08.44:806][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.18-21.08.45:852][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.18-21.08.45:860][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.18-21.08.45:866][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.18-21.08.45:873][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.18-21.08.45:879][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.18-21.08.45:883][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.18-21.08.45:887][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.18-21.08.45:891][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.18-21.08.45:895][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.18-21.08.45:899][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.18-21.08.45:903][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.18-21.08.45:911][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.18-21.08.45:912][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.18-21.08.45:913][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.18-21.08.45:932][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.18-21.08.45:936][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.18-21.08.45:940][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.18-21.08.45:943][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.18-21.08.45:947][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.18-21.08.45:947][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.18-21.08.46:060][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.18-21.08.46:135][  0]LogDerivedDataCache: Loaded boot cache 0.07s 74MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.18-21.08.46:135][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.08.18-21.08.46:135][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.18-21.08.46:135][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.18-21.08.46:135][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.18-21.08.46:135][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.18-21.08.46:151][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.18-21.08.46:165][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.18-21.08.46:407][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-21.08.46:414][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.08.18-21.08.46:414][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2016.08.18-21.08.46:554][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.18-21.08.46:554][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.18-21.08.46:554][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.18-21.08.46:802][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.18-21.08.46:908][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-21.08.46:908][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-21.08.47:093][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Movies/Default_Startup.mp4
+[2016.08.18-21.08.47:179][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.18-21.08.47:246][  0]LogTemp:Warning: No World
+[2016.08.18-21.08.47:265][  0]SourceControl: Info Source control is disabled
+[2016.08.18-21.08.47:265][  0]SourceControl: Info Source control is disabled
+[2016.08.18-21.08.47:279][  0]SourceControl: Info Source control is disabled
+[2016.08.18-21.08.47:421][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2016.08.18-21.08.47:450][  0]LogUObjectArray: 29307 objects as part of root set at end of initial load.
+[2016.08.18-21.08.47:450][  0]LogUObjectAllocator: 6107216 out of 0 bytes used by permanent object pool.
+[2016.08.18-21.08.47:450][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.18-21.08.47:511][  0]LogEngine: Initializing Engine...
+[2016.08.18-21.08.48:197][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.18-21.08.48:208][  0]LogInit: FAudioDevice initialized.
+[2016.08.18-21.08.48:218][  0]LogInit: Texture streaming: Enabled
+[2016.08.18-21.08.48:305][  0]LogNet: Browse: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-21.08.48:306][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-21.08.48:339][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-21.08.48:339][  0]LogMemory: Process Physical Memory: 777.52 MB used, 790.43 MB peak
+[2016.08.18-21.08.48:339][  0]LogMemory: Process Virtual Memory: 905.88 MB used, 905.89 MB peak
+[2016.08.18-21.08.48:339][  0]LogMemory: Physical Memory: 7170.53 MB used, 8174.67 MB total
+[2016.08.18-21.08.48:339][  0]LogMemory: Virtual Memory: 1475.37 MB used, 134217728.00 MB total
+[2016.08.18-21.08.48:339][  0]LogMemory: 
+[2016.08.18-21.08.48:339][  0]Allocator Stats for TBB: (not implemented)
+[2016.08.18-21.08.48:343][  0]LogTemp:Warning: No World
+[2016.08.18-21.08.48:440][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2016.08.18-21.08.48:675][  0]LogTemp:Warning: No World
+[2016.08.18-21.08.48:773][  0]LogTemp:Warning: No World
+[2016.08.18-21.08.48:825][  0]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.18-21.08.48:826][  0]LogWorld: Game class is 'BattleGameMode_BP_C'
+[2016.08.18-21.08.48:828][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel.OverworldLevel up for play (max tick rate 0) at 2016.08.18-17.08.48
+[2016.08.18-21.08.48:829][  0]LogWorld: Bringing up level for play took: 0.002072
+[2016.08.18-21.08.48:831][  0]LogInit:Display: Game Engine Initialized.
+[2016.08.18-21.08.49:053][  0]LogLoad: Full Startup: 6.13 seconds (BP compile: 0.37 seconds)
+[2016.08.18-21.08.49:053][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.18-21.08.49:053][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.18-21.08.49:071][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-21.08.49:071][  0]LogOcInput: OculusInput pre-init called
+[2016.08.18-21.08.49:187][  2]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
+[2016.08.18-21.08.54:118][304]LogTemp:Warning: got player controller successfully
+[2016.08.18-21.08.54:119][304]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.18-21.08.54:119][304]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.18-21.08.54:119][304]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.18-21.08.54:119][304]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.18-21.08.54:119][304]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.18-21.08.54:119][304]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.18-21.08.54:119][304]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Round: 6	Entity: Beck
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.18-21.08.54:279][314]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.18-21.08.55:134][367]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Round: 6	Entity: Sluagh
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Entity #:0: Entity Name: Sluagh
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Entity #:1: Entity Name: Sluagh2
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Entity #:2: Entity Name: Beck
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Entity #:3: Entity Name: Sluagh
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Entity #:4: Entity Name: Sluagh2
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Entity #:5: Entity Name: Beck
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Entity #:6: Entity Name: Sluagh
+[2016.08.18-21.08.55:135][367]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.18-21.08.55:152][368]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.18-21.08.55:152][368]LogPrimitiveComponent: Zero scaling not supported (/Temp/Autosaves/Game/Levels/UEDPCOverworldLevel.OverworldLevel:PersistentLevel.SoulTerminator_BP_C_0.RenderComponent)
+[2016.08.18-21.08.55:152][368]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.606602
+[2016.08.18-21.08.55:166][369]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.561031
+[2016.08.18-21.08.55:183][370]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.51556
+[2016.08.18-21.08.55:199][371]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.470189
+[2016.08.18-21.08.55:215][372]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.424921
+[2016.08.18-21.08.55:231][373]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.379756
+[2016.08.18-21.08.55:247][374]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.334695
+[2016.08.18-21.08.55:263][375]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.289741
+[2016.08.18-21.08.55:280][376]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.244894
+[2016.08.18-21.08.55:296][377]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.200155
+[2016.08.18-21.08.55:312][378]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.155528
+[2016.08.18-21.08.55:327][379]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.111012
+[2016.08.18-21.08.55:343][380]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.066608
+[2016.08.18-21.08.55:359][381]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.022321
+[2016.08.18-21.08.55:375][382]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.978149
+[2016.08.18-21.08.55:392][383]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.934095
+[2016.08.18-21.08.55:408][384]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.890161
+[2016.08.18-21.08.55:424][385]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.846347
+[2016.08.18-21.08.55:440][386]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.802656
+[2016.08.18-21.08.55:456][387]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.75909
+[2016.08.18-21.08.55:472][388]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.715649
+[2016.08.18-21.08.55:488][389]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.672337
+[2016.08.18-21.08.55:504][390]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.629152
+[2016.08.18-21.08.55:521][391]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.5861
+[2016.08.18-21.08.55:537][392]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.54318
+[2016.08.18-21.08.55:553][393]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.500396
+[2016.08.18-21.08.55:569][394]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.457747
+[2016.08.18-21.08.55:585][395]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.415237
+[2016.08.18-21.08.55:601][396]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.372868
+[2016.08.18-21.08.55:617][397]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.330609
+[2016.08.18-21.08.55:634][398]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.288526
+[2016.08.18-21.08.55:649][399]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.246588
+[2016.08.18-21.08.55:666][400]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.2048
+[2016.08.18-21.08.55:682][401]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.16316
+[2016.08.18-21.08.55:698][402]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.121673
+[2016.08.18-21.08.55:714][403]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.080341
+[2016.08.18-21.08.55:730][404]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.039165
+[2016.08.18-21.08.55:746][405]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.998147
+[2016.08.18-21.08.55:763][406]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.95729
+[2016.08.18-21.08.55:779][407]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.916596
+[2016.08.18-21.08.55:795][408]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.876066
+[2016.08.18-21.08.55:811][409]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.835705
+[2016.08.18-21.08.55:827][410]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.795513
+[2016.08.18-21.08.55:843][411]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.755493
+[2016.08.18-21.08.55:859][412]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.715648
+[2016.08.18-21.08.55:875][413]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.675979
+[2016.08.18-21.08.55:892][414]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.63649
+[2016.08.18-21.08.55:908][415]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.597182
+[2016.08.18-21.08.55:924][416]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.558059
+[2016.08.18-21.08.55:940][417]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.519123
+[2016.08.18-21.08.55:956][418]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.480375
+[2016.08.18-21.08.55:972][419]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.44182
+[2016.08.18-21.08.55:988][420]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.40346
+[2016.08.18-21.08.56:005][421]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.365296
+[2016.08.18-21.08.56:021][422]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.327332
+[2016.08.18-21.08.56:037][423]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.289573
+[2016.08.18-21.08.56:053][424]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.252017
+[2016.08.18-21.08.56:069][425]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.214669
+[2016.08.18-21.08.56:085][426]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.177534
+[2016.08.18-21.08.56:101][427]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.140613
+[2016.08.18-21.08.56:117][428]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.103909
+[2016.08.18-21.08.56:134][429]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.067424
+[2016.08.18-21.08.56:149][430]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.031161
+[2016.08.18-21.08.56:166][431]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.995125
+[2016.08.18-21.08.56:182][432]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.959319
+[2016.08.18-21.08.56:198][433]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.923744
+[2016.08.18-21.08.56:214][434]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.888404
+[2016.08.18-21.08.56:230][435]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.853303
+[2016.08.18-21.08.56:246][436]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.818444
+[2016.08.18-21.08.56:263][437]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.783828
+[2016.08.18-21.08.56:279][438]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.749463
+[2016.08.18-21.08.56:295][439]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.715348
+[2016.08.18-21.08.56:311][440]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.681488
+[2016.08.18-21.08.56:327][441]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.647887
+[2016.08.18-21.08.56:343][442]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.614548
+[2016.08.18-21.08.56:359][443]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.581473
+[2016.08.18-21.08.56:376][444]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.548584
+[2016.08.18-21.08.56:391][445]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.516051
+[2016.08.18-21.08.56:408][446]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.483794
+[2016.08.18-21.08.56:424][447]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.451816
+[2016.08.18-21.08.56:440][448]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.420121
+[2016.08.18-21.08.56:456][449]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.388712
+[2016.08.18-21.08.56:472][450]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.357594
+[2016.08.18-21.08.56:489][451]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.32677
+[2016.08.18-21.08.56:505][452]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.296244
+[2016.08.18-21.08.56:521][453]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.266018
+[2016.08.18-21.08.56:537][454]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.236098
+[2016.08.18-21.08.56:553][455]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.206487
+[2016.08.18-21.08.56:569][456]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.177188
+[2016.08.18-21.08.56:585][457]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.148206
+[2016.08.18-21.08.56:601][458]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.119546
+[2016.08.18-21.08.56:618][459]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.091208
+[2016.08.18-21.08.56:634][460]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.0632
+[2016.08.18-21.08.56:650][461]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.035524
+[2016.08.18-21.08.56:666][462]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.008184
+[2016.08.18-21.08.56:682][463]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.981184
+[2016.08.18-21.08.56:698][464]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.954528
+[2016.08.18-21.08.56:714][465]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.92822
+[2016.08.18-21.08.56:730][466]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.902265
+[2016.08.18-21.08.56:746][467]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.876665
+[2016.08.18-21.08.56:763][468]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.851425
+[2016.08.18-21.08.56:779][469]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.82655
+[2016.08.18-21.08.56:795][470]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.802042
+[2016.08.18-21.08.56:811][471]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.777906
+[2016.08.18-21.08.56:827][472]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.754146
+[2016.08.18-21.08.56:843][473]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.730766
+[2016.08.18-21.08.56:860][474]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.707744
+[2016.08.18-21.08.56:876][475]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.685136
+[2016.08.18-21.08.56:891][476]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.66292
+[2016.08.18-21.08.56:908][477]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.6411
+[2016.08.18-21.08.56:924][478]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.61968
+[2016.08.18-21.08.56:940][479]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.598663
+[2016.08.18-21.08.56:956][480]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.578054
+[2016.08.18-21.08.56:972][481]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.557856
+[2016.08.18-21.08.56:988][482]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.538073
+[2016.08.18-21.08.57:005][483]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.518709
+[2016.08.18-21.08.57:021][484]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.499768
+[2016.08.18-21.08.57:037][485]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.481253
+[2016.08.18-21.08.57:053][486]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.463168
+[2016.08.18-21.08.57:069][487]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.445517
+[2016.08.18-21.08.57:085][488]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.428302
+[2016.08.18-21.08.57:102][489]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.411528
+[2016.08.18-21.08.57:118][490]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.395199
+[2016.08.18-21.08.57:134][491]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.379317
+[2016.08.18-21.08.57:150][492]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.363886
+[2016.08.18-21.08.57:166][493]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.34891
+[2016.08.18-21.08.57:182][494]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.33439
+[2016.08.18-21.08.57:198][495]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.320332
+[2016.08.18-21.08.57:214][496]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.306737
+[2016.08.18-21.08.57:231][497]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.293609
+[2016.08.18-21.08.57:247][498]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.28095
+[2016.08.18-21.08.57:263][499]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.268764
+[2016.08.18-21.08.57:279][500]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.257052
+[2016.08.18-21.08.57:295][501]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.24582
+[2016.08.18-21.08.57:311][502]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.235067
+[2016.08.18-21.08.57:327][503]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.224797
+[2016.08.18-21.08.57:343][504]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.215013
+[2016.08.18-21.08.57:360][505]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.205716
+[2016.08.18-21.08.57:376][506]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.196909
+[2016.08.18-21.08.57:392][507]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.188594
+[2016.08.18-21.08.57:408][508]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.180773
+[2016.08.18-21.08.57:424][509]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.173448
+[2016.08.18-21.08.57:440][510]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.16662
+[2016.08.18-21.08.57:456][511]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.160292
+[2016.08.18-21.08.57:472][512]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.154464
+[2016.08.18-21.08.57:489][513]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.149138
+[2016.08.18-21.08.57:505][514]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.144317
+[2016.08.18-21.08.57:521][515]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.139999
+[2016.08.18-21.08.57:537][516]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.136187
+[2016.08.18-21.08.57:553][517]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.132882
+[2016.08.18-21.08.57:569][518]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.130085
+[2016.08.18-21.08.57:585][519]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.127795
+[2016.08.18-21.08.57:601][520]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.126015
+[2016.08.18-21.08.57:618][521]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.124743
+[2016.08.18-21.08.57:634][522]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.123981
+[2016.08.18-21.08.57:650][523]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.12373
+[2016.08.18-21.08.57:666][524]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.123987
+[2016.08.18-21.08.57:682][525]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.124754
+[2016.08.18-21.08.57:698][526]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.126031
+[2016.08.18-21.08.57:714][527]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.127818
+[2016.08.18-21.08.57:730][528]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.130113
+[2016.08.18-21.08.57:747][529]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.132916
+[2016.08.18-21.08.57:763][530]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.136226
+[2016.08.18-21.08.57:779][531]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.140044
+[2016.08.18-21.08.57:795][532]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.144366
+[2016.08.18-21.08.57:811][533]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.149194
+[2016.08.18-21.08.57:827][534]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.154525
+[2016.08.18-21.08.57:843][535]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.160358
+[2016.08.18-21.08.57:859][536]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.166692
+[2016.08.18-21.08.57:875][537]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.173526
+[2016.08.18-21.08.57:892][538]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.180856
+[2016.08.18-21.08.57:908][539]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.188683
+[2016.08.18-21.08.57:924][540]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.197003
+[2016.08.18-21.08.57:940][541]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.205815
+[2016.08.18-21.08.57:956][542]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.215117
+[2016.08.18-21.08.57:973][543]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.224907
+[2016.08.18-21.08.57:988][544]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.235182
+[2016.08.18-21.08.58:004][545]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.24594
+[2016.08.18-21.08.58:021][546]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.257178
+[2016.08.18-21.08.58:037][547]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.268895
+[2016.08.18-21.08.58:053][548]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.281086
+[2016.08.18-21.08.58:069][549]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.29375
+[2016.08.18-21.08.58:085][550]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.306884
+[2016.08.18-21.08.58:102][551]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.320484
+[2016.08.18-21.08.58:118][552]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.334548
+[2016.08.18-21.08.58:133][553]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.349072
+[2016.08.18-21.08.58:150][554]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.364054
+[2016.08.18-21.08.58:166][555]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.37949
+[2016.08.18-21.08.58:182][556]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.395377
+[2016.08.18-21.08.58:198][557]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.411711
+[2016.08.18-21.08.58:214][558]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.428491
+[2016.08.18-21.08.58:230][559]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.44571
+[2016.08.18-21.08.58:246][560]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.463366
+[2016.08.18-21.08.58:262][561]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.481456
+[2016.08.18-21.08.58:279][562]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.499976
+[2016.08.18-21.08.58:295][563]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.518922
+[2016.08.18-21.08.58:311][564]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.538291
+[2016.08.18-21.08.58:327][565]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.558078
+[2016.08.18-21.08.58:343][566]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.578281
+[2016.08.18-21.08.58:359][567]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.598895
+[2016.08.18-21.08.58:376][568]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.619916
+[2016.08.18-21.08.58:392][569]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.641341
+[2016.08.18-21.08.58:408][570]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.663166
+[2016.08.18-21.08.58:424][571]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.685386
+[2016.08.18-21.08.58:440][572]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.707998
+[2016.08.18-21.08.58:456][573]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.730999
+[2016.08.18-21.08.58:472][574]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.754382
+[2016.08.18-21.08.58:488][575]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.778146
+[2016.08.18-21.08.58:505][576]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.802286
+[2016.08.18-21.08.58:521][577]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.826798
+[2016.08.18-21.08.58:537][578]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.851677
+[2016.08.18-21.08.58:553][579]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.876922
+[2016.08.18-21.08.58:569][580]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.902525
+[2016.08.18-21.08.58:585][581]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.928484
+[2016.08.18-21.08.58:602][582]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.954796
+[2016.08.18-21.08.58:618][583]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.981456
+[2016.08.18-21.08.58:633][584]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.008459
+[2016.08.18-21.08.58:650][585]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.035803
+[2016.08.18-21.08.58:665][586]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.063483
+[2016.08.18-21.08.58:682][587]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.091495
+[2016.08.18-21.08.58:698][588]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.119835
+[2016.08.18-21.08.58:715][589]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.148499
+[2016.08.18-21.08.58:730][590]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.177485
+[2016.08.18-21.08.58:746][591]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.206787
+[2016.08.18-21.08.58:762][592]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.236401
+[2016.08.18-21.08.58:779][593]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.266325
+[2016.08.18-21.08.58:795][594]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.296553
+[2016.08.18-21.08.58:811][595]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.327083
+[2016.08.18-21.08.58:827][596]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.357911
+[2016.08.18-21.08.58:843][597]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.389032
+[2016.08.18-21.08.58:859][598]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.420444
+[2016.08.18-21.08.58:876][599]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.452142
+[2016.08.18-21.08.58:892][600]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.484122
+[2016.08.18-21.08.58:908][601]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.516383
+[2016.08.18-21.08.58:924][602]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.548919
+[2016.08.18-21.08.58:940][603]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.581727
+[2016.08.18-21.08.58:956][604]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.614803
+[2016.08.18-21.08.58:972][605]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.648146
+[2016.08.18-21.08.58:988][606]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.681749
+[2016.08.18-21.08.59:005][607]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.715611
+[2016.08.18-21.08.59:021][608]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.749727
+[2016.08.18-21.08.59:037][609]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.784095
+[2016.08.18-21.08.59:053][610]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.818712
+[2016.08.18-21.08.59:069][611]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.853573
+[2016.08.18-21.08.59:085][612]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.888676
+[2016.08.18-21.08.59:101][613]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.924017
+[2016.08.18-21.08.59:118][614]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.959594
+[2016.08.18-21.08.59:133][615]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.995403
+[2016.08.18-21.08.59:150][616]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.031441
+[2016.08.18-21.08.59:165][617]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.067705
+[2016.08.18-21.08.59:182][618]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.104193
+[2016.08.18-21.08.59:198][619]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.140899
+[2016.08.18-21.08.59:214][620]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.177823
+[2016.08.18-21.08.59:231][621]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.21496
+[2016.08.18-21.08.59:247][622]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.25231
+[2016.08.18-21.08.59:263][623]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.289866
+[2016.08.18-21.08.59:279][624]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.327629
+[2016.08.18-21.08.59:295][625]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.365595
+[2016.08.18-21.08.59:311][626]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.403761
+[2016.08.18-21.08.59:327][627]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.442123
+[2016.08.18-21.08.59:343][628]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.480681
+[2016.08.18-21.08.59:359][629]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.519445
+[2016.08.18-21.08.59:375][630]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.558384
+[2016.08.18-21.08.59:392][631]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.597509
+[2016.08.18-21.08.59:408][632]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.636819
+[2016.08.18-21.08.59:424][633]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.676311
+[2016.08.18-21.08.59:440][634]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.715981
+[2016.08.18-21.08.59:456][635]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.755829
+[2016.08.18-21.08.59:472][636]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.79585
+[2016.08.18-21.08.59:488][637]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.836044
+[2016.08.18-21.08.59:505][638]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.876408
+[2016.08.18-21.08.59:521][639]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.916939
+[2016.08.18-21.08.59:537][640]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.957635
+[2016.08.18-21.08.59:553][641]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.998493
+[2016.08.18-21.08.59:569][642]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.039514
+[2016.08.18-21.08.59:585][643]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.080691
+[2016.08.18-21.08.59:602][644]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.122025
+[2016.08.18-21.08.59:617][645]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.163515
+[2016.08.18-21.08.59:633][646]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.205155
+[2016.08.18-21.08.59:650][647]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.246946
+[2016.08.18-21.08.59:666][648]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.288885
+[2016.08.18-21.08.59:682][649]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.33097
+[2016.08.18-21.08.59:698][650]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.373199
+[2016.08.18-21.08.59:714][651]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.41557
+[2016.08.18-21.08.59:731][652]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.458082
+[2016.08.18-21.08.59:747][653]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.500732
+[2016.08.18-21.08.59:763][654]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.543518
+[2016.08.18-21.08.59:779][655]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.58644
+[2016.08.18-21.08.59:795][656]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.629494
+[2016.08.18-21.08.59:811][657]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.672679
+[2016.08.18-21.08.59:827][658]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.715994
+[2016.08.18-21.08.59:843][659]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.759457
+[2016.08.18-21.08.59:860][660]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.803025
+[2016.08.18-21.08.59:876][661]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.846718
+[2016.08.18-21.08.59:892][662]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.890532
+[2016.08.18-21.08.59:908][663]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.934468
+[2016.08.18-21.08.59:924][664]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.978524
+[2016.08.18-21.08.59:940][665]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.022697
+[2016.08.18-21.08.59:956][666]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.066987
+[2016.08.18-21.08.59:972][667]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.111391
+[2016.08.18-21.08.59:989][668]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.155909
+[2016.08.18-21.09.00:005][669]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.200539
+[2016.08.18-21.09.00:020][670]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.245277
+[2016.08.18-21.09.00:037][671]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.290126
+[2016.08.18-21.09.00:053][672]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.335082
+[2016.08.18-21.09.00:069][673]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.380144
+[2016.08.18-21.09.00:085][674]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.425311
+[2016.08.18-21.09.00:102][675]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.47058
+[2016.08.18-21.09.00:118][676]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.515952
+[2016.08.18-21.09.00:134][677]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.561425
+[2016.08.18-21.09.00:150][678]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.606997
+[2016.08.18-21.09.00:166][679]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.652667
+[2016.08.18-21.09.00:182][680]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.698434
+[2016.08.18-21.09.00:198][681]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.744296
+[2016.08.18-21.09.00:214][682]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.790254
+[2016.08.18-21.09.00:231][683]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.836304
+[2016.08.18-21.09.00:247][684]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.882445
+[2016.08.18-21.09.00:263][685]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.928679
+[2016.08.18-21.09.00:279][686]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.975001
+[2016.08.18-21.09.00:295][687]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.021412
+[2016.08.18-21.09.00:311][688]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.06791
+[2016.08.18-21.09.00:327][689]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.114495
+[2016.08.18-21.09.00:344][690]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.161166
+[2016.08.18-21.09.00:360][691]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.20792
+[2016.08.18-21.09.00:375][692]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.254758
+[2016.08.18-21.09.00:393][693]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.301678
+[2016.08.18-21.09.00:409][694]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.348679
+[2016.08.18-21.09.00:425][695]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.395759
+[2016.08.18-21.09.00:441][696]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.442918
+[2016.08.18-21.09.00:457][697]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.490155
+[2016.08.18-21.09.00:473][698]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.53747
+[2016.08.18-21.09.00:489][699]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.584861
+[2016.08.18-21.09.00:506][700]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.632327
+[2016.08.18-21.09.00:521][701]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.679868
+[2016.08.18-21.09.00:538][702]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.727482
+[2016.08.18-21.09.00:554][703]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.775167
+[2016.08.18-21.09.00:570][704]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.822927
+[2016.08.18-21.09.00:587][705]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.870756
+[2016.08.18-21.09.00:601][706]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.918654
+[2016.08.18-21.09.00:617][707]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 11.966623
+[2016.08.18-21.09.00:634][708]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.01466
+[2016.08.18-21.09.00:650][709]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.062764
+[2016.08.18-21.09.00:666][710]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.110934
+[2016.08.18-21.09.00:682][711]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.159171
+[2016.08.18-21.09.00:698][712]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.207473
+[2016.08.18-21.09.00:714][713]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.255839
+[2016.08.18-21.09.00:730][714]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.304269
+[2016.08.18-21.09.00:748][715]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.352762
+[2016.08.18-21.09.00:764][716]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.401316
+[2016.08.18-21.09.00:780][717]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.449933
+[2016.08.18-21.09.00:796][718]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.49861
+[2016.08.18-21.09.00:812][719]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.547346
+[2016.08.18-21.09.00:829][720]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.596142
+[2016.08.18-21.09.00:847][721]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.644997
+[2016.08.18-21.09.00:862][722]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.69391
+[2016.08.18-21.09.00:877][723]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.742879
+[2016.08.18-21.09.00:892][724]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.791905
+[2016.08.18-21.09.00:908][725]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.840987
+[2016.08.18-21.09.00:924][726]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.890125
+[2016.08.18-21.09.00:940][727]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.939317
+[2016.08.18-21.09.00:956][728]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 12.988563
+[2016.08.18-21.09.00:975][729]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.037863
+[2016.08.18-21.09.00:988][730]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.087214
+[2016.08.18-21.09.01:005][731]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.13662
+[2016.08.18-21.09.01:021][732]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.186076
+[2016.08.18-21.09.01:037][733]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.235583
+[2016.08.18-21.09.01:053][734]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.285141
+[2016.08.18-21.09.01:071][735]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.334749
+[2016.08.18-21.09.01:085][736]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.384406
+[2016.08.18-21.09.01:102][737]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.434113
+[2016.08.18-21.09.01:119][738]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.483867
+[2016.08.18-21.09.01:134][739]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 13.533669
+[2016.08.18-21.09.01:182][742]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.18-21.09.01:182][742]LogTemp:Warning: Round: 6	Entity: Sluagh2
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Entity #:0: Entity Name: Sluagh2
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Entity #:1: Entity Name: Beck
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Entity #:2: Entity Name: Sluagh
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Entity #:3: Entity Name: Sluagh2
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Entity #:4: Entity Name: Beck
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Entity #:5: Entity Name: Sluagh
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Entity #:6: Entity Name: Sluagh2
+[2016.08.18-21.09.01:183][742]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.18-21.09.02:199][805]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.18-21.09.02:199][805]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.606602
+[2016.08.18-21.09.02:215][806]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.561031
+[2016.08.18-21.09.02:231][807]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.51556
+[2016.08.18-21.09.02:248][808]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.470189
+[2016.08.18-21.09.02:264][809]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.424921
+[2016.08.18-21.09.02:282][810]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.379756
+[2016.08.18-21.09.02:296][811]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.33404
+[2016.08.18-21.09.02:312][812]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.289004
+[2016.08.18-21.09.02:328][813]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.244159
+[2016.08.18-21.09.02:344][814]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.199422
+[2016.08.18-21.09.02:360][815]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.154797
+[2016.08.18-21.09.02:376][816]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.110283
+[2016.08.18-21.09.02:392][817]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.065882
+[2016.08.18-21.09.02:408][818]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.021595
+[2016.08.18-21.09.02:425][819]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.977426
+[2016.08.18-21.09.02:441][820]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.933373
+[2016.08.18-21.09.02:457][821]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.889244
+[2016.08.18-21.09.02:473][822]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.845433
+[2016.08.18-21.09.02:489][823]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.80173
+[2016.08.18-21.09.02:505][824]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.758167
+[2016.08.18-21.09.02:521][825]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.714728
+[2016.08.18-21.09.02:537][826]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.671418
+[2016.08.18-21.09.02:554][827]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.628238
+[2016.08.18-21.09.02:570][828]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.585188
+[2016.08.18-21.09.02:586][829]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.542272
+[2016.08.18-21.09.02:602][830]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.499489
+[2016.08.18-21.09.02:618][831]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.456835
+[2016.08.18-21.09.02:634][832]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.414328
+[2016.08.18-21.09.02:650][833]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.371962
+[2016.08.18-21.09.02:666][834]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.329737
+[2016.08.18-21.09.02:683][835]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.287657
+[2016.08.18-21.09.02:699][836]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.245723
+[2016.08.18-21.09.02:715][837]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.203937
+[2016.08.18-21.09.02:731][838]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.162301
+[2016.08.18-21.09.02:747][839]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.120816
+[2016.08.18-21.09.02:763][840]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.079487
+[2016.08.18-21.09.02:779][841]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.038314
+[2016.08.18-21.09.02:796][842]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.9973
+[2016.08.18-21.09.02:812][843]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.956447
+[2016.08.18-21.09.02:828][844]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.915717
+[2016.08.18-21.09.02:844][845]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.875192
+[2016.08.18-21.09.02:860][846]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.834799
+[2016.08.18-21.09.02:876][847]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.79461
+[2016.08.18-21.09.02:893][848]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.754594
+[2016.08.18-21.09.02:909][849]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.714753
+[2016.08.18-21.09.02:926][850]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.675088
+[2016.08.18-21.09.02:941][851]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.635603
+[2016.08.18-21.09.02:957][852]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.5963
+[2016.08.18-21.09.02:973][853]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.55718
+[2016.08.18-21.09.02:989][854]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.518248
+[2016.08.18-21.09.03:005][855]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.479506
+[2016.08.18-21.09.03:021][856]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.440954
+[2016.08.18-21.09.03:038][857]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.402598
+[2016.08.18-21.09.03:054][858]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.364439
+[2016.08.18-21.09.03:070][859]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.326016
+[2016.08.18-21.09.03:086][860]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.288263
+[2016.08.18-21.09.03:102][861]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.250715
+[2016.08.18-21.09.03:118][862]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.213376
+[2016.08.18-21.09.03:135][863]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.176248
+[2016.08.18-21.09.03:151][864]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.139334
+[2016.08.18-21.09.03:167][865]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.102636
+[2016.08.18-21.09.03:183][866]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.06616
+[2016.08.18-21.09.03:199][867]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.029905
+[2016.08.18-21.09.03:215][868]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.993877
+[2016.08.18-21.09.03:231][869]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.958078
+[2016.08.18-21.09.03:247][870]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.922511
+[2016.08.18-21.09.03:264][871]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.88718
+[2016.08.18-21.09.03:280][872]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.852087
+[2016.08.18-21.09.03:296][873]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.817236
+[2016.08.18-21.09.03:312][874]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.782631
+[2016.08.18-21.09.03:328][875]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.748273
+[2016.08.18-21.09.03:344][876]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.714168
+[2016.08.18-21.09.03:360][877]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.680317
+[2016.08.18-21.09.03:376][878]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.646725
+[2016.08.18-21.09.03:393][879]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.613394
+[2016.08.18-21.09.03:409][880]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.580329
+[2016.08.18-21.09.03:426][881]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.547533
+[2016.08.18-21.09.03:441][882]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.515008
+[2016.08.18-21.09.03:457][883]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.482759
+[2016.08.18-21.09.03:473][884]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.450791
+[2016.08.18-21.09.03:489][885]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.419106
+[2016.08.18-21.09.03:506][886]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.387706
+[2016.08.18-21.09.03:523][887]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.356597
+[2016.08.18-21.09.03:538][888]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.325782
+[2016.08.18-21.09.03:554][889]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.295265
+[2016.08.18-21.09.03:570][890]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.265049
+[2016.08.18-21.09.03:586][891]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.235139
+[2016.08.18-21.09.03:602][892]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.205538
+[2016.08.18-21.09.03:618][893]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.176243
+[2016.08.18-21.09.03:635][894]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.147272
+[2016.08.18-21.09.03:651][895]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.11862
+[2016.08.18-21.09.03:667][896]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.090295
+[2016.08.18-21.09.03:683][897]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.062297
+[2016.08.18-21.09.03:700][898]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.034631
+[2016.08.18-21.09.03:715][899]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.007302
+[2016.08.18-21.09.03:731][900]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.980314
+[2016.08.18-21.09.03:747][901]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.953486
+[2016.08.18-21.09.03:764][902]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.927192
+[2016.08.18-21.09.03:780][903]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.90125
+[2016.08.18-21.09.03:796][904]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.875664
+[2016.08.18-21.09.03:812][905]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.850439
+[2016.08.18-21.09.03:828][906]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.825577
+[2016.08.18-21.09.03:844][907]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.801085
+[2016.08.18-21.09.03:860][908]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.776963
+[2016.08.18-21.09.03:876][909]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.753218
+[2016.08.18-21.09.03:892][910]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.729853
+[2016.08.18-21.09.03:909][911]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.706872
+[2016.08.18-21.09.03:925][912]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.68428
+[2016.08.18-21.09.03:941][913]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.662079
+[2016.08.18-21.09.03:957][914]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.640275
+[2016.08.18-21.09.03:973][915]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.618869
+[2016.08.18-21.09.03:990][916]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.59784
+[2016.08.18-21.09.04:006][917]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.577247
+[2016.08.18-21.09.04:022][918]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.557065
+[2016.08.18-21.09.04:038][919]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.537299
+[2016.08.18-21.09.04:054][920]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.517951
+[2016.08.18-21.09.04:071][921]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.499027
+[2016.08.18-21.09.04:087][922]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.480528
+[2016.08.18-21.09.04:103][923]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.462461
+[2016.08.18-21.09.04:119][924]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.444826
+[2016.08.18-21.09.04:135][925]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.427629
+[2016.08.18-21.09.04:151][926]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.410873
+[2016.08.18-21.09.04:167][927]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.394558
+[2016.08.18-21.09.04:183][928]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.378694
+[2016.08.18-21.09.04:199][929]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.363281
+[2016.08.18-21.09.04:216][930]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.348322
+[2016.08.18-21.09.04:232][931]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.33377
+[2016.08.18-21.09.04:248][932]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.319731
+[2016.08.18-21.09.04:264][933]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.306156
+[2016.08.18-21.09.04:280][934]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.293048
+[2016.08.18-21.09.04:296][935]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.28041
+[2016.08.18-21.09.04:312][936]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.268244
+[2016.08.18-21.09.04:328][937]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.256554
+[2016.08.18-21.09.04:344][938]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.245342
+[2016.08.18-21.09.04:361][939]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.23461
+[2016.08.18-21.09.04:377][940]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.224361
+[2016.08.18-21.09.04:393][941]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.214598
+[2016.08.18-21.09.04:409][942]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.205322
+[2016.08.18-21.09.04:425][943]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.196537
+[2016.08.18-21.09.04:441][944]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.188243
+[2016.08.18-21.09.04:457][945]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.180443
+[2016.08.18-21.09.04:473][946]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.17314
+[2016.08.18-21.09.04:489][947]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.166333
+[2016.08.18-21.09.04:506][948]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.160026
+[2016.08.18-21.09.04:522][949]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.15422
+[2016.08.18-21.09.04:538][950]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.148916
+[2016.08.18-21.09.04:554][951]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.144116
+[2016.08.18-21.09.04:570][952]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.139821
+[2016.08.18-21.09.04:587][953]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.136031
+[2016.08.18-21.09.04:603][954]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.132745
+[2016.08.18-21.09.04:619][955]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.12997
+[2016.08.18-21.09.04:635][956]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.127703
+[2016.08.18-21.09.04:651][957]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.125946
+[2016.08.18-21.09.04:668][958]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.124696
+[2016.08.18-21.09.04:683][959]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.123957
+[2016.08.18-21.09.04:699][960]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.123727
+[2016.08.18-21.09.04:715][961]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.124008
+[2016.08.18-21.09.04:732][962]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.124798
+[2016.08.18-21.09.04:748][963]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.126097
+[2016.08.18-21.09.04:764][964]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.127906
+[2016.08.18-21.09.04:780][965]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.130223
+[2016.08.18-21.09.04:796][966]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.133049
+[2016.08.18-21.09.04:812][967]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.136381
+[2016.08.18-21.09.04:829][968]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.140221
+[2016.08.18-21.09.04:845][969]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.144567
+[2016.08.18-21.09.04:861][970]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.149422
+[2016.08.18-21.09.04:879][971]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.154776
+[2016.08.18-21.09.04:895][972]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.161383
+[2016.08.18-21.09.04:911][973]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.167801
+[2016.08.18-21.09.04:927][974]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.174718
+[2016.08.18-21.09.04:943][975]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.182132
+[2016.08.18-21.09.04:959][976]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.190042
+[2016.08.18-21.09.04:975][977]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.198444
+[2016.08.18-21.09.04:992][978]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.207339
+[2016.08.18-21.09.05:008][979]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.216723
+[2016.08.18-21.09.05:024][980]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.226594
+[2016.08.18-21.09.05:040][981]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.23695
+[2016.08.18-21.09.05:056][982]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.247795
+[2016.08.18-21.09.05:072][983]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.259114
+[2016.08.18-21.09.05:088][984]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.270911
+[2016.08.18-21.09.05:104][985]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.283182
+[2016.08.18-21.09.05:121][986]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.295925
+[2016.08.18-21.09.05:137][987]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.309137
+[2016.08.18-21.09.05:153][988]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.322815
+[2016.08.18-21.09.05:169][989]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.336957
+[2016.08.18-21.09.05:185][990]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.351559
+[2016.08.18-21.09.05:201][991]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.366652
+[2016.08.18-21.09.05:217][992]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.382165
+[2016.08.18-21.09.05:233][993]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.398129
+[2016.08.18-21.09.05:250][994]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.414539
+[2016.08.18-21.09.05:266][995]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.431393
+[2016.08.18-21.09.05:282][996]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.448687
+[2016.08.18-21.09.05:298][997]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.466418
+[2016.08.18-21.09.05:314][998]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.484581
+[2016.08.18-21.09.05:330][999]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.503174
+[2016.08.18-21.09.05:346][  0]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.522192
+[2016.08.18-21.09.05:362][  1]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.541634
+[2016.08.18-21.09.05:379][  2]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.561492
+[2016.08.18-21.09.05:396][  3]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.581765
+[2016.08.18-21.09.05:411][  4]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.602448
+[2016.08.18-21.09.05:427][  5]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.623539
+[2016.08.18-21.09.05:444][  6]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.645032
+[2016.08.18-21.09.05:459][  7]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.666924
+[2016.08.18-21.09.05:476][  8]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.689212
+[2016.08.18-21.09.05:492][  9]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.711891
+[2016.08.18-21.09.05:509][ 10]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.734957
+[2016.08.18-21.09.05:524][ 11]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.758406
+[2016.08.18-21.09.05:540][ 12]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.782234
+[2016.08.18-21.09.05:556][ 13]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.806437
+[2016.08.18-21.09.05:572][ 14]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.831012
+[2016.08.18-21.09.05:589][ 15]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.855954
+[2016.08.18-21.09.05:605][ 16]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.881261
+[2016.08.18-21.09.05:621][ 17]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.906926
+[2016.08.18-21.09.05:637][ 18]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.932946
+[2016.08.18-21.09.05:653][ 19]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.959317
+[2016.08.18-21.09.05:670][ 20]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 6.98609
+[2016.08.18-21.09.05:685][ 21]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.013153
+[2016.08.18-21.09.05:701][ 22]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.040554
+[2016.08.18-21.09.05:717][ 23]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.068292
+[2016.08.18-21.09.05:734][ 24]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.096361
+[2016.08.18-21.09.05:751][ 25]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.124757
+[2016.08.18-21.09.05:766][ 26]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.15348
+[2016.08.18-21.09.05:782][ 27]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.18252
+[2016.08.18-21.09.05:799][ 28]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.211876
+[2016.08.18-21.09.05:814][ 29]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.241544
+[2016.08.18-21.09.05:830][ 30]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.27152
+[2016.08.18-21.09.05:846][ 31]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.301801
+[2016.08.18-21.09.05:862][ 32]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.332383
+[2016.08.18-21.09.05:879][ 33]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.363262
+[2016.08.18-21.09.05:895][ 34]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.394433
+[2016.08.18-21.09.05:911][ 35]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.425895
+[2016.08.18-21.09.05:927][ 36]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.457642
+[2016.08.18-21.09.05:943][ 37]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.489671
+[2016.08.18-21.09.05:959][ 38]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.521979
+[2016.08.18-21.09.05:976][ 39]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.554563
+[2016.08.18-21.09.05:992][ 40]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.587417
+[2016.08.18-21.09.06:008][ 41]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.62054
+[2016.08.18-21.09.06:024][ 42]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.653927
+[2016.08.18-21.09.06:040][ 43]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.687576
+[2016.08.18-21.09.06:056][ 44]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.721482
+[2016.08.18-21.09.06:072][ 45]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.755642
+[2016.08.18-21.09.06:089][ 46]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.790053
+[2016.08.18-21.09.06:105][ 47]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.824712
+[2016.08.18-21.09.06:121][ 48]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.859615
+[2016.08.18-21.09.06:137][ 49]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.89476
+[2016.08.18-21.09.06:153][ 50]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.930142
+[2016.08.18-21.09.06:169][ 51]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 7.965772
+[2016.08.18-21.09.06:185][ 52]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.00162
+[2016.08.18-21.09.06:201][ 53]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.037698
+[2016.08.18-21.09.06:217][ 54]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.074
+[2016.08.18-21.09.06:233][ 55]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.110526
+[2016.08.18-21.09.06:249][ 56]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.14727
+[2016.08.18-21.09.06:265][ 57]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.184232
+[2016.08.18-21.09.06:282][ 58]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.221406
+[2016.08.18-21.09.06:298][ 59]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.258792
+[2016.08.18-21.09.06:314][ 60]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.296385
+[2016.08.18-21.09.06:331][ 61]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.334183
+[2016.08.18-21.09.06:347][ 62]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.372183
+[2016.08.18-21.09.06:363][ 63]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.410383
+[2016.08.18-21.09.06:379][ 64]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.44878
+[2016.08.18-21.09.06:395][ 65]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.48737
+[2016.08.18-21.09.06:411][ 66]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.526153
+[2016.08.18-21.09.06:427][ 67]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.565124
+[2016.08.18-21.09.06:443][ 68]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.604281
+[2016.08.18-21.09.06:459][ 69]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.643622
+[2016.08.18-21.09.06:476][ 70]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.683145
+[2016.08.18-21.09.06:492][ 71]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.722846
+[2016.08.18-21.09.06:508][ 72]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.762724
+[2016.08.18-21.09.06:524][ 73]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.802775
+[2016.08.18-21.09.06:540][ 74]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.843002
+[2016.08.18-21.09.06:556][ 75]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.883394
+[2016.08.18-21.09.06:572][ 76]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.923954
+[2016.08.18-21.09.06:588][ 77]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 8.964679
+[2016.08.18-21.09.06:604][ 78]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.005566
+[2016.08.18-21.09.06:621][ 79]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.046612
+[2016.08.18-21.09.06:637][ 80]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.087817
+[2016.08.18-21.09.06:653][ 81]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.129179
+[2016.08.18-21.09.06:669][ 82]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.170694
+[2016.08.18-21.09.06:685][ 83]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.21236
+[2016.08.18-21.09.06:701][ 84]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.254177
+[2016.08.18-21.09.06:718][ 85]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.296142
+[2016.08.18-21.09.06:734][ 86]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.338252
+[2016.08.18-21.09.06:750][ 87]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.380506
+[2016.08.18-21.09.06:766][ 88]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.422901
+[2016.08.18-21.09.06:782][ 89]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.465637
+[2016.08.18-21.09.06:798][ 90]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.508311
+[2016.08.18-21.09.06:814][ 91]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.551122
+[2016.08.18-21.09.06:830][ 92]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.594067
+[2016.08.18-21.09.06:846][ 93]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.637144
+[2016.08.18-21.09.06:862][ 94]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.680352
+[2016.08.18-21.09.06:878][ 95]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.72369
+[2016.08.18-21.09.06:895][ 96]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.767154
+[2016.08.18-21.09.06:911][ 97]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.810744
+[2016.08.18-21.09.06:927][ 98]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.854459
+[2016.08.18-21.09.06:944][ 99]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.898294
+[2016.08.18-21.09.06:960][100]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.942252
+[2016.08.18-21.09.06:976][101]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 9.986329
+[2016.08.18-21.09.06:992][102]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.030523
+[2016.08.18-21.09.07:008][103]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.074833
+[2016.08.18-21.09.07:024][104]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.119257
+[2016.08.18-21.09.07:040][105]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.163795
+[2016.08.18-21.09.07:056][106]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.208444
+[2016.08.18-21.09.07:072][107]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.253202
+[2016.08.18-21.09.07:088][108]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.29807
+[2016.08.18-21.09.07:105][109]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.343045
+[2016.08.18-21.09.07:121][110]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.388125
+[2016.08.18-21.09.07:137][111]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.433311
+[2016.08.18-21.09.07:153][112]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.478599
+[2016.08.18-21.09.07:169][113]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.523989
+[2016.08.18-21.09.07:185][114]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.569478
+[2016.08.18-21.09.07:201][115]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.615067
+[2016.08.18-21.09.07:217][116]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.660755
+[2016.08.18-21.09.07:234][117]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.706539
+[2016.08.18-21.09.07:250][118]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.752419
+[2016.08.18-21.09.07:266][119]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.798391
+[2016.08.18-21.09.07:282][120]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.844459
+[2016.08.18-21.09.07:298][121]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.890616
+[2016.08.18-21.09.07:314][122]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.936865
+[2016.08.18-21.09.07:330][123]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 10.983204
+[2016.08.18-21.09.07:346][124]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.029631
+[2016.08.18-21.09.07:362][125]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.076144
+[2016.08.18-21.09.07:378][126]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.122745
+[2016.08.18-21.09.07:395][127]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.16943
+[2016.08.18-21.09.07:411][128]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.216199
+[2016.08.18-21.09.07:428][129]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.263051
+[2016.08.18-21.09.07:444][130]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.309985
+[2016.08.18-21.09.07:460][131]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.357068
+[2016.08.18-21.09.07:476][132]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.404163
+[2016.08.18-21.09.07:492][133]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.451336
+[2016.08.18-21.09.07:508][134]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.498588
+[2016.08.18-21.09.07:524][135]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.545917
+[2016.08.18-21.09.07:540][136]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.59332
+[2016.08.18-21.09.07:556][137]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.6408
+[2016.08.18-21.09.07:572][138]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.688354
+[2016.08.18-21.09.07:589][139]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.735981
+[2016.08.18-21.09.07:605][140]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.78368
+[2016.08.18-21.09.07:621][141]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.83145
+[2016.08.18-21.09.07:637][142]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.879292
+[2016.08.18-21.09.07:653][143]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.927204
+[2016.08.18-21.09.07:669][144]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 11.975183
+[2016.08.18-21.09.07:685][145]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.023233
+[2016.08.18-21.09.07:701][146]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.071349
+[2016.08.18-21.09.07:718][147]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.119532
+[2016.08.18-21.09.07:734][148]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.16778
+[2016.08.18-21.09.07:750][149]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.216093
+[2016.08.18-21.09.07:766][150]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.264471
+[2016.08.18-21.09.07:782][151]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.312913
+[2016.08.18-21.09.07:798][152]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.361421
+[2016.08.18-21.09.07:814][153]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.409986
+[2016.08.18-21.09.07:830][154]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.458613
+[2016.08.18-21.09.07:846][155]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.5073
+[2016.08.18-21.09.07:863][156]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.556048
+[2016.08.18-21.09.07:879][157]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.604855
+[2016.08.18-21.09.07:895][158]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.65372
+[2016.08.18-21.09.07:911][159]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.702642
+[2016.08.18-21.09.07:927][160]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.751621
+[2016.08.18-21.09.07:943][161]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.800658
+[2016.08.18-21.09.07:959][162]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.849803
+[2016.08.18-21.09.07:975][163]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.899115
+[2016.08.18-21.09.07:992][164]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.948317
+[2016.08.18-21.09.08:008][165]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 12.997573
+[2016.08.18-21.09.08:024][166]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.046882
+[2016.08.18-21.09.08:040][167]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.096244
+[2016.08.18-21.09.08:056][168]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.145658
+[2016.08.18-21.09.08:073][169]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.195134
+[2016.08.18-21.09.08:089][170]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.244651
+[2016.08.18-21.09.08:105][171]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.294218
+[2016.08.18-21.09.08:121][172]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.343835
+[2016.08.18-21.09.08:137][173]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.393501
+[2016.08.18-21.09.08:153][174]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.443215
+[2016.08.18-21.09.08:169][175]LogBlueprintUserMessages: [OrbReticle_BP_C_1] 13.492978
+[2016.08.18-21.09.08:234][179]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Round: 12	Entity: Beck
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.18-21.09.08:427][191]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.18-21.09.15:464][627]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Round: 12	Entity: Sluagh
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Entity #:0: Entity Name: Sluagh
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Entity #:1: Entity Name: Sluagh2
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Entity #:2: Entity Name: Beck
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Entity #:3: Entity Name: Sluagh
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Entity #:4: Entity Name: Sluagh2
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Entity #:5: Entity Name: Beck
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Entity #:6: Entity Name: Sluagh
+[2016.08.18-21.09.15:465][627]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.18-21.09.16:482][690]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.18-21.09.16:482][690]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.606602
+[2016.08.18-21.09.16:497][691]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.561031
+[2016.08.18-21.09.16:513][692]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.51556
+[2016.08.18-21.09.16:529][693]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.470189
+[2016.08.18-21.09.16:545][694]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.424921
+[2016.08.18-21.09.16:561][695]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.379756
+[2016.08.18-21.09.16:577][696]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.334695
+[2016.08.18-21.09.16:595][697]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.289741
+[2016.08.18-21.09.16:611][698]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.244887
+[2016.08.18-21.09.16:626][699]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.199938
+[2016.08.18-21.09.16:642][700]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.155311
+[2016.08.18-21.09.16:658][701]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.110795
+[2016.08.18-21.09.16:674][702]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.066393
+[2016.08.18-21.09.16:690][703]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.022105
+[2016.08.18-21.09.16:706][704]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.977934
+[2016.08.18-21.09.16:723][705]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.933881
+[2016.08.18-21.09.16:739][706]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.889947
+[2016.08.18-21.09.16:755][707]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.846134
+[2016.08.18-21.09.16:771][708]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.802188
+[2016.08.18-21.09.16:787][709]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.758623
+[2016.08.18-21.09.16:804][710]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.715183
+[2016.08.18-21.09.16:820][711]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.671872
+[2016.08.18-21.09.16:836][712]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.62869
+[2016.08.18-21.09.16:852][713]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.585615
+[2016.08.18-21.09.16:868][714]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.542697
+[2016.08.18-21.09.16:885][715]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.499913
+[2016.08.18-21.09.16:901][716]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.457266
+[2016.08.18-21.09.16:917][717]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.414748
+[2016.08.18-21.09.16:933][718]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.372381
+[2016.08.18-21.09.16:949][719]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.330154
+[2016.08.18-21.09.16:965][720]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.288073
+[2016.08.18-21.09.16:981][721]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.246137
+[2016.08.18-21.09.16:997][722]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.20435
+[2016.08.18-21.09.17:014][723]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.162712
+[2016.08.18-21.09.17:030][724]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.121227
+[2016.08.18-21.09.17:046][725]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.079896
+[2016.08.18-21.09.17:062][726]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.038721
+[2016.08.18-21.09.17:078][727]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.997696
+[2016.08.18-21.09.17:094][728]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.95684
+[2016.08.18-21.09.17:111][729]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.916147
+[2016.08.18-21.09.17:126][730]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.87562
+[2016.08.18-21.09.17:142][731]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.83526
+[2016.08.18-21.09.17:158][732]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.79507
+[2016.08.18-21.09.17:175][733]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.755053
+[2016.08.18-21.09.17:191][734]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.715207
+[2016.08.18-21.09.17:207][735]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.675541
+[2016.08.18-21.09.17:223][736]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.636054
+[2016.08.18-21.09.17:239][737]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.596748
+[2016.08.18-21.09.17:255][738]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.557628
+[2016.08.18-21.09.17:271][739]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.518562
+[2016.08.18-21.09.17:288][740]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.479817
+[2016.08.18-21.09.17:304][741]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.441265
+[2016.08.18-21.09.17:320][742]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.402907
+[2016.08.18-21.09.17:336][743]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.364748
+[2016.08.18-21.09.17:352][744]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.326786
+[2016.08.18-21.09.17:368][745]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.289028
+[2016.08.18-21.09.17:384][746]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.251476
+[2016.08.18-21.09.17:400][747]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.214132
+[2016.08.18-21.09.17:416][748]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.177001
+[2016.08.18-21.09.17:433][749]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.140081
+[2016.08.18-21.09.17:449][750]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.10338
+[2016.08.18-21.09.17:465][751]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.066899
+[2016.08.18-21.09.17:481][752]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.030641
+[2016.08.18-21.09.17:497][753]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.994608
+[2016.08.18-21.09.17:513][754]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.958804
+[2016.08.18-21.09.17:529][755]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.923233
+[2016.08.18-21.09.17:546][756]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.887897
+[2016.08.18-21.09.17:562][757]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.852798
+[2016.08.18-21.09.17:578][758]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.817943
+[2016.08.18-21.09.17:595][759]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.783253
+[2016.08.18-21.09.17:611][760]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.748888
+[2016.08.18-21.09.17:627][761]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.714761
+[2016.08.18-21.09.17:643][762]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.680906
+[2016.08.18-21.09.17:659][763]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.647309
+[2016.08.18-21.09.17:675][764]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.613974
+[2016.08.18-21.09.17:691][765]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.580904
+[2016.08.18-21.09.17:707][766]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.548103
+[2016.08.18-21.09.17:724][767]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.515574
+[2016.08.18-21.09.17:739][768]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.48332
+[2016.08.18-21.09.17:756][769]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.451346
+[2016.08.18-21.09.17:772][770]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.41963
+[2016.08.18-21.09.17:788][771]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.388226
+[2016.08.18-21.09.17:804][772]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.357112
+[2016.08.18-21.09.17:820][773]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.326292
+[2016.08.18-21.09.17:836][774]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.295771
+[2016.08.18-21.09.17:852][775]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.265548
+[2016.08.18-21.09.17:868][776]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.235632
+[2016.08.18-21.09.17:885][777]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.206026
+[2016.08.18-21.09.17:901][778]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.176667
+[2016.08.18-21.09.17:917][779]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.147691
+[2016.08.18-21.09.17:933][780]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.119036
+[2016.08.18-21.09.17:949][781]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.090705
+[2016.08.18-21.09.17:966][782]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.062702
+[2016.08.18-21.09.17:981][783]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.035032
+[2016.08.18-21.09.17:997][784]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.007698
+[2016.08.18-21.09.18:014][785]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.980705
+[2016.08.18-21.09.18:030][786]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.954055
+[2016.08.18-21.09.18:046][787]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.927753
+[2016.08.18-21.09.18:062][788]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.901803
+[2016.08.18-21.09.18:078][789]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.87621
+[2016.08.18-21.09.18:094][790]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.850951
+[2016.08.18-21.09.18:110][791]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.826077
+[2016.08.18-21.09.18:126][792]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.801577
+[2016.08.18-21.09.18:142][793]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.777436
+[2016.08.18-21.09.18:159][794]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.753684
+[2016.08.18-21.09.18:175][795]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.730311
+[2016.08.18-21.09.18:191][796]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.707323
+[2016.08.18-21.09.18:207][797]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.684723
+[2016.08.18-21.09.18:223][798]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.662514
+[2016.08.18-21.09.18:239][799]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.640702
+[2016.08.18-21.09.18:255][800]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.619289
+[2016.08.18-21.09.18:272][801]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.598197
+[2016.08.18-21.09.18:288][802]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.577597
+[2016.08.18-21.09.18:304][803]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.557408
+[2016.08.18-21.09.18:320][804]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.537635
+[2016.08.18-21.09.18:336][805]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.51828
+[2016.08.18-21.09.18:353][806]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.499349
+[2016.08.18-21.09.18:369][807]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.480843
+[2016.08.18-21.09.18:385][808]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.462768
+[2016.08.18-21.09.18:401][809]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.445126
+[2016.08.18-21.09.18:417][810]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.427921
+[2016.08.18-21.09.18:433][811]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.411158
+[2016.08.18-21.09.18:449][812]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.394838
+[2016.08.18-21.09.18:466][813]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.378966
+[2016.08.18-21.09.18:481][814]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.36353
+[2016.08.18-21.09.18:498][815]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.348564
+[2016.08.18-21.09.18:514][816]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.334056
+[2016.08.18-21.09.18:530][817]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.320007
+[2016.08.18-21.09.18:546][818]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.306424
+[2016.08.18-21.09.18:562][819]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.293306
+[2016.08.18-21.09.18:578][820]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.280658
+[2016.08.18-21.09.18:594][821]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.268483
+[2016.08.18-21.09.18:611][822]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.256783
+[2016.08.18-21.09.18:627][823]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.245561
+[2016.08.18-21.09.18:643][824]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.234819
+[2016.08.18-21.09.18:659][825]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.224561
+[2016.08.18-21.09.18:675][826]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.214788
+[2016.08.18-21.09.18:691][827]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.205503
+[2016.08.18-21.09.18:707][828]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.196708
+[2016.08.18-21.09.18:723][829]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.188404
+[2016.08.18-21.09.18:739][830]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.180594
+[2016.08.18-21.09.18:756][831]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.173281
+[2016.08.18-21.09.18:772][832]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.166465
+[2016.08.18-21.09.18:788][833]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.160148
+[2016.08.18-21.09.18:804][834]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.154332
+[2016.08.18-21.09.18:820][835]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.149018
+[2016.08.18-21.09.18:836][836]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.144207
+[2016.08.18-21.09.18:852][837]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.139902
+[2016.08.18-21.09.18:868][838]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.136102
+[2016.08.18-21.09.18:885][839]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.132809
+[2016.08.18-21.09.18:901][840]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.130023
+[2016.08.18-21.09.18:917][841]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.127746
+[2016.08.18-21.09.18:933][842]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.125978
+[2016.08.18-21.09.18:949][843]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.124719
+[2016.08.18-21.09.18:965][844]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.123969
+[2016.08.18-21.09.18:981][845]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.123728
+[2016.08.18-21.09.18:998][846]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.123998
+[2016.08.18-21.09.19:014][847]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.124777
+[2016.08.18-21.09.19:030][848]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.126067
+[2016.08.18-21.09.19:046][849]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.127864
+[2016.08.18-21.09.19:062][850]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.130171
+[2016.08.18-21.09.19:078][851]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.132987
+[2016.08.18-21.09.19:095][852]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.136309
+[2016.08.18-21.09.19:111][853]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.140138
+[2016.08.18-21.09.19:127][854]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.144473
+[2016.08.18-21.09.19:143][855]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.14936
+[2016.08.18-21.09.19:159][856]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.154707
+[2016.08.18-21.09.19:175][857]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.160557
+[2016.08.18-21.09.19:191][858]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.166907
+[2016.08.18-21.09.19:207][859]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.173757
+[2016.08.18-21.09.19:224][860]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.181104
+[2016.08.18-21.09.19:240][861]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.188958
+[2016.08.18-21.09.19:256][862]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.197295
+[2016.08.18-21.09.19:272][863]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.206123
+[2016.08.18-21.09.19:288][864]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.215442
+[2016.08.18-21.09.19:304][865]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.225249
+[2016.08.18-21.09.19:320][866]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.23554
+[2016.08.18-21.09.19:336][867]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.246315
+[2016.08.18-21.09.19:352][868]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.257569
+[2016.08.18-21.09.19:369][869]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.269302
+[2016.08.18-21.09.19:385][870]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.281509
+[2016.08.18-21.09.19:401][871]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.294189
+[2016.08.18-21.09.19:417][872]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.307339
+[2016.08.18-21.09.19:433][873]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.320955
+[2016.08.18-21.09.19:449][874]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.335034
+[2016.08.18-21.09.19:465][875]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.349574
+[2016.08.18-21.09.19:481][876]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.364572
+[2016.08.18-21.09.19:498][877]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.380023
+[2016.08.18-21.09.19:514][878]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.395925
+[2016.08.18-21.09.19:530][879]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.412275
+[2016.08.18-21.09.19:546][880]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.429069
+[2016.08.18-21.09.19:562][881]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.446302
+[2016.08.18-21.09.19:578][882]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.463974
+[2016.08.18-21.09.19:594][883]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.482095
+[2016.08.18-21.09.19:610][884]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.50063
+[2016.08.18-21.09.19:627][885]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.519591
+[2016.08.18-21.09.19:643][886]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.538974
+[2016.08.18-21.09.19:659][887]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.558776
+[2016.08.18-21.09.19:675][888]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.578994
+[2016.08.18-21.09.19:691][889]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.599622
+[2016.08.18-21.09.19:707][890]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.620657
+[2016.08.18-21.09.19:724][891]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.642096
+[2016.08.18-21.09.19:740][892]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.663952
+[2016.08.18-21.09.19:756][893]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.686187
+[2016.08.18-21.09.19:772][894]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.708813
+[2016.08.18-21.09.19:788][895]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.731827
+[2016.08.18-21.09.19:804][896]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.755224
+[2016.08.18-21.09.19:820][897]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.779002
+[2016.08.18-21.09.19:837][898]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.803155
+[2016.08.18-21.09.19:853][899]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.82768
+[2016.08.18-21.09.19:870][900]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.852573
+[2016.08.18-21.09.19:885][901]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.877829
+[2016.08.18-21.09.19:901][902]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.903446
+[2016.08.18-21.09.19:917][903]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.929418
+[2016.08.18-21.09.19:933][904]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.955742
+[2016.08.18-21.09.19:949][905]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 6.982414
+[2016.08.18-21.09.19:966][906]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.00943
+[2016.08.18-21.09.19:982][907]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.036786
+[2016.08.18-21.09.19:998][908]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.064478
+[2016.08.18-21.09.20:014][909]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.092501
+[2016.08.18-21.09.20:030][910]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.120853
+[2016.08.18-21.09.20:046][911]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.149529
+[2016.08.18-21.09.20:062][912]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.178526
+[2016.08.18-21.09.20:079][913]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.207839
+[2016.08.18-21.09.20:095][914]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.237464
+[2016.08.18-21.09.20:111][915]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.267399
+[2016.08.18-21.09.20:127][916]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.297638
+[2016.08.18-21.09.20:143][917]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.328179
+[2016.08.18-21.09.20:159][918]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.359017
+[2016.08.18-21.09.20:175][919]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.390149
+[2016.08.18-21.09.20:191][920]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.421675
+[2016.08.18-21.09.20:207][921]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.453384
+[2016.08.18-21.09.20:224][922]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.485376
+[2016.08.18-21.09.20:240][923]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.517647
+[2016.08.18-21.09.20:256][924]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.550194
+[2016.08.18-21.09.20:272][925]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.583014
+[2016.08.18-21.09.20:288][926]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.616102
+[2016.08.18-21.09.20:304][927]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.649454
+[2016.08.18-21.09.20:320][928]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.683125
+[2016.08.18-21.09.20:336][929]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.716997
+[2016.08.18-21.09.20:352][930]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.751125
+[2016.08.18-21.09.20:369][931]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.785502
+[2016.08.18-21.09.20:385][932]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.820129
+[2016.08.18-21.09.20:401][933]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.855
+[2016.08.18-21.09.20:417][934]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.890113
+[2016.08.18-21.09.20:433][935]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.925465
+[2016.08.18-21.09.20:450][936]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.961051
+[2016.08.18-21.09.20:466][937]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 7.99687
+[2016.08.18-21.09.20:482][938]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.032935
+[2016.08.18-21.09.20:498][939]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.069208
+[2016.08.18-21.09.20:514][940]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.105704
+[2016.08.18-21.09.20:530][941]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.14242
+[2016.08.18-21.09.20:546][942]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.179353
+[2016.08.18-21.09.20:562][943]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.216499
+[2016.08.18-21.09.20:579][944]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.253858
+[2016.08.18-21.09.20:595][945]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.291423
+[2016.08.18-21.09.20:611][946]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.329194
+[2016.08.18-21.09.20:627][947]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.367168
+[2016.08.18-21.09.20:643][948]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.405342
+[2016.08.18-21.09.20:659][949]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.443726
+[2016.08.18-21.09.20:675][950]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.482291
+[2016.08.18-21.09.20:691][951]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.52143
+[2016.08.18-21.09.20:708][952]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.560379
+[2016.08.18-21.09.20:724][953]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.599514
+[2016.08.18-21.09.20:740][954]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.638833
+[2016.08.18-21.09.20:756][955]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.678333
+[2016.08.18-21.09.20:772][956]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.718013
+[2016.08.18-21.09.20:788][957]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.757871
+[2016.08.18-21.09.20:804][958]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.797901
+[2016.08.18-21.09.20:821][959]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.838103
+[2016.08.18-21.09.20:837][960]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.878476
+[2016.08.18-21.09.20:853][961]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.919144
+[2016.08.18-21.09.20:869][962]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 8.959849
+[2016.08.18-21.09.20:885][963]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.000717
+[2016.08.18-21.09.20:901][964]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.041745
+[2016.08.18-21.09.20:917][965]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.082932
+[2016.08.18-21.09.20:933][966]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.124328
+[2016.08.18-21.09.20:950][967]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.165824
+[2016.08.18-21.09.20:966][968]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.207474
+[2016.08.18-21.09.20:982][969]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.249273
+[2016.08.18-21.09.20:998][970]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.291221
+[2016.08.18-21.09.21:014][971]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.333314
+[2016.08.18-21.09.21:030][972]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.375551
+[2016.08.18-21.09.21:046][973]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.41793
+[2016.08.18-21.09.21:062][974]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.460449
+[2016.08.18-21.09.21:078][975]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.503107
+[2016.08.18-21.09.21:095][976]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.546206
+[2016.08.18-21.09.21:111][977]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.589341
+[2016.08.18-21.09.21:127][978]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.632403
+[2016.08.18-21.09.21:143][979]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.675598
+[2016.08.18-21.09.21:159][980]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.71896
+[2016.08.18-21.09.21:176][981]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.76241
+[2016.08.18-21.09.21:192][982]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.805987
+[2016.08.18-21.09.21:208][983]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.849688
+[2016.08.18-21.09.21:224][984]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.893513
+[2016.08.18-21.09.21:240][985]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.937457
+[2016.08.18-21.09.21:256][986]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 9.98152
+[2016.08.18-21.09.21:272][987]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.025701
+[2016.08.18-21.09.21:289][988]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.069999
+[2016.08.18-21.09.21:305][989]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.114413
+[2016.08.18-21.09.21:321][990]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.158938
+[2016.08.18-21.09.21:337][991]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.203575
+[2016.08.18-21.09.21:353][992]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.248322
+[2016.08.18-21.09.21:369][993]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.293179
+[2016.08.18-21.09.21:387][994]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.338142
+[2016.08.18-21.09.21:404][995]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.385621
+[2016.08.18-21.09.21:419][996]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.4308
+[2016.08.18-21.09.21:436][997]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.476083
+[2016.08.18-21.09.21:451][998]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.521467
+[2016.08.18-21.09.21:467][999]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.566952
+[2016.08.18-21.09.21:483][  0]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.612535
+[2016.08.18-21.09.21:499][  1]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.658217
+[2016.08.18-21.09.21:516][  2]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.703996
+[2016.08.18-21.09.21:532][  3]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.74987
+[2016.08.18-21.09.21:547][  4]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.795838
+[2016.08.18-21.09.21:563][  5]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.8419
+[2016.08.18-21.09.21:580][  6]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.888053
+[2016.08.18-21.09.21:596][  7]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.934297
+[2016.08.18-21.09.21:612][  8]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 10.98063
+[2016.08.18-21.09.21:628][  9]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.027757
+[2016.08.18-21.09.21:645][ 10]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.074267
+[2016.08.18-21.09.21:661][ 11]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.120864
+[2016.08.18-21.09.21:677][ 12]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.167546
+[2016.08.18-21.09.21:693][ 13]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.214312
+[2016.08.18-21.09.21:709][ 14]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.261161
+[2016.08.18-21.09.21:725][ 15]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.308091
+[2016.08.18-21.09.21:741][ 16]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.355103
+[2016.08.18-21.09.21:757][ 17]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.402194
+[2016.08.18-21.09.21:773][ 18]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.449365
+[2016.08.18-21.09.21:789][ 19]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.496612
+[2016.08.18-21.09.21:805][ 20]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.543937
+[2016.08.18-21.09.21:822][ 21]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.591338
+[2016.08.18-21.09.21:838][ 22]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.638815
+[2016.08.18-21.09.21:854][ 23]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.686365
+[2016.08.18-21.09.21:870][ 24]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.73399
+[2016.08.18-21.09.21:886][ 25]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.781686
+[2016.08.18-21.09.21:903][ 26]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.829454
+[2016.08.18-21.09.21:919][ 27]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.877293
+[2016.08.18-21.09.21:935][ 28]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.925201
+[2016.08.18-21.09.21:951][ 29]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 11.97318
+[2016.08.18-21.09.21:967][ 30]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.021225
+[2016.08.18-21.09.21:983][ 31]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.069339
+[2016.08.18-21.09.21:999][ 32]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.117518
+[2016.08.18-21.09.22:015][ 33]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.165763
+[2016.08.18-21.09.22:032][ 34]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.214075
+[2016.08.18-21.09.22:048][ 35]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.262449
+[2016.08.18-21.09.22:064][ 36]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.310887
+[2016.08.18-21.09.22:080][ 37]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.359388
+[2016.08.18-21.09.22:096][ 38]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.407951
+[2016.08.18-21.09.22:112][ 39]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.456576
+[2016.08.18-21.09.22:129][ 40]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.505261
+[2016.08.18-21.09.22:145][ 41]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.554007
+[2016.08.18-21.09.22:161][ 42]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.60281
+[2016.08.18-21.09.22:177][ 43]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.651672
+[2016.08.18-21.09.22:193][ 44]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.700593
+[2016.08.18-21.09.22:209][ 45]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.749571
+[2016.08.18-21.09.22:225][ 46]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.798605
+[2016.08.18-21.09.22:241][ 47]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.847694
+[2016.08.18-21.09.22:257][ 48]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.896839
+[2016.08.18-21.09.22:273][ 49]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.946039
+[2016.08.18-21.09.22:290][ 50]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 12.995293
+[2016.08.18-21.09.22:306][ 51]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.0446
+[2016.08.18-21.09.22:322][ 52]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.093959
+[2016.08.18-21.09.22:338][ 53]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.143371
+[2016.08.18-21.09.22:354][ 54]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.192834
+[2016.08.18-21.09.22:370][ 55]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.242349
+[2016.08.18-21.09.22:386][ 56]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.291913
+[2016.08.18-21.09.22:402][ 57]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.341528
+[2016.08.18-21.09.22:418][ 58]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.391191
+[2016.08.18-21.09.22:435][ 59]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.440905
+[2016.08.18-21.09.22:451][ 60]LogBlueprintUserMessages: [OrbReticle_BP_C_2] 13.490665
+[2016.08.18-21.09.22:516][ 64]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Round: 12	Entity: Sluagh2
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Entity #:0: Entity Name: Sluagh2
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Entity #:1: Entity Name: Beck
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Entity #:2: Entity Name: Sluagh
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Entity #:3: Entity Name: Sluagh2
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Entity #:4: Entity Name: Beck
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Entity #:5: Entity Name: Sluagh
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Entity #:6: Entity Name: Sluagh2
+[2016.08.18-21.09.22:517][ 64]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.18-21.09.23:532][127]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.18-21.09.23:533][127]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.606602
+[2016.08.18-21.09.23:548][128]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.561031
+[2016.08.18-21.09.23:564][129]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.51556
+[2016.08.18-21.09.23:580][130]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.470189
+[2016.08.18-21.09.23:596][131]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.424921
+[2016.08.18-21.09.23:612][132]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.379756
+[2016.08.18-21.09.23:629][133]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.334695
+[2016.08.18-21.09.23:645][134]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.289741
+[2016.08.18-21.09.23:660][135]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.244894
+[2016.08.18-21.09.23:677][136]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.200155
+[2016.08.18-21.09.23:693][137]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.155528
+[2016.08.18-21.09.23:709][138]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.111012
+[2016.08.18-21.09.23:725][139]LogBlueprintUserMessages: [OrbReticle_BP_C_3] 10.066608
+[2016.08.18-21.09.23:771][140]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-21.09.23:776][140]LogEngine: All Windows Closed
+[2016.08.18-21.09.23:776][140]LogWindows: FPlatformMisc::RequestExit(0)
+[2016.08.18-21.09.24:528][141]LogExit: Preparing to exit.
+[2016.08.18-21.09.25:329][141]LogExit: Game engine shut down
+[2016.08.18-21.09.25:446][141]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.18-21.09.25:446][141]LogExit: Object subsystem successfully closed.
+[2016.08.18-21.09.25:463][141]LogD3D11RHI: Shutdown
+[2016.08.18-21.09.25:463][141]LogD3D11RHI: CleanupD3DDevice
+[2016.08.18-21.09.25:526][141]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.18-21.09.25:682][141]LogDerivedDataCache: Shutdown
+[2016.08.18-21.09.25:682][141]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (126)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module AutomationController (125)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module AutomationWorker (124)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module CharacterAI (123)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module AITestSuite (122)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module GameplayDebugger (121)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module AIModule (120)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module AssetRegistry (119)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (118)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (117)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module PortalServices (116)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module PortalRpc (115)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module MessagingRpc (114)
+[2016.08.18-21.09.26:083][141]LogModuleManager: Shutting down and abandoning module ProfilerService (113)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module TaskGraph (112)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module SlateRemote (111)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module SteamVRController (110)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module SteamVR (109)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (108)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module OculusLibrary (107)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module OculusInput (106)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (105)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module CableComponent (104)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (103)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module HTML5Networking (102)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module DesktopPlatform (101)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (100)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (98)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module UObjectPlugin (97)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (96)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module SourceControl (95)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (94)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
+[2016.08.18-21.09.26:249][141]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.08.18-21.09.26:350][141]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.08.18-21.09.26:352][141]LogDerivedDataCache: Shutdown
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.18-21.09.26:352][141]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.18-21.09.26:353][141]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.18-21.09.26:354][141]LogExit: Exiting.
+[2016.08.18-21.09.26:356][141]Log file closed, 08/18/16 17:09:26

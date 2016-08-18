@@ -1,0 +1,57 @@
+﻿Log file open, 08/18/16 15:48:46
+LogInit:Display: Running engine for game: ProjectOne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1347598153) SRandInit(1347598156).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.092789
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.18-19.48.46:785][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-19.48.46:785][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.18-19.48.46:805][  0]LogInit: Computer: FAHAD-PC
+[2016.08.18-19.48.46:805][  0]LogInit: User: Fahad
+[2016.08.18-19.48.46:805][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.18-19.48.46:805][  0]LogInit: High frequency timer resolution =3.215352 MHz
+[2016.08.18-19.48.46:805][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.18-19.48.46:805][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-19.48.46:805][  0]LogMemory: Process Physical Memory: 313.41 MB used, 313.41 MB peak
+[2016.08.18-19.48.46:805][  0]LogMemory: Process Virtual Memory: 314.86 MB used, 314.86 MB peak
+[2016.08.18-19.48.46:805][  0]LogMemory: Physical Memory: 6872.75 MB used, 8174.67 MB total
+[2016.08.18-19.48.46:805][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.18-19.48.46:983][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.18-19.48.47:512][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.18-19.48.47:642][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.18-19.48.47:642][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.18-19.48.47:654][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.18-19.48.47:654][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.18-19.48.47:654][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.18-19.48.47:660][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.18-19.48.47:661][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.18-19.48.47:661][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.18-19.48.47:661][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.18-19.48.47:661][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.18-19.48.47:704][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.18-19.48.48:497][  0]LogShaderCompilers: Guid for
