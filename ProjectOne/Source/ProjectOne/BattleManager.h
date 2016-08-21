@@ -74,7 +74,6 @@ public:
 		UFUNCTION(BlueprintCallable, Category = "Turn Order")
 		TArray<AGameCharacter*> GetTurnOrder();
 
-
 		//this functigon returns the turn order widget array
 		UFUNCTION(BlueprintCallable, Category = "Turn Order")
 		TArray<AGameCharacter*> GetTurnOrderWidgetArray(); 
