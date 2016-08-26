@@ -1,0 +1,552 @@
+﻿Log file open, 08/18/16 17:07:30
+LogInit:Display: Running engine for game: ProjectOne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-641058977) SRandInit(-641058975).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.086804
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.18-21.07.30:893][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-21.07.30:893][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.18-21.07.30:897][  0]LogInit: Computer: FAHAD-PC
+[2016.08.18-21.07.30:897][  0]LogInit: User: Fahad
+[2016.08.18-21.07.30:897][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.18-21.07.30:897][  0]LogInit: High frequency timer resolution =3.215352 MHz
+[2016.08.18-21.07.30:897][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.18-21.07.30:897][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-21.07.30:897][  0]LogMemory: Process Physical Memory: 313.66 MB used, 313.66 MB peak
+[2016.08.18-21.07.30:897][  0]LogMemory: Process Virtual Memory: 314.86 MB used, 314.86 MB peak
+[2016.08.18-21.07.30:897][  0]LogMemory: Physical Memory: 6766.17 MB used, 8174.67 MB total
+[2016.08.18-21.07.30:898][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.18-21.07.30:952][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.18-21.07.31:366][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.18-21.07.31:400][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.18-21.07.31:400][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.18-21.07.31:402][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.18-21.07.31:402][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.18-21.07.31:402][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.18-21.07.31:406][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.18-21.07.31:407][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.18-21.07.31:407][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.18-21.07.31:407][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.18-21.07.31:407][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.18-21.07.31:421][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.18-21.07.31:910][  0]LogShaderCompilers: Guid format shader working directory is -48 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/3876/).
+[2016.08.18-21.07.31:910][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/397756D14D080E5D8950FD8542D680D0/'.
+[2016.08.18-21.07.31:910][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.18-21.07.32:987][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.18-21.07.32:994][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.18-21.07.33:000][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.18-21.07.33:007][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.18-21.07.33:014][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.18-21.07.33:018][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.18-21.07.33:022][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.18-21.07.33:027][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.18-21.07.33:031][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.18-21.07.33:035][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.18-21.07.33:039][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.18-21.07.33:048][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.18-21.07.33:048][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.18-21.07.33:049][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.18-21.07.33:068][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.18-21.07.33:072][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.18-21.07.33:076][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.18-21.07.33:080][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.18-21.07.33:084][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.18-21.07.33:084][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.18-21.07.33:203][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.18-21.07.33:277][  0]LogDerivedDataCache: Loaded boot cache 0.07s 74MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.18-21.07.33:278][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.08.18-21.07.33:278][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.18-21.07.33:278][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.18-21.07.33:278][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.18-21.07.33:278][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.18-21.07.33:294][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.18-21.07.33:307][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.18-21.07.33:558][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-21.07.33:565][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.08.18-21.07.33:566][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2016.08.18-21.07.33:708][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.18-21.07.33:708][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.18-21.07.33:708][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.18-21.07.33:962][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.18-21.07.34:072][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-21.07.34:072][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-21.07.34:253][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Movies/Default_Startup.mp4
+[2016.08.18-21.07.34:344][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.18-21.07.34:411][  0]LogTemp:Warning: No World
+[2016.08.18-21.07.34:430][  0]SourceControl: Info Source control is disabled
+[2016.08.18-21.07.34:430][  0]SourceControl: Info Source control is disabled
+[2016.08.18-21.07.34:442][  0]SourceControl: Info Source control is disabled
+[2016.08.18-21.07.34:588][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2016.08.18-21.07.34:618][  0]LogUObjectArray: 29307 objects as part of root set at end of initial load.
+[2016.08.18-21.07.34:618][  0]LogUObjectAllocator: 6107216 out of 0 bytes used by permanent object pool.
+[2016.08.18-21.07.34:618][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.18-21.07.34:680][  0]LogEngine: Initializing Engine...
+[2016.08.18-21.07.35:399][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.18-21.07.35:413][  0]LogInit: FAudioDevice initialized.
+[2016.08.18-21.07.35:423][  0]LogInit: Texture streaming: Enabled
+[2016.08.18-21.07.35:513][  0]LogNet: Browse: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-21.07.35:513][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-21.07.35:547][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-21.07.35:547][  0]LogMemory: Process Physical Memory: 752.02 MB used, 791.65 MB peak
+[2016.08.18-21.07.35:547][  0]LogMemory: Process Virtual Memory: 881.14 MB used, 881.15 MB peak
+[2016.08.18-21.07.35:547][  0]LogMemory: Physical Memory: 7162.90 MB used, 8174.67 MB total
+[2016.08.18-21.07.35:547][  0]LogMemory: Virtual Memory: 1450.72 MB used, 134217728.00 MB total
+[2016.08.18-21.07.35:547][  0]LogMemory: 
+[2016.08.18-21.07.35:547][  0]Allocator Stats for TBB: (not implemented)
+[2016.08.18-21.07.35:552][  0]LogTemp:Warning: No World
+[2016.08.18-21.07.35:650][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2016.08.18-21.07.35:889][  0]LogTemp:Warning: No World
+[2016.08.18-21.07.35:991][  0]LogTemp:Warning: No World
+[2016.08.18-21.07.36:048][  0]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.18-21.07.36:048][  0]LogWorld: Game class is 'BattleGameMode_BP_C'
+[2016.08.18-21.07.36:050][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel.OverworldLevel up for play (max tick rate 0) at 2016.08.18-17.07.36
+[2016.08.18-21.07.36:051][  0]LogWorld: Bringing up level for play took: 0.001996
+[2016.08.18-21.07.36:052][  0]LogInit:Display: Game Engine Initialized.
+[2016.08.18-21.07.36:275][  0]LogLoad: Full Startup: 6.32 seconds (BP compile: 0.38 seconds)
+[2016.08.18-21.07.36:275][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.18-21.07.36:275][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.18-21.07.36:294][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-21.07.36:294][  0]LogOcInput: OculusInput pre-init called
+[2016.08.18-21.07.36:415][  2]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: got player controller successfully
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.18-21.07.39:295][179]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Round: 6	Entity: Beck
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.18-21.07.39:454][189]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.18-21.07.40:373][246]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Round: 6	Entity: Sluagh
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Entity #:0: Entity Name: Sluagh
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Entity #:1: Entity Name: Sluagh2
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Entity #:2: Entity Name: Beck
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Entity #:3: Entity Name: Sluagh
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Entity #:4: Entity Name: Sluagh2
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Entity #:5: Entity Name: Beck
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Entity #:6: Entity Name: Sluagh
+[2016.08.18-21.07.40:373][246]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.18-21.07.41:390][309]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.18-21.07.41:390][309]LogPrimitiveComponent: Zero scaling not supported (/Temp/Autosaves/Game/Levels/UEDPCOverworldLevel.OverworldLevel:PersistentLevel.SoulTerminator_BP_C_0.RenderComponent)
+[2016.08.18-21.07.41:391][309]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.606602
+[2016.08.18-21.07.41:405][310]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.561031
+[2016.08.18-21.07.41:421][311]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.51556
+[2016.08.18-21.07.41:437][312]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.470189
+[2016.08.18-21.07.41:453][313]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.424921
+[2016.08.18-21.07.41:470][314]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.379756
+[2016.08.18-21.07.41:486][315]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.334695
+[2016.08.18-21.07.41:502][316]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.289621
+[2016.08.18-21.07.41:518][317]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.244774
+[2016.08.18-21.07.41:534][318]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.200037
+[2016.08.18-21.07.41:550][319]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.155409
+[2016.08.18-21.07.41:567][320]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.110893
+[2016.08.18-21.07.41:583][321]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.066491
+[2016.08.18-21.07.41:599][322]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 10.022202
+[2016.08.18-21.07.41:615][323]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.978032
+[2016.08.18-21.07.41:631][324]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.933978
+[2016.08.18-21.07.41:647][325]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.890044
+[2016.08.18-21.07.41:663][326]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.846231
+[2016.08.18-21.07.41:679][327]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.802541
+[2016.08.18-21.07.41:695][328]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.758973
+[2016.08.18-21.07.41:711][329]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.715534
+[2016.08.18-21.07.41:728][330]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.672221
+[2016.08.18-21.07.41:744][331]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.629038
+[2016.08.18-21.07.41:760][332]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.585985
+[2016.08.18-21.07.41:776][333]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.543065
+[2016.08.18-21.07.41:792][334]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.50028
+[2016.08.18-21.07.41:808][335]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.457633
+[2016.08.18-21.07.41:824][336]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.415123
+[2016.08.18-21.07.41:841][337]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.372754
+[2016.08.18-21.07.41:857][338]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.330527
+[2016.08.18-21.07.41:873][339]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.288444
+[2016.08.18-21.07.41:889][340]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.246507
+[2016.08.18-21.07.41:905][341]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.204718
+[2016.08.18-21.07.41:921][342]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.163079
+[2016.08.18-21.07.41:937][343]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.121593
+[2016.08.18-21.07.41:954][344]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.08026
+[2016.08.18-21.07.41:970][345]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 9.039084
+[2016.08.18-21.07.41:986][346]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.998067
+[2016.08.18-21.07.42:002][347]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.957211
+[2016.08.18-21.07.42:018][348]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.916516
+[2016.08.18-21.07.42:034][349]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.875987
+[2016.08.18-21.07.42:050][350]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.835627
+[2016.08.18-21.07.42:066][351]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.795435
+[2016.08.18-21.07.42:083][352]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.755416
+[2016.08.18-21.07.42:099][353]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.71557
+[2016.08.18-21.07.42:115][354]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.675902
+[2016.08.18-21.07.42:131][355]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.636414
+[2016.08.18-21.07.42:147][356]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.597106
+[2016.08.18-21.07.42:163][357]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.557982
+[2016.08.18-21.07.42:179][358]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.519047
+[2016.08.18-21.07.42:195][359]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.4803
+[2016.08.18-21.07.42:211][360]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.441745
+[2016.08.18-21.07.42:227][361]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.403384
+[2016.08.18-21.07.42:244][362]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.365222
+[2016.08.18-21.07.42:260][363]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.327259
+[2016.08.18-21.07.42:276][364]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.289461
+[2016.08.18-21.07.42:292][365]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.251905
+[2016.08.18-21.07.42:308][366]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.21456
+[2016.08.18-21.07.42:324][367]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.177424
+[2016.08.18-21.07.42:340][368]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.140505
+[2016.08.18-21.07.42:357][369]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.103801
+[2016.08.18-21.07.42:373][370]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.067317
+[2016.08.18-21.07.42:389][371]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.031054
+[2016.08.18-21.07.42:405][372]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.995019
+[2016.08.18-21.07.42:421][373]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.959213
+[2016.08.18-21.07.42:437][374]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.923639
+[2016.08.18-21.07.42:454][375]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.8883
+[2016.08.18-21.07.42:470][376]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.8532
+[2016.08.18-21.07.42:486][377]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.818341
+[2016.08.18-21.07.42:502][378]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.783728
+[2016.08.18-21.07.42:518][379]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.749362
+[2016.08.18-21.07.42:534][380]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.715249
+[2016.08.18-21.07.42:550][381]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.68139
+[2016.08.18-21.07.42:566][382]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.647789
+[2016.08.18-21.07.42:583][383]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.61445
+[2016.08.18-21.07.42:599][384]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.581377
+[2016.08.18-21.07.42:615][385]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.548572
+[2016.08.18-21.07.42:631][386]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.516039
+[2016.08.18-21.07.42:647][387]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.483781
+[2016.08.18-21.07.42:663][388]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.451803
+[2016.08.18-21.07.42:679][389]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.420102
+[2016.08.18-21.07.42:695][390]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.388693
+[2016.08.18-21.07.42:712][391]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.357575
+[2016.08.18-21.07.42:728][392]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.326751
+[2016.08.18-21.07.42:744][393]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.296225
+[2016.08.18-21.07.42:760][394]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.266
+[2016.08.18-21.07.42:776][395]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.23608
+[2016.08.18-21.07.42:792][396]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.206469
+[2016.08.18-21.07.42:808][397]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.17717
+[2016.08.18-21.07.42:825][398]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.148189
+[2016.08.18-21.07.42:841][399]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.119515
+[2016.08.18-21.07.42:857][400]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.091178
+[2016.08.18-21.07.42:873][401]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.06317
+[2016.08.18-21.07.42:889][402]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.035494
+[2016.08.18-21.07.42:905][403]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.008154
+[2016.08.18-21.07.42:921][404]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.981155
+[2016.08.18-21.07.42:937][405]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.9545
+[2016.08.18-21.07.42:954][406]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.928193
+[2016.08.18-21.07.42:970][407]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.902237
+[2016.08.18-21.07.42:986][408]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.876637
+[2016.08.18-21.07.43:002][409]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.851398
+[2016.08.18-21.07.43:018][410]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.826522
+[2016.08.18-21.07.43:034][411]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.802015
+[2016.08.18-21.07.43:050][412]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.77788
+[2016.08.18-21.07.43:066][413]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.754121
+[2016.08.18-21.07.43:083][414]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.730741
+[2016.08.18-21.07.43:098][415]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.707746
+[2016.08.18-21.07.43:115][416]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.685138
+[2016.08.18-21.07.43:131][417]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.662922
+[2016.08.18-21.07.43:147][418]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.641102
+[2016.08.18-21.07.43:163][419]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.619681
+[2016.08.18-21.07.43:179][420]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.598665
+[2016.08.18-21.07.43:196][421]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.578056
+[2016.08.18-21.07.43:212][422]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.557858
+[2016.08.18-21.07.43:228][423]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.538075
+[2016.08.18-21.07.43:244][424]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.518711
+[2016.08.18-21.07.43:260][425]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.499733
+[2016.08.18-21.07.43:276][426]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.481219
+[2016.08.18-21.07.43:292][427]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.463135
+[2016.08.18-21.07.43:308][428]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.445485
+[2016.08.18-21.07.43:325][429]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.428271
+[2016.08.18-21.07.43:341][430]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.411498
+[2016.08.18-21.07.43:357][431]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.39517
+[2016.08.18-21.07.43:373][432]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.379288
+[2016.08.18-21.07.43:389][433]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.363859
+[2016.08.18-21.07.43:405][434]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.348882
+[2016.08.18-21.07.43:421][435]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.334364
+[2016.08.18-21.07.43:438][436]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.320306
+[2016.08.18-21.07.43:453][437]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.306712
+[2016.08.18-21.07.43:470][438]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.293585
+[2016.08.18-21.07.43:486][439]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.280927
+[2016.08.18-21.07.43:503][440]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.268742
+[2016.08.18-21.07.43:519][441]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.257031
+[2016.08.18-21.07.43:535][442]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.245799
+[2016.08.18-21.07.43:552][443]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.235047
+[2016.08.18-21.07.43:569][444]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.224778
+[2016.08.18-21.07.43:584][445]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.214995
+[2016.08.18-21.07.43:601][446]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.205699
+[2016.08.18-21.07.43:618][447]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.196893
+[2016.08.18-21.07.43:633][448]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.188579
+[2016.08.18-21.07.43:650][449]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.180759
+[2016.08.18-21.07.43:665][450]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.173435
+[2016.08.18-21.07.43:682][451]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.166608
+[2016.08.18-21.07.43:698][452]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.16028
+[2016.08.18-21.07.43:714][453]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.154453
+[2016.08.18-21.07.43:729][454]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.149128
+[2016.08.18-21.07.43:746][455]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.144308
+[2016.08.18-21.07.43:761][456]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.139991
+[2016.08.18-21.07.43:778][457]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.13618
+[2016.08.18-21.07.43:795][458]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.132876
+[2016.08.18-21.07.43:811][459]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.130079
+[2016.08.18-21.07.43:825][460]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.127791
+[2016.08.18-21.07.43:841][461]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.126011
+[2016.08.18-21.07.43:857][462]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.124741
+[2016.08.18-21.07.43:873][463]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.12398
+[2016.08.18-21.07.43:889][464]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.123729
+[2016.08.18-21.07.43:905][465]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.123988
+[2016.08.18-21.07.43:921][466]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.124756
+[2016.08.18-21.07.43:937][467]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.126033
+[2016.08.18-21.07.43:954][468]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.12782
+[2016.08.18-21.07.43:970][469]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.130116
+[2016.08.18-21.07.43:986][470]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.13292
+[2016.08.18-21.07.44:002][471]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.136232
+[2016.08.18-21.07.44:018][472]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.14005
+[2016.08.18-21.07.44:034][473]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.144374
+[2016.08.18-21.07.44:051][474]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.149202
+[2016.08.18-21.07.44:067][475]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.154534
+[2016.08.18-21.07.44:084][476]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.160368
+[2016.08.18-21.07.44:099][477]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.166703
+[2016.08.18-21.07.44:116][478]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.173537
+[2016.08.18-21.07.44:132][479]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.180869
+[2016.08.18-21.07.44:148][480]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.188696
+[2016.08.18-21.07.44:164][481]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.197018
+[2016.08.18-21.07.44:179][482]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.205831
+[2016.08.18-21.07.44:195][483]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.215134
+[2016.08.18-21.07.44:212][484]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.224925
+[2016.08.18-21.07.44:228][485]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.2352
+[2016.08.18-21.07.44:244][486]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.245959
+[2016.08.18-21.07.44:260][487]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.257198
+[2016.08.18-21.07.44:276][488]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.268918
+[2016.08.18-21.07.44:292][489]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.28111
+[2016.08.18-21.07.44:308][490]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.293792
+[2016.08.18-21.07.44:324][491]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.306927
+[2016.08.18-21.07.44:342][492]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.320529
+[2016.08.18-21.07.44:358][493]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.334594
+[2016.08.18-21.07.44:374][494]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.34912
+[2016.08.18-21.07.44:390][495]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.364103
+[2016.08.18-21.07.44:405][496]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.379541
+[2016.08.18-21.07.44:422][497]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.395429
+[2016.08.18-21.07.44:438][498]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.411765
+[2016.08.18-21.07.44:454][499]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.428545
+[2016.08.18-21.07.44:471][500]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.445766
+[2016.08.18-21.07.44:487][501]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.463424
+[2016.08.18-21.07.44:503][502]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.481519
+[2016.08.18-21.07.44:519][503]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.500041
+[2016.08.18-21.07.44:538][504]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.518988
+[2016.08.18-21.07.44:550][505]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.538358
+[2016.08.18-21.07.44:567][506]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.558147
+[2016.08.18-21.07.44:583][507]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.578351
+[2016.08.18-21.07.44:599][508]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.598967
+[2016.08.18-21.07.44:616][509]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.619989
+[2016.08.18-21.07.44:631][510]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.641416
+[2016.08.18-21.07.44:647][511]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.663241
+[2016.08.18-21.07.44:663][512]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.685463
+[2016.08.18-21.07.44:679][513]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.708077
+[2016.08.18-21.07.44:698][514]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.731079
+[2016.08.18-21.07.44:712][515]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.754464
+[2016.08.18-21.07.44:729][516]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.778229
+[2016.08.18-21.07.44:744][517]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.80237
+[2016.08.18-21.07.44:760][518]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.826972
+[2016.08.18-21.07.44:776][519]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.851855
+[2016.08.18-21.07.44:796][520]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.877101
+[2016.08.18-21.07.44:808][521]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.902707
+[2016.08.18-21.07.44:825][522]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.928669
+[2016.08.18-21.07.44:841][523]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.954983
+[2016.08.18-21.07.44:857][524]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 6.981645
+[2016.08.18-21.07.44:873][525]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.008651
+[2016.08.18-21.07.44:891][526]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.035997
+[2016.08.18-21.07.44:905][527]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.06368
+[2016.08.18-21.07.44:921][528]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.091693
+[2016.08.18-21.07.44:938][529]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.120037
+[2016.08.18-21.07.44:954][530]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.148703
+[2016.08.18-21.07.44:970][531]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.177691
+[2016.08.18-21.07.44:989][532]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.206995
+[2016.08.18-21.07.45:003][533]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.236612
+[2016.08.18-21.07.45:019][534]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.266538
+[2016.08.18-21.07.45:035][535]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.296768
+[2016.08.18-21.07.45:051][536]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.3273
+[2016.08.18-21.07.45:067][537]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.35813
+[2016.08.18-21.07.45:083][538]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.389253
+[2016.08.18-21.07.45:099][539]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.420667
+[2016.08.18-21.07.45:115][540]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.452367
+[2016.08.18-21.07.45:131][541]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.48435
+[2016.08.18-21.07.45:147][542]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.516612
+[2016.08.18-21.07.45:163][543]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.54915
+[2016.08.18-21.07.45:179][544]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.58196
+[2016.08.18-21.07.45:196][545]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.615038
+[2016.08.18-21.07.45:212][546]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.648524
+[2016.08.18-21.07.45:228][547]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.682131
+[2016.08.18-21.07.45:244][548]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.715995
+[2016.08.18-21.07.45:260][549]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.750115
+[2016.08.18-21.07.45:276][550]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.784522
+[2016.08.18-21.07.45:292][551]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.819141
+[2016.08.18-21.07.45:309][552]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.854005
+[2016.08.18-21.07.45:325][553]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.889112
+[2016.08.18-21.07.45:341][554]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.924456
+[2016.08.18-21.07.45:358][555]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.960046
+[2016.08.18-21.07.45:374][556]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 7.995858
+[2016.08.18-21.07.45:390][557]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.031898
+[2016.08.18-21.07.45:406][558]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.068166
+[2016.08.18-21.07.45:421][559]LogBlueprintUserMessages: [OrbReticle_BP_C_0] 8.104655
+[2016.08.18-21.07.45:558][560]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-21.07.45:568][560]LogEngine: All Windows Closed
+[2016.08.18-21.07.45:568][560]LogWindows: FPlatformMisc::RequestExit(0)
+[2016.08.18-21.07.45:690][561]LogExit: Preparing to exit.
+[2016.08.18-21.07.46:501][561]LogExit: Game engine shut down
+[2016.08.18-21.07.46:614][561]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.18-21.07.46:615][561]LogExit: Object subsystem successfully closed.
+[2016.08.18-21.07.46:627][561]LogD3D11RHI: Shutdown
+[2016.08.18-21.07.46:627][561]LogD3D11RHI: CleanupD3DDevice
+[2016.08.18-21.07.46:690][561]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.18-21.07.46:804][561]LogDerivedDataCache: Shutdown
+[2016.08.18-21.07.46:804][561]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (126)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module AutomationController (125)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module AutomationWorker (124)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module CharacterAI (123)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module AITestSuite (122)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module GameplayDebugger (121)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module AIModule (120)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module AssetRegistry (119)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (118)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (117)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module PortalServices (116)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module PortalRpc (115)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module MessagingRpc (114)
+[2016.08.18-21.07.47:282][561]LogModuleManager: Shutting down and abandoning module ProfilerService (113)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module TaskGraph (112)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module SlateRemote (111)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module SteamVRController (110)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module SteamVR (109)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (108)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module OculusLibrary (107)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module OculusInput (106)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (105)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module CableComponent (104)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (103)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module HTML5Networking (102)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module DesktopPlatform (101)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (100)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (98)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module UObjectPlugin (97)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (96)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module SourceControl (95)
+[2016.08.18-21.07.47:396][561]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (94)
+[2016.08.18-21.07.47:397][561]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
+[2016.08.18-21.07.47:397][561]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.08.18-21.07.47:497][561]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.08.18-21.07.47:499][561]LogDerivedDataCache: Shutdown
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.18-21.07.47:499][561]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.18-21.07.47:500][561]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.18-21.07.47:501][561]LogExit: Exiting.
+[2016.08.18-21.07.47:502][561]Log file closed, 08/18/16 17:07:47

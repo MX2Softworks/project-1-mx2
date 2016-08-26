@@ -1,0 +1,385 @@
+﻿Log file open, 08/18/16 18:33:29
+LogInit:Display: Running engine for game: ProjectOne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1234111413) SRandInit(-1234111411).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.087316
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.18-22.33.29:580][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-22.33.29:580][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.18-22.33.29:584][  0]LogInit: Computer: FAHAD-PC
+[2016.08.18-22.33.29:584][  0]LogInit: User: Fahad
+[2016.08.18-22.33.29:584][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.18-22.33.29:584][  0]LogInit: High frequency timer resolution =3.215352 MHz
+[2016.08.18-22.33.29:584][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.18-22.33.29:584][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-22.33.29:584][  0]LogMemory: Process Physical Memory: 313.61 MB used, 313.61 MB peak
+[2016.08.18-22.33.29:584][  0]LogMemory: Process Virtual Memory: 314.84 MB used, 314.84 MB peak
+[2016.08.18-22.33.29:584][  0]LogMemory: Physical Memory: 5778.38 MB used, 8174.67 MB total
+[2016.08.18-22.33.29:584][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.18-22.33.29:643][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.18-22.33.30:088][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.18-22.33.30:113][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.18-22.33.30:113][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.18-22.33.30:115][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.18-22.33.30:115][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.18-22.33.30:115][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.18-22.33.30:120][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.18-22.33.30:120][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.18-22.33.30:120][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.18-22.33.30:120][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.18-22.33.30:120][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.18-22.33.30:134][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.18-22.33.30:615][  0]LogShaderCompilers: Guid format shader working directory is -49 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/14288/).
+[2016.08.18-22.33.30:615][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/36D489EF4F1DD0BDB7FE0F94B1BA6805/'.
+[2016.08.18-22.33.30:615][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.18-22.33.31:675][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.18-22.33.31:682][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.18-22.33.31:689][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.18-22.33.31:695][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.18-22.33.31:702][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.18-22.33.31:706][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.18-22.33.31:710][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.18-22.33.31:714][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.18-22.33.31:718][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.18-22.33.31:723][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.18-22.33.31:728][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.18-22.33.31:736][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.18-22.33.31:736][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.18-22.33.31:737][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.18-22.33.31:756][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.18-22.33.31:760][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.18-22.33.31:763][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.18-22.33.31:767][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.18-22.33.31:771][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.18-22.33.31:771][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.18-22.33.31:888][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.18-22.33.31:959][  0]LogDerivedDataCache: Loaded boot cache 0.07s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.18-22.33.31:959][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.08.18-22.33.31:960][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.18-22.33.31:960][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.18-22.33.31:960][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.18-22.33.31:960][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.18-22.33.31:975][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.18-22.33.31:988][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.18-22.33.32:230][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-22.33.32:236][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.08.18-22.33.32:237][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2016.08.18-22.33.32:375][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.18-22.33.32:375][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.18-22.33.32:375][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.18-22.33.32:620][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.18-22.33.32:726][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-22.33.32:726][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-22.33.32:902][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Movies/Default_Startup.mp4
+[2016.08.18-22.33.32:988][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.18-22.33.33:056][  0]LogTemp:Warning: No World
+[2016.08.18-22.33.33:074][  0]SourceControl: Info Source control is disabled
+[2016.08.18-22.33.33:075][  0]SourceControl: Info Source control is disabled
+[2016.08.18-22.33.33:088][  0]SourceControl: Info Source control is disabled
+[2016.08.18-22.33.33:233][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2016.08.18-22.33.33:263][  0]LogUObjectArray: 29307 objects as part of root set at end of initial load.
+[2016.08.18-22.33.33:263][  0]LogUObjectAllocator: 6107224 out of 0 bytes used by permanent object pool.
+[2016.08.18-22.33.33:263][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.18-22.33.33:323][  0]LogEngine: Initializing Engine...
+[2016.08.18-22.33.34:032][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.18-22.33.34:044][  0]LogInit: FAudioDevice initialized.
+[2016.08.18-22.33.34:055][  0]LogInit: Texture streaming: Enabled
+[2016.08.18-22.33.34:144][  0]LogNet: Browse: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-22.33.34:144][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-22.33.34:178][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-22.33.34:178][  0]LogMemory: Process Physical Memory: 749.82 MB used, 782.01 MB peak
+[2016.08.18-22.33.34:178][  0]LogMemory: Process Virtual Memory: 881.18 MB used, 881.18 MB peak
+[2016.08.18-22.33.34:178][  0]LogMemory: Physical Memory: 6157.47 MB used, 8174.67 MB total
+[2016.08.18-22.33.34:178][  0]LogMemory: Virtual Memory: 1453.87 MB used, 134217728.00 MB total
+[2016.08.18-22.33.34:178][  0]LogMemory: 
+[2016.08.18-22.33.34:178][  0]Allocator Stats for TBB: (not implemented)
+[2016.08.18-22.33.34:182][  0]LogTemp:Warning: No World
+[2016.08.18-22.33.34:307][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2016.08.18-22.33.34:557][  0]LogTemp:Warning: No World
+[2016.08.18-22.33.34:671][  0]LogTemp:Warning: No World
+[2016.08.18-22.33.34:729][  0]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.18-22.33.34:729][  0]LogWorld: Game class is 'BattleGameMode_BP_C'
+[2016.08.18-22.33.34:731][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel.OverworldLevel up for play (max tick rate 0) at 2016.08.18-18.33.34
+[2016.08.18-22.33.34:732][  0]LogWorld: Bringing up level for play took: 0.002239
+[2016.08.18-22.33.34:733][  0]LogInit:Display: Game Engine Initialized.
+[2016.08.18-22.33.34:955][  0]LogLoad: Full Startup: 6.37 seconds (BP compile: 0.40 seconds)
+[2016.08.18-22.33.34:955][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.18-22.33.34:955][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.18-22.33.34:974][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-22.33.34:974][  0]LogOcInput: OculusInput pre-init called
+[2016.08.18-22.33.35:021][  1]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:090][  2]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
+[2016.08.18-22.33.35:121][  2]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:154][  3]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:174][  4]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:191][  5]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:208][  6]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:226][  7]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:245][  8]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:262][  9]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:280][ 10]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:297][ 11]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:313][ 12]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:329][ 13]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:345][ 14]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:361][ 15]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:377][ 16]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:393][ 17]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:410][ 18]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:426][ 19]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:442][ 20]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:458][ 21]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:474][ 22]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:490][ 23]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:507][ 24]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:523][ 25]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:539][ 26]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:555][ 27]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:571][ 28]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:587][ 29]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:603][ 30]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:620][ 31]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:635][ 32]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:652][ 33]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:668][ 34]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:684][ 35]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:699][ 36]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:716][ 37]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:732][ 38]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:749][ 39]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:765][ 40]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:781][ 41]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:797][ 42]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:814][ 43]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:829][ 44]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:846][ 45]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:863][ 46]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:879][ 47]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:895][ 48]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:911][ 49]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:927][ 50]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:943][ 51]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:960][ 52]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:976][ 53]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.35:990][ 54]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:007][ 55]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:023][ 56]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:039][ 57]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:056][ 58]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:072][ 59]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:087][ 60]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:105][ 61]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:121][ 62]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:135][ 63]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:153][ 64]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:169][ 65]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:184][ 66]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:200][ 67]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:218][ 68]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:232][ 69]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:252][ 70]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:268][ 71]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:281][ 72]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:298][ 73]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:315][ 74]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:330][ 75]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:345][ 76]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:363][ 77]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:377][ 78]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:393][ 79]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:410][ 80]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:426][ 81]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:442][ 82]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:459][ 83]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:475][ 84]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:491][ 85]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:507][ 86]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:525][ 87]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:539][ 88]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:555][ 89]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:571][ 90]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:587][ 91]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:603][ 92]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:621][ 93]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:636][ 94]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:652][ 95]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:668][ 96]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:686][ 97]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:702][ 98]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:718][ 99]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:734][100]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:751][101]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:766][102]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:782][103]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:798][104]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:813][105]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:829][106]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:845][107]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:861][108]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:877][109]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:894][110]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:910][111]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:926][112]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.36:942][113]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_2 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.33.37:081][114]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-22.33.37:095][114]LogEngine: All Windows Closed
+[2016.08.18-22.33.37:095][114]LogWindows: FPlatformMisc::RequestExit(0)
+[2016.08.18-22.33.37:329][115]LogExit: Preparing to exit.
+[2016.08.18-22.33.38:153][115]LogExit: Game engine shut down
+[2016.08.18-22.33.38:287][115]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.18-22.33.38:288][115]LogExit: Object subsystem successfully closed.
+[2016.08.18-22.33.38:303][115]LogD3D11RHI: Shutdown
+[2016.08.18-22.33.38:303][115]LogD3D11RHI: CleanupD3DDevice
+[2016.08.18-22.33.38:383][115]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.18-22.33.38:484][115]LogDerivedDataCache: Shutdown
+[2016.08.18-22.33.38:484][115]LogModuleManager: Shutting down and abandoning module AutomationController (125)
+[2016.08.18-22.33.38:484][115]LogModuleManager: Shutting down and abandoning module AutomationWorker (124)
+[2016.08.18-22.33.38:484][115]LogModuleManager: Shutting down and abandoning module CharacterAI (123)
+[2016.08.18-22.33.38:484][115]LogModuleManager: Shutting down and abandoning module AITestSuite (122)
+[2016.08.18-22.33.38:484][115]LogModuleManager: Shutting down and abandoning module GameplayDebugger (121)
+[2016.08.18-22.33.38:484][115]LogModuleManager: Shutting down and abandoning module AIModule (120)
+[2016.08.18-22.33.38:484][115]LogModuleManager: Shutting down and abandoning module AssetRegistry (119)
+[2016.08.18-22.33.38:485][115]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (118)
+[2016.08.18-22.33.38:485][115]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (117)
+[2016.08.18-22.33.38:485][115]LogModuleManager: Shutting down and abandoning module PortalServices (116)
+[2016.08.18-22.33.38:485][115]LogModuleManager: Shutting down and abandoning module PortalRpc (115)
+[2016.08.18-22.33.38:485][115]LogModuleManager: Shutting down and abandoning module MessagingRpc (114)
+[2016.08.18-22.33.38:485][115]LogModuleManager: Shutting down and abandoning module ProfilerService (113)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module TaskGraph (112)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module SlateRemote (111)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module SteamVRController (110)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module SteamVR (109)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (108)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module OculusLibrary (107)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module OculusInput (106)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (105)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module CableComponent (104)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (103)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module HTML5Networking (102)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module DesktopPlatform (101)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (100)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (98)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module UObjectPlugin (97)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (96)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module SourceControl (95)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (94)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
+[2016.08.18-22.33.38:535][115]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.08.18-22.33.38:636][115]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.08.18-22.33.38:637][115]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.08.18-22.33.38:639][115]LogDerivedDataCache: Shutdown
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.18-22.33.38:639][115]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.18-22.33.38:640][115]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.18-22.33.38:641][115]LogExit: Exiting.
+[2016.08.18-22.33.38:642][115]Log file closed, 08/18/16 18:33:38

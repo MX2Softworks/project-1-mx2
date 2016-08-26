@@ -1,0 +1,744 @@
+﻿Log file open, 08/18/16 18:29:26
+LogInit:Display: Running engine for game: ProjectOne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-2014611329) SRandInit(-2014611327).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.086031
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.18-22.29.26:749][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-22.29.26:749][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.18-22.29.26:753][  0]LogInit: Computer: FAHAD-PC
+[2016.08.18-22.29.26:753][  0]LogInit: User: Fahad
+[2016.08.18-22.29.26:753][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.18-22.29.26:753][  0]LogInit: High frequency timer resolution =3.215352 MHz
+[2016.08.18-22.29.26:754][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.18-22.29.26:754][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-22.29.26:754][  0]LogMemory: Process Physical Memory: 313.66 MB used, 313.66 MB peak
+[2016.08.18-22.29.26:754][  0]LogMemory: Process Virtual Memory: 314.89 MB used, 314.89 MB peak
+[2016.08.18-22.29.26:754][  0]LogMemory: Physical Memory: 5646.14 MB used, 8174.67 MB total
+[2016.08.18-22.29.26:754][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.18-22.29.26:809][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.18-22.29.27:224][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.18-22.29.27:250][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.18-22.29.27:250][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.18-22.29.27:252][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.18-22.29.27:253][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.18-22.29.27:253][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.18-22.29.27:257][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.18-22.29.27:257][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.18-22.29.27:257][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.18-22.29.27:257][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.18-22.29.27:257][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.18-22.29.27:271][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.18-22.29.27:743][  0]LogShaderCompilers: Guid format shader working directory is -49 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/11152/).
+[2016.08.18-22.29.27:743][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/662561D44EB61E05CE93968FA303A91C/'.
+[2016.08.18-22.29.27:743][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.18-22.29.28:895][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.18-22.29.28:903][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.18-22.29.28:910][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.18-22.29.28:917][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.18-22.29.28:926][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.18-22.29.28:931][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.18-22.29.28:936][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.18-22.29.28:941][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.18-22.29.28:946][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.18-22.29.28:951][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.18-22.29.28:956][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.18-22.29.28:966][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.18-22.29.28:966][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.18-22.29.28:967][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.18-22.29.28:988][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.18-22.29.28:993][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.18-22.29.28:998][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.18-22.29.29:002][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.18-22.29.29:007][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.18-22.29.29:007][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.18-22.29.29:144][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.18-22.29.29:224][  0]LogDerivedDataCache: Loaded boot cache 0.08s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.18-22.29.29:224][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.08.18-22.29.29:225][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.18-22.29.29:225][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.18-22.29.29:225][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.18-22.29.29:225][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.18-22.29.29:243][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.18-22.29.29:256][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.18-22.29.29:529][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-22.29.29:537][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.08.18-22.29.29:538][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2016.08.18-22.29.29:693][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.18-22.29.29:693][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.18-22.29.29:693][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.18-22.29.29:983][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.18-22.29.30:108][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-22.29.30:108][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-22.29.30:323][  0]LogWindowsMoviePlayer: Unable to load movie: ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Movies/Default_Startup.mp4
+[2016.08.18-22.29.30:410][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.18-22.29.30:477][  0]LogTemp:Warning: No World
+[2016.08.18-22.29.30:495][  0]SourceControl: Info Source control is disabled
+[2016.08.18-22.29.30:495][  0]SourceControl: Info Source control is disabled
+[2016.08.18-22.29.30:509][  0]SourceControl: Info Source control is disabled
+[2016.08.18-22.29.30:656][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2016.08.18-22.29.30:687][  0]LogUObjectArray: 29307 objects as part of root set at end of initial load.
+[2016.08.18-22.29.30:687][  0]LogUObjectAllocator: 6107224 out of 0 bytes used by permanent object pool.
+[2016.08.18-22.29.30:687][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.18-22.29.30:748][  0]LogEngine: Initializing Engine...
+[2016.08.18-22.29.31:450][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.18-22.29.31:463][  0]LogInit: FAudioDevice initialized.
+[2016.08.18-22.29.31:472][  0]LogInit: Texture streaming: Enabled
+[2016.08.18-22.29.31:557][  0]LogNet: Browse: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-22.29.31:558][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel?Name=Player
+[2016.08.18-22.29.31:592][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-22.29.31:592][  0]LogMemory: Process Physical Memory: 777.55 MB used, 787.79 MB peak
+[2016.08.18-22.29.31:592][  0]LogMemory: Process Virtual Memory: 905.32 MB used, 905.33 MB peak
+[2016.08.18-22.29.31:592][  0]LogMemory: Physical Memory: 6055.36 MB used, 8174.67 MB total
+[2016.08.18-22.29.31:592][  0]LogMemory: Virtual Memory: 1475.04 MB used, 134217728.00 MB total
+[2016.08.18-22.29.31:592][  0]LogMemory: 
+[2016.08.18-22.29.31:592][  0]Allocator Stats for TBB: (not implemented)
+[2016.08.18-22.29.31:597][  0]LogTemp:Warning: No World
+[2016.08.18-22.29.31:721][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2016.08.18-22.29.31:965][  0]LogTemp:Warning: No World
+[2016.08.18-22.29.32:075][  0]LogTemp:Warning: No World
+[2016.08.18-22.29.32:132][  0]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.18-22.29.32:133][  0]LogWorld: Game class is 'BattleGameMode_BP_C'
+[2016.08.18-22.29.32:135][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Levels/UEDPCOverworldLevel.OverworldLevel up for play (max tick rate 0) at 2016.08.18-18.29.32
+[2016.08.18-22.29.32:136][  0]LogWorld: Bringing up level for play took: 0.002142
+[2016.08.18-22.29.32:137][  0]LogInit:Display: Game Engine Initialized.
+[2016.08.18-22.29.32:360][  0]LogLoad: Full Startup: 6.51 seconds (BP compile: 0.40 seconds)
+[2016.08.18-22.29.32:360][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.18-22.29.32:360][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.18-22.29.32:376][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-22.29.32:377][  0]LogOcInput: OculusInput pre-init called
+[2016.08.18-22.29.32:492][  2]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:2).
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: got player controller successfully
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.18-22.29.36:291][236]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Round: 6	Entity: Beck
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.18-22.29.36:451][246]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.18-22.29.37:292][298]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Round: 6	Entity: Sluagh
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Entity #:0: Entity Name: Sluagh
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Entity #:1: Entity Name: Sluagh2
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Entity #:2: Entity Name: Beck
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Entity #:3: Entity Name: Sluagh
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Entity #:4: Entity Name: Sluagh2
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Entity #:5: Entity Name: Beck
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Entity #:6: Entity Name: Sluagh
+[2016.08.18-22.29.37:293][298]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.18-22.29.38:307][361]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.18-22.29.46:774][886]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:774][886]LogPhysics:Warning: MoveFixedBody: Trying to move component'/Temp/Autosaves/Game/Levels/UEDPCOverworldLevel.OverworldLevel:PersistentLevel.OrbReticleFadeOut_BP_C_0.RenderComponent' with a non-Movable Mobility.
+[2016.08.18-22.29.46:774][886]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:774][886]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:790][887]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:790][887]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:806][888]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:806][888]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:822][889]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:822][889]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:838][890]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:838][890]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:854][891]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:855][891]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:871][892]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:871][892]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:887][893]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:887][893]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:903][894]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:903][894]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:919][895]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:919][895]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:935][896]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:935][896]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:951][897]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:951][897]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:967][898]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:967][898]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.46:983][899]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.46:984][899]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:000][900]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:000][900]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:016][901]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:016][901]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:032][902]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:032][902]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:048][903]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:048][903]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:064][904]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:064][904]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:080][905]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:080][905]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:096][906]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:096][906]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:113][907]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:113][907]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:128][908]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:129][908]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:145][909]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:145][909]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:161][910]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:161][910]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:177][911]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:177][911]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:193][912]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:193][912]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:209][913]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:209][913]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:225][914]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:226][914]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:241][915]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:241][915]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:257][916]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:258][916]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:274][917]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:274][917]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:290][918]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:290][918]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:306][919]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:306][919]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:322][920]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:322][920]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:338][921]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:338][921]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:354][922]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:354][922]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:370][923]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:370][923]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:387][924]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:387][924]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:403][925]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:403][925]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:419][926]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:419][926]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:435][927]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:435][927]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:451][928]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:451][928]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:467][929]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:467][929]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:483][930]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:483][930]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:500][931]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:500][931]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:515][932]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:516][932]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:531][933]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:531][933]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:548][934]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:548][934]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:564][935]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:564][935]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:580][936]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:580][936]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:596][937]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:597][937]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:613][938]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:613][938]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:628][939]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:629][939]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:645][940]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:645][940]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:661][941]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:661][941]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:677][942]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:677][942]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:693][943]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:693][943]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:709][944]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:709][944]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:725][945]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:725][945]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:741][946]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:741][946]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:758][947]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:758][947]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:774][948]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:774][948]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:790][949]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:790][949]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:806][950]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:806][950]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:822][951]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:822][951]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:838][952]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:838][952]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:854][953]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:854][953]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-114.031 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:871][954]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:871][954]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-115.969 Y=177.751 Z=20.000
+[2016.08.18-22.29.47:888][955]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:888][955]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-121.781 Y=175.813 Z=20.000
+[2016.08.18-22.29.47:904][956]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:904][956]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-132.438 Y=175.813 Z=20.000
+[2016.08.18-22.29.47:920][957]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:920][957]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-147.938 Y=175.813 Z=20.000
+[2016.08.18-22.29.47:936][958]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:936][958]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-164.406 Y=175.813 Z=20.000
+[2016.08.18-22.29.47:952][959]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:952][959]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-178.937 Y=175.813 Z=20.000
+[2016.08.18-22.29.47:968][960]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:968][960]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-191.531 Y=176.781 Z=20.000
+[2016.08.18-22.29.47:985][961]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.47:985][961]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-198.313 Y=176.781 Z=20.000
+[2016.08.18-22.29.48:001][962]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:001][962]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-202.187 Y=177.750 Z=20.000
+[2016.08.18-22.29.48:017][963]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:017][963]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-206.063 Y=178.719 Z=20.000
+[2016.08.18-22.29.48:033][964]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:033][964]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-209.937 Y=180.657 Z=20.000
+[2016.08.18-22.29.48:049][965]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:049][965]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=181.625 Z=20.000
+[2016.08.18-22.29.48:066][966]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:066][966]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-231.250 Y=184.531 Z=20.000
+[2016.08.18-22.29.48:083][967]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:083][967]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-245.781 Y=187.438 Z=20.000
+[2016.08.18-22.29.48:100][968]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:100][968]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-261.281 Y=193.250 Z=20.000
+[2016.08.18-22.29.48:116][969]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:116][969]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-274.844 Y=199.063 Z=20.000
+[2016.08.18-22.29.48:132][970]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:132][970]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-287.438 Y=206.813 Z=20.000
+[2016.08.18-22.29.48:148][971]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:148][971]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-296.156 Y=211.656 Z=20.000
+[2016.08.18-22.29.48:164][972]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:164][972]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-303.906 Y=218.438 Z=20.000
+[2016.08.18-22.29.48:180][973]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:180][973]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-309.719 Y=223.281 Z=20.000
+[2016.08.18-22.29.48:196][974]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:196][974]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-312.625 Y=232.000 Z=20.000
+[2016.08.18-22.29.48:211][975]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:211][975]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-313.594 Y=238.781 Z=20.000
+[2016.08.18-22.29.48:227][976]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:227][976]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-314.563 Y=244.594 Z=20.000
+[2016.08.18-22.29.48:243][977]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:243][977]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-314.563 Y=245.563 Z=20.000
+[2016.08.18-22.29.48:257][978]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:257][978]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-314.563 Y=245.563 Z=20.000
+[2016.08.18-22.29.48:275][979]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:275][979]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-315.531 Y=246.531 Z=20.000
+[2016.08.18-22.29.48:292][980]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:292][980]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-316.500 Y=249.438 Z=20.000
+[2016.08.18-22.29.48:307][981]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:307][981]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-318.438 Y=254.281 Z=20.000
+[2016.08.18-22.29.48:323][982]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:323][982]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-319.406 Y=259.125 Z=20.000
+[2016.08.18-22.29.48:339][983]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:339][983]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-320.375 Y=264.938 Z=20.000
+[2016.08.18-22.29.48:355][984]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:355][984]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-321.344 Y=272.688 Z=20.000
+[2016.08.18-22.29.48:371][985]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:371][985]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-321.344 Y=294.000 Z=20.000
+[2016.08.18-22.29.48:388][986]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:388][986]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-314.563 Y=338.563 Z=20.000
+[2016.08.18-22.29.48:404][987]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:404][987]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-297.125 Y=402.500 Z=20.000
+[2016.08.18-22.29.48:420][988]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:420][988]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-270.002 Y=462.562 Z=20.000
+[2016.08.18-22.29.48:436][989]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:436][989]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-239.971 Y=511.969 Z=20.000
+[2016.08.18-22.29.48:452][990]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:452][990]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.814 Y=539.094 Z=20.000
+[2016.08.18-22.29.48:468][991]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:468][991]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-187.656 Y=559.438 Z=20.000
+[2016.08.18-22.29.48:485][992]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:485][992]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-148.906 Y=585.594 Z=20.000
+[2016.08.18-22.29.48:501][993]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:501][993]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-108.219 Y=610.781 Z=20.000
+[2016.08.18-22.29.48:517][994]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:517][994]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-71.406 Y=626.282 Z=20.000
+[2016.08.18-22.29.48:533][995]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:533][995]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-47.188 Y=635.969 Z=20.000
+[2016.08.18-22.29.48:549][996]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:549][996]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-24.908 Y=639.845 Z=20.000
+[2016.08.18-22.29.48:565][997]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:565][997]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-4.564 Y=644.688 Z=20.000
+[2016.08.18-22.29.48:582][998]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:582][998]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=14.811 Y=649.532 Z=20.000
+[2016.08.18-22.29.48:598][999]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:598][999]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=32.248 Y=657.282 Z=20.000
+[2016.08.18-22.29.48:614][  0]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:614][  0]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=49.687 Y=661.157 Z=20.000
+[2016.08.18-22.29.48:630][  1]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:630][  1]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=65.187 Y=665.031 Z=20.000
+[2016.08.18-22.29.48:646][  2]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:646][  2]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=75.842 Y=667.939 Z=20.000
+[2016.08.18-22.29.48:663][  3]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:663][  3]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:678][  4]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:678][  4]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:694][  5]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:694][  5]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:710][  6]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:710][  6]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:726][  7]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:726][  7]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:743][  8]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:743][  8]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:758][  9]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:758][  9]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:775][ 10]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:775][ 10]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:791][ 11]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:791][ 11]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:807][ 12]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:807][ 12]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:823][ 13]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:823][ 13]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:839][ 14]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:839][ 14]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:855][ 15]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:855][ 15]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:871][ 16]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:872][ 16]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:888][ 17]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:888][ 17]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:904][ 18]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:904][ 18]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:920][ 19]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:920][ 19]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:936][ 20]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:936][ 20]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:952][ 21]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:952][ 21]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:968][ 22]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:968][ 22]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.48:985][ 23]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.48:985][ 23]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:001][ 24]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:001][ 24]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:016][ 25]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:016][ 25]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:033][ 26]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:033][ 26]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:048][ 27]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:048][ 27]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:064][ 28]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:064][ 28]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:082][ 29]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:082][ 29]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:096][ 30]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:096][ 30]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:114][ 31]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:114][ 31]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:129][ 32]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:129][ 32]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:145][ 33]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:145][ 33]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:163][ 34]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:163][ 34]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:177][ 35]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:177][ 35]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:195][ 36]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:195][ 36]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.49:213][ 37]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:213][ 37]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=61.311 Y=744.470 Z=20.000
+[2016.08.18-22.29.49:227][ 38]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:227][ 38]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=34.186 Y=724.126 Z=20.000
+[2016.08.18-22.29.49:243][ 39]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:243][ 39]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=3.186 Y=698.938 Z=20.000
+[2016.08.18-22.29.49:259][ 40]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:259][ 40]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-34.596 Y=658.250 Z=20.000
+[2016.08.18-22.29.49:274][ 41]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:275][ 41]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-70.439 Y=606.907 Z=20.000
+[2016.08.18-22.29.49:291][ 42]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:291][ 42]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-108.219 Y=554.593 Z=20.000
+[2016.08.18-22.29.49:307][ 43]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:307][ 43]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-142.125 Y=504.219 Z=20.000
+[2016.08.18-22.29.49:323][ 44]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:323][ 44]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-169.250 Y=447.063 Z=20.000
+[2016.08.18-22.29.49:339][ 45]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:339][ 45]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-195.406 Y=403.470 Z=20.000
+[2016.08.18-22.29.49:355][ 46]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:356][ 46]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-207.033 Y=381.188 Z=20.000
+[2016.08.18-22.29.49:371][ 47]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:371][ 47]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-212.844 Y=373.437 Z=20.000
+[2016.08.18-22.29.49:388][ 48]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:388][ 48]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:403][ 49]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:403][ 49]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:419][ 50]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:419][ 50]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:435][ 51]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:435][ 51]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:451][ 52]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:451][ 52]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:468][ 53]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:468][ 53]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:483][ 54]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:483][ 54]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:500][ 55]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:500][ 55]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:516][ 56]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:516][ 56]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:532][ 57]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:532][ 57]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:548][ 58]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:548][ 58]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:564][ 59]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:564][ 59]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:581][ 60]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:581][ 60]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:596][ 61]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:596][ 61]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:612][ 62]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:612][ 62]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:628][ 63]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:628][ 63]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:645][ 64]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:645][ 64]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:661][ 65]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:661][ 65]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:677][ 66]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:677][ 66]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=373.438 Z=20.000
+[2016.08.18-22.29.49:694][ 67]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:694][ 67]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-213.813 Y=392.813 Z=20.000
+[2016.08.18-22.29.49:710][ 68]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:710][ 68]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-209.937 Y=433.500 Z=20.000
+[2016.08.18-22.29.49:726][ 69]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:726][ 69]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-196.377 Y=484.844 Z=20.000
+[2016.08.18-22.29.49:742][ 70]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:742][ 70]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-168.283 Y=544.906 Z=20.000
+[2016.08.18-22.29.49:758][ 71]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:758][ 71]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-134.375 Y=606.907 Z=20.000
+[2016.08.18-22.29.49:775][ 72]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:775][ 72]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-100.469 Y=652.438 Z=20.000
+[2016.08.18-22.29.49:791][ 73]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:791][ 73]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-67.533 Y=686.345 Z=20.000
+[2016.08.18-22.29.49:807][ 74]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:807][ 74]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-37.500 Y=703.781 Z=20.000
+[2016.08.18-22.29.49:823][ 75]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:823][ 75]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=-13.281 Y=712.501 Z=20.000
+[2016.08.18-22.29.49:839][ 76]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:839][ 76]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=7.062 Y=717.345 Z=20.000
+[2016.08.18-22.29.49:856][ 77]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:856][ 77]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=24.498 Y=721.219 Z=20.000
+[2016.08.18-22.29.49:872][ 78]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:872][ 78]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=37.092 Y=723.156 Z=20.000
+[2016.08.18-22.29.49:888][ 79]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:888][ 79]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=44.844 Y=723.156 Z=20.000
+[2016.08.18-22.29.49:904][ 80]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:904][ 80]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=48.717 Y=724.126 Z=20.000
+[2016.08.18-22.29.49:920][ 81]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:920][ 81]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=52.592 Y=725.095 Z=20.000
+[2016.08.18-22.29.49:936][ 82]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:936][ 82]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=54.531 Y=725.095 Z=20.000
+[2016.08.18-22.29.49:952][ 83]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:953][ 83]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=56.467 Y=725.095 Z=20.000
+[2016.08.18-22.29.49:968][ 84]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:969][ 84]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=57.436 Y=725.095 Z=20.000
+[2016.08.18-22.29.49:985][ 85]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.49:985][ 85]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=60.344 Y=726.063 Z=20.000
+[2016.08.18-22.29.50:001][ 86]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:001][ 86]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=64.219 Y=728.000 Z=20.000
+[2016.08.18-22.29.50:017][ 87]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:017][ 87]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=67.123 Y=728.970 Z=20.000
+[2016.08.18-22.29.50:033][ 88]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:033][ 88]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=69.062 Y=728.970 Z=20.000
+[2016.08.18-22.29.50:051][ 89]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:051][ 89]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=70.031 Y=729.938 Z=20.000
+[2016.08.18-22.29.50:066][ 90]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:066][ 90]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=73.906 Y=733.814 Z=20.000
+[2016.08.18-22.29.50:083][ 91]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:083][ 91]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=74.875 Y=735.752 Z=20.000
+[2016.08.18-22.29.50:098][ 92]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:098][ 92]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=75.842 Y=736.720 Z=20.000
+[2016.08.18-22.29.50:113][ 93]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:113][ 93]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=75.842 Y=736.720 Z=20.000
+[2016.08.18-22.29.50:131][ 94]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:131][ 94]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=76.811 Y=738.657 Z=20.000
+[2016.08.18-22.29.50:145][ 95]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:145][ 95]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=76.811 Y=738.657 Z=20.000
+[2016.08.18-22.29.50:165][ 96]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:165][ 96]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:180][ 97]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:180][ 97]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:196][ 98]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:196][ 98]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:210][ 99]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:210][ 99]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:227][100]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:227][100]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:241][101]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:241][101]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:259][102]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:259][102]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:274][103]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:274][103]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:290][104]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:290][104]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:306][105]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:306][105]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:322][106]PIE:Warning: Warning Mobility of OrbReticleFadeOut_BP_C_0 : RenderComponent has to be 'Movable' if you'd like to move. 
+[2016.08.18-22.29.50:322][106]LogBlueprintUserMessages: [OrbReticleFadeOut_BP_C_0] X=0.000 Y=0.000 Z=0.000
+[2016.08.18-22.29.50:471][107]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-22.29.50:486][107]LogEngine: All Windows Closed
+[2016.08.18-22.29.50:486][107]LogWindows: FPlatformMisc::RequestExit(0)
+[2016.08.18-22.29.50:761][108]LogExit: Preparing to exit.
+[2016.08.18-22.29.51:562][108]LogExit: Game engine shut down
+[2016.08.18-22.29.51:678][108]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.18-22.29.51:678][108]LogExit: Object subsystem successfully closed.
+[2016.08.18-22.29.51:691][108]LogD3D11RHI: Shutdown
+[2016.08.18-22.29.51:691][108]LogD3D11RHI: CleanupD3DDevice
+[2016.08.18-22.29.51:754][108]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.18-22.29.52:259][108]LogDerivedDataCache: Shutdown
+[2016.08.18-22.29.52:259][108]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (126)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module AutomationController (125)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module AutomationWorker (124)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module CharacterAI (123)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module AITestSuite (122)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module GameplayDebugger (121)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module AIModule (120)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module AssetRegistry (119)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (118)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (117)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module PortalServices (116)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module PortalRpc (115)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module MessagingRpc (114)
+[2016.08.18-22.29.52:379][108]LogModuleManager: Shutting down and abandoning module ProfilerService (113)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module TaskGraph (112)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module SlateRemote (111)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module SteamVRController (110)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module SteamVR (109)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (108)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module OculusLibrary (107)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module OculusInput (106)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (105)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module CableComponent (104)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (103)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module HTML5Networking (102)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module DesktopPlatform (101)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (100)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (98)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module UObjectPlugin (97)
+[2016.08.18-22.29.52:472][108]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (96)
+[2016.08.18-22.29.52:473][108]LogModuleManager: Shutting down and abandoning module SourceControl (95)
+[2016.08.18-22.29.52:473][108]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (94)
+[2016.08.18-22.29.52:473][108]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
+[2016.08.18-22.29.52:473][108]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.08.18-22.29.52:573][108]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.08.18-22.29.52:574][108]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.08.18-22.29.52:574][108]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.08.18-22.29.52:574][108]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.08.18-22.29.52:574][108]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.08.18-22.29.52:574][108]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.08.18-22.29.52:575][108]LogDerivedDataCache: Shutdown
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.18-22.29.52:575][108]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.18-22.29.52:576][108]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.18-22.29.52:577][108]LogExit: Exiting.
+[2016.08.18-22.29.52:579][108]Log file closed, 08/18/16 18:29:52
