@@ -31,6 +31,29 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
 	void RetrieveEngagedEnemy(AEnemy* EngagedEnemy);
 
+
+	/// GETTERS
+
+	// Getter for GotBaseEnemy
+	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
+	bool GetGotBaseEnemy();
+
+	// Getter for EnemiesInBattle
+	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
+	TArray<AEnemy*> GetEnemiesInBattle();
+
+	// Getter for Panes
+	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
+	TArray<AEnemy*> GetPanes();
+
+
+	/// SETTERS
+
+	// Setter for GotBaseEnemy
+	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
+	void SetGotBaseEnemy(bool bGotBaseEnemy);
+
+
 private:
 
 	// A list of the enemies in battle in the order they entered
@@ -41,5 +64,8 @@ private:
 
 	// The enemy that was engaged upon in the overworld
 	AEnemy* BaseEnemy;
+
+	// Defaults to false but is true when RetrieveEngagedEnemy is called
+	bool GotBaseEnemy = false;
 	
 };
