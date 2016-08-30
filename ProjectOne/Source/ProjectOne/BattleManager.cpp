@@ -77,40 +77,6 @@ int32 UBattleManager::GetTurnCounter() { return TurnCounter; };
 TArray<AGameCharacter*> UBattleManager::CalculateTurnOrder()
 {
 	//makes a 2d timeline where each frame is the entities that go during that time.
-	/*TArray<TArray<AGameCharacter*>> Timeline; 
-	TArray<AGameCharacter*> TempArray; 
-	int32 EntitySpeed; 
-	TempArray.Init(nullptr, 1);
-	Timeline.Init(TempArray, 10);
-	for (AGameCharacter* Entity : EntitiesComingIn)
-	{
-		if (Entity != nullptr)
-		{
-			EntitySpeed = Entity->GetSpeed(); 
-			for (int32 Index = 0; Index < Timeline.Num(); Index++)
-			{
-				if ((Index + ((RoundCounter - 1)*Timeline.Num())) == 0) {}
-				else if ((Index + ((RoundCounter - 1)*Timeline.Num())) % EntitySpeed == 0)
-				{
-					TArray<AGameCharacter*> Frame = Timeline[Index];
-					Frame.Emplace(Entity);
-					Timeline[Index] = Frame; 
-				}
-				
-			}
-		}
-	}
-
-	//adds to turn order. 
-	TurnOrder.Reset(1); 
-	for (TArray<AGameCharacter*> Frame : Timeline)
-	{
-		for (AGameCharacter* Entity : Frame)
-		{
-			TurnOrder.Add(Entity);
-		}
-	}*/
-
 	int32 EntitySpeed = 0; 
 	TurnOrder.Reset(1);
 	for (AGameCharacter* Entity : EntitiesComingIn)
@@ -230,12 +196,6 @@ TArray<AGameCharacter*> UBattleManager::PopulateTurnOrderWidgetArray()
 			}
 		}
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::Red, FString::Printf(TEXT("==============================")));
-	for (int I = 0; I < TurnOrderWidgetArray.Num(); I++)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Entity #:%d: Entity Name: %s"), I, *TurnOrderWidgetArray[I]->GetName());
-	}
-	GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::Red, FString::Printf(TEXT("==============================")));
 	return TurnOrderWidgetArray;
 }
 
@@ -315,8 +275,8 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 					{
 						//resets the sluagh's message timer
 						bCanDisplayMessage = false;
+					
 						//ends turn.
-
 						NextTurn();
 						bAttackOccurred = false;
 						bIsPlayerTurnActive = false;
