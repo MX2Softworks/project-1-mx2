@@ -1,0 +1,611 @@
+﻿Log file open, 08/21/16 16:23:58
+LogInit:Display: Running engine for game: ProjectOne
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-290927848) SRandInit(-290927844).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 11.467949
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.21-20.24.02:321][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.21-20.24.02:340][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.21-20.24.02:775][  0]LogInit: Computer: FAHAD-PC
+[2016.08.21-20.24.02:775][  0]LogInit: User: Fahad
+[2016.08.21-20.24.02:775][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.21-20.24.02:775][  0]LogInit: High frequency timer resolution =3.215352 MHz
+[2016.08.21-20.24.02:823][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.21-20.24.02:823][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.21-20.24.02:823][  0]LogMemory: Process Physical Memory: 313.81 MB used, 313.81 MB peak
+[2016.08.21-20.24.02:823][  0]LogMemory: Process Virtual Memory: 314.82 MB used, 314.82 MB peak
+[2016.08.21-20.24.02:823][  0]LogMemory: Physical Memory: 4313.96 MB used, 8174.67 MB total
+[2016.08.21-20.24.02:823][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.21-20.24.05:463][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.21-20.24.08:640][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.21-20.24.08:724][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.21-20.24.08:724][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.21-20.24.08:867][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.21-20.24.08:867][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.21-20.24.08:867][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.21-20.24.08:907][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.21-20.24.08:927][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.21-20.24.08:927][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.21-20.24.08:928][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.21-20.24.08:951][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.21-20.24.09:028][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.21-20.24.10:876][  0]LogShaderCompilers: Guid format shader working directory is -48 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/7516/).
+[2016.08.21-20.24.10:876][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/41869D544E7E3A76752919903547B190/'.
+[2016.08.21-20.24.10:907][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.21-20.24.24:640][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.21-20.24.24:726][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.21-20.24.24:824][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.21-20.24.24:844][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.21-20.24.24:942][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.21-20.24.25:037][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.21-20.24.25:170][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.21-20.24.25:266][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.21-20.24.25:355][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.21-20.24.25:370][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.21-20.24.25:407][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.21-20.24.25:485][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.21-20.24.25:485][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.21-20.24.25:526][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.21-20.24.25:602][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.21-20.24.25:606][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.21-20.24.25:622][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.21-20.24.25:650][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.21-20.24.25:706][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.21-20.24.25:716][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.21-20.24.27:664][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.21-20.24.32:634][  0]LogDerivedDataCache: Loaded boot cache 4.97s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.21-20.24.32:648][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.08.21-20.24.32:656][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.21-20.24.32:656][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.21-20.24.32:656][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.21-20.24.32:656][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.21-20.24.32:781][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.21-20.24.32:830][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.21-20.24.47:483][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.21-20.24.47:724][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.21-20.24.50:596][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.08.21-20.24.54:494][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.21-20.24.54:494][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.21-20.24.54:494][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.21-20.25.18:419][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.08.21-20.25.18:444][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.08.21-20.25.18:444][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.21-20.25.18:514][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.21-20.25.25:368][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.21-20.25.25:397][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.21-20.25.32:256][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.21-20.25.32:256][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.21-20.25.32:256][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.21-20.25.32:256][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.21-20.25.32:256][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.21-20.25.32:256][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.21-20.25.56:617][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.21-20.25.56:766][  0]LogTemp:Warning: No World
+[2016.08.21-20.25.57:779][  0]LogAssetRegistry: FAssetRegistry took 0.0239 seconds to start up
+[2016.08.21-20.26.02:109][  0]SourceControl: Info Source control is disabled
+[2016.08.21-20.26.03:235][  0]SourceControl: Info Source control is disabled
+[2016.08.21-20.26.03:408][  0]SourceControl: Info Source control is disabled
+[2016.08.21-20.26.03:483][  0]SourceControl: Info Source control is disabled
+[2016.08.21-20.26.05:376][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2016.08.21-20.26.06:581][  0]LogEngine: Initializing Engine...
+[2016.08.21-20.26.13:513][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.21-20.26.14:209][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.21-20.26.14:263][  0]LogInit: FAudioDevice initialized.
+[2016.08.21-20.26.14:313][  0]LogDerivedDataCache: Saved boot cache 0.05s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.21-20.26.14:335][  0]LogInit: Texture streaming: Enabled
+[2016.08.21-20.26.15:408][  0]LogInit: Transaction tracking system initialized
+[2016.08.21-20.26.16:283][  0]BlueprintLog: New page: Editor Load
+[2016.08.21-20.26.20:938][  0]LocalizationService: Info Localization service is disabled
+[2016.08.21-20.26.25:998][  0]LogConsoleResponse:Display: 
+[2016.08.21-20.26.32:144][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/' took 0.13s
+[2016.08.21-20.26.32:144][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.21-20.26.32:151][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.21-20.26.32:153][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.08.21-20.26.35:540][  0]SourceControl: Info Source control is disabled
+[2016.08.21-20.26.35:737][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.21-20.26.35:887][  0]LightingResults: New page: Lighting Build
+[2016.08.21-20.26.36:743][  0]MapCheck: New page: Map Check
+[2016.08.21-20.26.36:743][  0]LightingResults: New page: Lighting Build
+[2016.08.21-20.26.43:703][  0]LogTemp:Warning: No World
+[2016.08.21-20.26.43:719][  0]LogTemp:Warning: No World
+[2016.08.21-20.26.43:754][  0]LogTemp:Warning: No World
+[2016.08.21-20.26.45:793][  0]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.21-20.26.48:406][  0]LogEditorServer: Finished looking for orphan Actors (0.021 secs)
+[2016.08.21-20.26.48:798][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.21-20.26.49:144][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 345.974ms to complete.
+[2016.08.21-20.26.49:159][  0]LogFileHelpers: Loading map 'OverworldLevel' took 13.476
+[2016.08.21-20.26.54:801][  0]LogCollectionManager: Loaded 1 collections in 0.014390 seconds
+[2016.08.21-20.26.55:140][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Collections/' took 0.01s
+[2016.08.21-20.26.55:140][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Developers/Fahad/Collections/' took 0.00s
+[2016.08.21-20.26.55:140][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Collections/' took 0.01s
+[2016.08.21-20.26.55:140][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000008 seconds
+[2016.08.21-20.26.55:140][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000001 seconds
+[2016.08.21-20.26.55:192][  0]LogContentBrowser: Native class hierarchy populated in 0.0507 seconds. Added 1988 classes and 347 folders.
+[2016.08.21-20.26.55:340][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.008 s
+[2016.08.21-20.26.55:340][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.21-20.26.55:343][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0020 seconds. Added 12 classes and 0 folders.
+[2016.08.21-20.26.55:367][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2016.08.21-20.26.55:695][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0022 seconds. Added 1 classes and 2 folders.
+[2016.08.21-20.26.57:248][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0036 seconds. Added 0 classes and 0 folders.
+[2016.08.21-20.26.58:122][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.21-20.26.58:441][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.21-20.26.58:567][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0022 seconds. Added 1 classes and 2 folders.
+[2016.08.21-20.26.58:578][  0]LogLoad: Full Startup: 202.73 seconds (BP compile: 7.51 seconds)
+[2016.08.21-20.26.58:589][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.21-20.26.58:589][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.21-20.26.59:026][  0]LogOcInput: OculusInput pre-init called
+[2016.08.21-20.27.00:057][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.08.21-20.27.01:484][  0]LogRenderer: Reallocating scene render targets to support 1248x636 (Frame:2).
+[2016.08.21-20.27.02:877][  3]LogAssetRegistry: Asset discovery search completed in 65.1207 seconds
+[2016.08.21-20.27.02:877][  3]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000002 seconds (found 0 objects)
+[2016.08.21-20.27.02:877][  3]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000095 seconds (updated 0 objects)
+[2016.08.21-20.27.12:071][965]LogTemp:Warning: No World
+[2016.08.21-20.27.12:692][965]LogSavePackage: Save=655.00ms
+[2016.08.21-20.27.12:692][965]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevelAC75EF6046FA4D72B821CCAACA3A946A.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.21-20.27.12:701][965]LogSavePackage: Total save time: 763.84ms
+[2016.08.21-20.27.12:701][965]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.21-20.31.13:964][653]Running C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe ProjectOne Win64 Development -editorrecompile "C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject" -invalidatemakefilesonly -2015
+[2016.08.21-20.31.14:498][653]Invalidating makefiles only in this run.
+[2016.08.21-20.31.15:043][653]Recompiling ProjectOne...
+[2016.08.21-20.31.15:043][653]Launching UnrealBuildTool... [C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe ProjectOne -ModuleWithSuffix ProjectOne 9307 Win64 Development -editorrecompile -canskiplink "C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject"  -2015]
+[2016.08.21-20.33.59:647][653]CompilerResultsLog: New page: Compilation - Aug 21, 2016, 11:33:59 AM
+[2016.08.21-20.33.59:647][653]CompilerResultsLog: Info Creating makefile for hot reloading ProjectOne (no existing makefile)
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info Parsing headers for ProjectOneEditor
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\ProjectOne.uproject" "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\ProjectOneEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info Reflection code generated for ProjectOneEditor in 8.1129403 seconds
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info Weapon.cpp
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info ProjectOne.generated.cpp
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info [3/3] Link UE4Editor-ProjectOne-9307.dll
+[2016.08.21-20.33.59:648][653]CompilerResultsLog: Info    Creating library C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-9307.lib and object C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-9307.exp
+[2016.08.21-20.33.59:649][653]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.08.21-20.33.59:649][653]CompilerResultsLog: Info Total build time: 164.41 seconds
+[2016.08.21-20.33.59:651][653]LogMainFrame: MainFrame: Module compiling took 164.619 seconds
+[2016.08.21-20.33.59:678][653]LogTemp:Warning: No World
+[2016.08.21-20.33.59:719][653]LogClass: Could not find existing class Weapon in package /Script/ProjectOne for HotReload, assuming new class
+[2016.08.21-20.33.59:719][653]LogClass: ECombatPhase HotReload.
+[2016.08.21-20.33.59:720][653]LogTemp:Warning: No World
+[2016.08.21-20.33.59:723][653]LogContentBrowser: Native class hierarchy updated for 'ProjectOne' in 0.0020 seconds. Added 9 classes and 2 folders.
+[2016.08.21-20.33.59:725][653]Warning: HotReload successful (27 functions remapped  0 scriptstructs remapped)
+[2016.08.21-20.33.59:812][653]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 1991 classes and 351 folders.
+[2016.08.21-20.33.59:858][653]Warning: HotReload took 165.1s.
+[2016.08.21-20.33.59:860][653]Warning: HotReload operation took 165.1s.
+[2016.08.21-20.34.00:191][653]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Source/ProjectOne/Weapon.h'
+[2016.08.21-20.34.00:371][653]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Source/ProjectOne/Weapon.cpp'
+[2016.08.21-20.34.00:454][653]LogHotReload: New module detected: UE4Editor-ProjectOne-9307.dll
+[2016.08.21-20.34.00:535][654]LogHotReload: Starting Hot-Reload from IDE
+[2016.08.21-20.34.00:599][654]LogContentBrowser: Native class hierarchy updated for 'ProjectOne' in 0.0020 seconds. Added 9 classes and 2 folders.
+[2016.08.21-20.34.00:602][654]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.08.21-20.34.00:611][654]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 1991 classes and 351 folders.
+[2016.08.21-20.34.00:622][654]Warning: HotReload took 165.9s.
+[2016.08.21-20.34.16:451][410]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Source/ProjectOne/Weapon.h'
+[2016.08.21-20.34.16:497][410]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Source/ProjectOne/Weapon.cpp'
+[2016.08.21-20.49.16:176][767]Recompiling ProjectOne...
+[2016.08.21-20.49.16:176][767]Launching UnrealBuildTool... [C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe ProjectOne -ModuleWithSuffix ProjectOne 1420 Win64 Development -editorrecompile -canskiplink "C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject"  -2015]
+[2016.08.21-20.49.16:181][767]Warning: Starting HotReload took  0.0s.
+[2016.08.21-20.49.41:341][740]CompilerResultsLog: New page: Compilation - Aug 21, 2016, 11:49:41 AM
+[2016.08.21-20.49.41:342][740]CompilerResultsLog: Info Creating makefile for hot reloading ProjectOne (working set of source files changed)
+[2016.08.21-20.49.41:342][740]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.21-20.49.41:342][740]CompilerResultsLog: Info Parsing headers for ProjectOneEditor
+[2016.08.21-20.49.41:342][740]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\ProjectOne.uproject" "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\ProjectOneEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.21-20.49.41:343][740]CompilerResultsLog: Info Reflection code generated for ProjectOneEditor in 6.8176125 seconds
+[2016.08.21-20.49.41:343][740]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2016.08.21-20.49.41:343][740]CompilerResultsLog: Info ProjectOne.generated.cpp
+[2016.08.21-20.49.41:343][740]CompilerResultsLog: Info BattleManager.cpp
+[2016.08.21-20.49.41:343][740]CompilerResultsLog: Info Weapon.cpp
+[2016.08.21-20.49.41:343][740]CompilerResultsLog: Info [4/4] Link UE4Editor-ProjectOne-1420.dll
+[2016.08.21-20.49.41:343][740]CompilerResultsLog: Info    Creating library C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-1420.lib and object C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-1420.exp
+[2016.08.21-20.49.41:344][740]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.08.21-20.49.41:344][740]CompilerResultsLog: Info Total build time: 24.96 seconds
+[2016.08.21-20.49.41:344][740]LogMainFrame: MainFrame: Module compiling took 25.176 seconds
+[2016.08.21-20.49.41:357][740]LogTemp:Warning: No World
+[2016.08.21-20.49.41:367][740]LogClass: Could not find existing class Weapon in package /Script/ProjectOne for HotReload, assuming new class
+[2016.08.21-20.49.41:368][740]LogClass: Function GetDamagePerHit is new.
+[2016.08.21-20.49.41:368][740]LogClass: Function GetWeaponName is new.
+[2016.08.21-20.49.41:368][740]LogClass: Function SetDamagePerHit is new.
+[2016.08.21-20.49.41:368][740]LogClass: Function SetWeaponName is new.
+[2016.08.21-20.49.41:368][740]LogClass: ECombatPhase HotReload.
+[2016.08.21-20.49.41:369][740]LogTemp:Warning: No World
+[2016.08.21-20.49.41:379][740]LogHotReload: Re-instancing Weapon after hot-reload.
+[2016.08.21-20.49.41:416][740]LogContentBrowser: Native class hierarchy updated for 'ProjectOne' in 0.0020 seconds. Added 9 classes and 2 folders.
+[2016.08.21-20.49.41:418][740]Warning: HotReload successful (27 functions remapped  0 scriptstructs remapped)
+[2016.08.21-20.49.41:459][740]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 1991 classes and 351 folders.
+[2016.08.21-20.49.41:462][740]Warning: HotReload took 25.3s.
+[2016.08.21-20.49.45:489][171]LogTemp:Warning: No World
+[2016.08.21-20.49.45:646][171]LogSavePackage: Save=165.70ms
+[2016.08.21-20.49.45:646][171]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelA4AE3C3F405C59F7EB9182B569E8B80D.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.21-20.49.45:649][171]LogSavePackage: Total save time: 206.01ms
+[2016.08.21-20.49.45:649][171]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.21-20.52.57:554][188]LogTemp:Warning: No World
+[2016.08.21-20.52.57:710][188]LogSavePackage: Save=165.32ms
+[2016.08.21-20.52.57:711][188]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelE9665CE048E1FC6D00D45F93FC7632CD.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.21-20.52.57:748][188]LogSavePackage: Total save time: 239.00ms
+[2016.08.21-20.52.57:748][188]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.21-20.53.28:474][511]Running C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject" -game -progress -2015
+[2016.08.21-20.53.29:293][511]Discovering modules, targets and source code for game...
+[2016.08.21-20.53.42:253][511]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2016.08.21-20.53.42:260][511]Recompiling ProjectOne...
+[2016.08.21-20.53.42:260][511]Launching UnrealBuildTool... [C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe ProjectOne -ModuleWithSuffix ProjectOne 6924 Win64 Development -editorrecompile -canskiplink "C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject"  -2015]
+[2016.08.21-20.55.22:688][511]CompilerResultsLog: New page: Compilation - Aug 21, 2016, 11:55:22 AM
+[2016.08.21-20.55.22:688][511]CompilerResultsLog: Info Creating makefile for hot reloading ProjectOne (new files with reflected types)
+[2016.08.21-20.55.22:688][511]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.21-20.55.22:688][511]CompilerResultsLog: Info Parsing headers for ProjectOneEditor
+[2016.08.21-20.55.22:688][511]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\ProjectOne.uproject" "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\ProjectOneEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info Reflection code generated for ProjectOneEditor in 7.4914152 seconds
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info Weapon.cpp
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info Melee.cpp
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info ProjectOne.generated.cpp
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info [4/4] Link UE4Editor-ProjectOne-6924.dll
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info    Creating library C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-6924.lib and object C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-6924.exp
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.08.21-20.55.22:689][511]CompilerResultsLog: Info Total build time: 100.25 seconds
+[2016.08.21-20.55.22:689][511]LogMainFrame: MainFrame: Module compiling took 100.436 seconds
+[2016.08.21-20.55.22:718][511]LogTemp:Warning: No World
+[2016.08.21-20.55.22:727][511]LogClass: Could not find existing class Melee in package /Script/ProjectOne for HotReload, assuming new class
+[2016.08.21-20.55.22:727][511]LogClass: ECombatPhase HotReload.
+[2016.08.21-20.55.22:728][511]LogTemp:Warning: No World
+[2016.08.21-20.55.22:730][511]LogContentBrowser: Native class hierarchy updated for 'ProjectOne' in 0.0019 seconds. Added 10 classes and 2 folders.
+[2016.08.21-20.55.22:732][511]Warning: HotReload successful (31 functions remapped  0 scriptstructs remapped)
+[2016.08.21-20.55.22:774][511]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 1992 classes and 351 folders.
+[2016.08.21-20.55.22:777][511]Warning: HotReload took 100.5s.
+[2016.08.21-20.55.22:779][511]Warning: HotReload operation took 100.5s.
+[2016.08.21-20.55.22:838][511]LogHotReload: New module detected: UE4Editor-ProjectOne-6924.dll
+[2016.08.21-20.55.22:871][512]LogHotReload: Starting Hot-Reload from IDE
+[2016.08.21-20.55.22:995][512]LogContentBrowser: Native class hierarchy updated for 'ProjectOne' in 0.0020 seconds. Added 10 classes and 2 folders.
+[2016.08.21-20.55.22:996][512]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.08.21-20.55.23:006][512]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 1992 classes and 351 folders.
+[2016.08.21-20.55.23:017][512]Warning: HotReload took 100.8s.
+[2016.08.21-20.55.35:797][748]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.35:812][749]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.36:144][750]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.36:477][751]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.36:812][752]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.37:144][753]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.37:478][754]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.37:811][755]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.38:145][756]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.38:478][757]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.38:811][758]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.51:444][759]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-20.55.52:300][760]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Source/ProjectOne/Melee.h'
+[2016.08.21-20.55.52:746][760]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Source/ProjectOne/Melee.cpp'
+[2016.08.21-21.15.46:816][662]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2016.08.21-21.15.46:824][662]Recompiling ProjectOne...
+[2016.08.21-21.15.46:824][662]Launching UnrealBuildTool... [C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe ProjectOne -ModuleWithSuffix ProjectOne 7732 Win64 Development -editorrecompile -canskiplink "C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject"  -2015]
+[2016.08.21-21.15.46:986][662]Warning: Starting HotReload took  0.2s.
+[2016.08.21-21.16.38:549][710]CompilerResultsLog: New page: Compilation - Aug 21, 2016, 12:16:38 PM
+[2016.08.21-21.16.38:550][710]CompilerResultsLog: Info Creating makefile for hot reloading ProjectOne (working set of source files changed)
+[2016.08.21-21.16.38:551][710]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.21-21.16.38:551][710]CompilerResultsLog: Info Parsing headers for ProjectOneEditor
+[2016.08.21-21.16.38:551][710]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\ProjectOne.uproject" "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\ProjectOneEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.21-21.16.38:551][710]CompilerResultsLog:Error: Error C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Source/ProjectOne/Melee.h(19)  : Function return type: Missing variable type
+[2016.08.21-21.16.38:551][710]CompilerResultsLog:Error: Error Error: Failed to generate code for ProjectOneEditor - error code: OtherCompilationError (5) 
+[2016.08.21-21.16.38:551][710]CompilerResultsLog: Info UnrealHeaderTool failed for target 'ProjectOneEditor' (platform: Win64, module info: C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\ProjectOneEditor\Development\UnrealHeaderTool.manifest).
+[2016.08.21-21.16.38:551][710]LogMainFrame: MainFrame: Module compiling took 51.736 seconds
+[2016.08.21-21.16.38:551][710]Warning: HotReload failed, recompile failed
+[2016.08.21-21.16.50:354][751]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.50:368][752]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.50:702][753]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:035][754]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:370][755]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:381][756]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:391][757]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:434][758]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:468][759]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:481][760]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:493][761]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:504][762]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:516][763]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:526][764]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:537][765]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:550][766]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:560][767]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:571][768]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:581][769]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:591][770]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:601][771]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:611][772]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:622][773]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:633][774]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:649][775]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:661][776]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:670][777]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.51:681][778]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.16.56:777][779]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.08.21-21.18.25:228][934]Recompiling ProjectOne...
+[2016.08.21-21.18.25:228][934]Launching UnrealBuildTool... [C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe ProjectOne -ModuleWithSuffix ProjectOne 2884 Win64 Development -editorrecompile -canskiplink "C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject"  -2015]
+[2016.08.21-21.18.25:233][934]Warning: Starting HotReload took  0.0s.
+[2016.08.21-21.19.25:141][670]CompilerResultsLog: New page: Compilation - Aug 21, 2016, 12:19:25 PM
+[2016.08.21-21.19.25:141][670]CompilerResultsLog: Info Creating makefile for hot reloading ProjectOne (working set of source files changed)
+[2016.08.21-21.19.25:141][670]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.21-21.19.25:141][670]CompilerResultsLog: Info Parsing headers for ProjectOneEditor
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\ProjectOne.uproject" "C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\ProjectOneEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info Reflection code generated for ProjectOneEditor in 7.2679134 seconds
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info ProjectOne.generated.cpp
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info Weapon.cpp
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info Melee.cpp
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info [4/4] Link UE4Editor-ProjectOne-2884.dll
+[2016.08.21-21.19.25:142][670]CompilerResultsLog: Info    Creating library C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-2884.lib and object C:\Users\Fahad\Desktop\MX2 Game Suite\GitHub Directory\project-1-mx2\ProjectOne\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProjectOne-2884.exp
+[2016.08.21-21.19.25:143][670]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.08.21-21.19.25:143][670]CompilerResultsLog: Info Total build time: 59.70 seconds
+[2016.08.21-21.19.25:143][670]LogMainFrame: MainFrame: Module compiling took 59.923 seconds
+[2016.08.21-21.19.25:159][670]LogTemp:Warning: No World
+[2016.08.21-21.19.25:169][670]LogClass: Could not find existing class Weapon in package /Script/ProjectOne for HotReload, assuming new class
+[2016.08.21-21.19.25:170][670]LogClass: Function GetDamagePerHit is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function GetWeaponName is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function SetDamagePerHit is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function SetWeaponName is new.
+[2016.08.21-21.19.25:170][670]LogClass: Could not find existing class Melee in package /Script/ProjectOne for HotReload, assuming new class
+[2016.08.21-21.19.25:170][670]LogClass: Function GetAttackOver is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function GetMaxSwings is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function GetSwingLength is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function SetAttackOver is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function SetMaxSwings is new.
+[2016.08.21-21.19.25:170][670]LogClass: Function SetSwingLength is new.
+[2016.08.21-21.19.25:170][670]LogClass: ECombatPhase HotReload.
+[2016.08.21-21.19.25:172][670]LogTemp:Warning: No World
+[2016.08.21-21.19.25:177][670]LogHotReload: Re-instancing Weapon after hot-reload.
+[2016.08.21-21.19.25:216][670]LogHotReload: Re-instancing Melee after hot-reload.
+[2016.08.21-21.19.25:252][670]LogContentBrowser: Native class hierarchy updated for 'ProjectOne' in 0.0020 seconds. Added 10 classes and 2 folders.
+[2016.08.21-21.19.25:253][670]Warning: HotReload successful (27 functions remapped  0 scriptstructs remapped)
+[2016.08.21-21.19.25:294][670]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 1992 classes and 351 folders.
+[2016.08.21-21.19.25:296][670]Warning: HotReload took 60.1s.
+[2016.08.21-21.20.13:071][446]LogTemp:Warning: No World
+[2016.08.21-21.20.13:288][446]LogSavePackage: Save=225.51ms
+[2016.08.21-21.20.13:288][446]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/UEDPCOverworldLevelA51A355C4A9E16029CA9D4A5FAC62F1B.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap'
+[2016.08.21-21.20.13:291][446]LogSavePackage: Total save time: 2077.61ms
+[2016.08.21-21.20.13:291][446]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Levels/UEDPCOverworldLevel.umap
+[2016.08.21-21.21.43:768][797]LogTemp:Warning: No World
+[2016.08.21-21.21.43:917][797]LogSavePackage: Save=157.61ms
+[2016.08.21-21.21.43:917][797]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/OverworldLevelA8F7CABB41061E5CFEBDE4B3BDB6A543.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap'
+[2016.08.21-21.21.43:934][797]LogSavePackage: Total save time: 210.70ms
+[2016.08.21-21.21.43:934][797]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap
+[2016.08.21-21.22.27:737][262]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0023 seconds. Added 108 classes and 0 folders.
+[2016.08.21-21.34.36:358][271]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.21-21.34.36:858][272]Cmd: QUIT_EDITOR
+[2016.08.21-21.34.37:052][272]LogExit: Preparing to exit.
+[2016.08.21-21.34.37:969][272]LogExit: Editor shut down
+[2016.08.21-21.34.37:974][272]LogExit: Transaction tracking system shut down
+[2016.08.21-21.34.38:819][272]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.21-21.34.38:819][272]LogExit: Object subsystem successfully closed.
+[2016.08.21-21.34.38:837][272]LogD3D11RHI: Shutdown
+[2016.08.21-21.34.38:837][272]LogD3D11RHI: CleanupD3DDevice
+[2016.08.21-21.34.39:073][272]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.21-21.34.39:104][272]LogDerivedDataCache: Shutdown
+[2016.08.21-21.34.39:394][272]LogModuleManager: Shutting down and abandoning module SequencerWidgets (207)
+[2016.08.21-21.34.39:394][272]LogModuleManager: Shutting down and abandoning module BlueprintGraph (206)
+[2016.08.21-21.34.39:394][272]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (205)
+[2016.08.21-21.34.39:394][272]LogModuleManager: Shutting down and abandoning module CrashTracker (204)
+[2016.08.21-21.34.39:396][272]LogModuleManager: Shutting down and abandoning module SuperSearch (203)
+[2016.08.21-21.34.39:396][272]LogModuleManager: Shutting down and abandoning module WidgetCarousel (202)
+[2016.08.21-21.34.39:396][272]LogModuleManager: Shutting down and abandoning module AddContentDialog (201)
+[2016.08.21-21.34.39:398][272]LogModuleManager: Shutting down and abandoning module GameplayTags (200)
+[2016.08.21-21.34.39:398][272]LogModuleManager: Shutting down and abandoning module EditorWidgets (199)
+[2016.08.21-21.34.39:398][272]LogModuleManager: Shutting down and abandoning module CollectionManager (198)
+[2016.08.21-21.34.39:399][272]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2016.08.21-21.34.39:400][272]LogModuleManager: Shutting down and abandoning module StatsViewer (196)
+[2016.08.21-21.34.39:438][272]LogModuleManager: Shutting down and abandoning module FoliageEdit (195)
+[2016.08.21-21.34.39:438][272]LogModuleManager: Shutting down and abandoning module LandscapeEditor (194)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module ActorPickerMode (193)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module GeometryMode (192)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module TextureAlignMode (191)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module BspMode (190)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module PlacementMode (189)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module AutomationWorker (188)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module CharacterAI (187)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module SmartSnapping (186)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module ViewportSnapping (185)
+[2016.08.21-21.34.39:439][272]LogModuleManager: Shutting down and abandoning module LogVisualizer (184)
+[2016.08.21-21.34.39:468][272]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (183)
+[2016.08.21-21.34.39:468][272]LogModuleManager: Shutting down and abandoning module IntroTutorials (182)
+[2016.08.21-21.34.39:500][272]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (181)
+[2016.08.21-21.34.39:500][272]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (180)
+[2016.08.21-21.34.39:501][272]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (179)
+[2016.08.21-21.34.39:501][272]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (178)
+[2016.08.21-21.34.40:251][272]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (177)
+[2016.08.21-21.34.40:251][272]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (176)
+[2016.08.21-21.34.40:251][272]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (175)
+[2016.08.21-21.34.40:251][272]LogModuleManager: Shutting down and abandoning module MergeActors (174)
+[2016.08.21-21.34.40:252][272]LogModuleManager: Shutting down and abandoning module SizeMap (173)
+[2016.08.21-21.34.40:252][272]LogModuleManager: Shutting down and abandoning module TreeMap (172)
+[2016.08.21-21.34.40:253][272]LogModuleManager: Shutting down and abandoning module ReferenceViewer (171)
+[2016.08.21-21.34.40:254][272]LogModuleManager: Shutting down and abandoning module LocalizationService (170)
+[2016.08.21-21.34.40:255][272]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (169)
+[2016.08.21-21.34.40:283][272]LogModuleManager: Shutting down and abandoning module HardwareTargeting (168)
+[2016.08.21-21.34.40:283][272]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (167)
+[2016.08.21-21.34.40:284][272]LogModuleManager: Shutting down and abandoning module UndoHistory (166)
+[2016.08.21-21.34.40:285][272]LogModuleManager: Shutting down and abandoning module UserFeedback (165)
+[2016.08.21-21.34.40:285][272]LogModuleManager: Shutting down and abandoning module XmlParser (164)
+[2016.08.21-21.34.40:285][272]LogModuleManager: Shutting down and abandoning module Blutility (163)
+[2016.08.21-21.34.40:285][272]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (162)
+[2016.08.21-21.34.40:285][272]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (161)
+[2016.08.21-21.34.40:285][272]LogModuleManager: Shutting down and abandoning module InputBindingEditor (160)
+[2016.08.21-21.34.40:287][272]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (159)
+[2016.08.21-21.34.40:287][272]LogModuleManager: Shutting down and abandoning module SettingsEditor (158)
+[2016.08.21-21.34.40:289][272]LogModuleManager: Shutting down and abandoning module ProjectLauncher (157)
+[2016.08.21-21.34.40:360][272]LogModuleManager: Shutting down and abandoning module SessionFrontend (156)
+[2016.08.21-21.34.40:383][272]LogModuleManager: Shutting down and abandoning module ProfilerClient (155)
+[2016.08.21-21.34.40:426][272]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (154)
+[2016.08.21-21.34.40:426][272]LogModuleManager: Shutting down and abandoning module DeviceManager (153)
+[2016.08.21-21.34.40:525][272]LogModuleManager: Shutting down and abandoning module AutomationController (152)
+[2016.08.21-21.34.40:525][272]LogModuleManager: Shutting down and abandoning module AutomationWindow (151)
+[2016.08.21-21.34.40:537][272]LogModuleManager: Shutting down and abandoning module Layers (150)
+[2016.08.21-21.34.40:564][272]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (149)
+[2016.08.21-21.34.40:564][272]LogModuleManager: Shutting down and abandoning module DetailCustomizations (148)
+[2016.08.21-21.34.40:566][272]LogModuleManager: Shutting down and abandoning module PackagesDialog (147)
+[2016.08.21-21.34.40:566][272]LogModuleManager: Shutting down and abandoning module Persona (146)
+[2016.08.21-21.34.40:676][272]LogModuleManager: Shutting down and abandoning module Kismet (145)
+[2016.08.21-21.34.40:676][272]LogModuleManager: Shutting down and abandoning module GraphEditor (144)
+[2016.08.21-21.34.40:676][272]LogModuleManager: Shutting down and abandoning module ClassViewer (143)
+[2016.08.21-21.34.40:677][272]LogModuleManager: Shutting down and abandoning module Toolbox (142)
+[2016.08.21-21.34.40:679][272]LogModuleManager: Shutting down and abandoning module ModuleUI (141)
+[2016.08.21-21.34.40:713][272]LogModuleManager: Shutting down and abandoning module MovieSceneTools (140)
+[2016.08.21-21.34.40:714][272]LogModuleManager: Shutting down and abandoning module OutputLog (139)
+[2016.08.21-21.34.40:714][272]LogModuleManager: Shutting down and abandoning module GammaUI (138)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module Documentation (137)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (136)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module AnalyticsET (135)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module Analytics (134)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module PortalServices (133)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module PortalRpc (132)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module MessagingRpc (131)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module AITestSuite (130)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module GameplayDebugger (129)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module AIModule (128)
+[2016.08.21-21.34.40:734][272]LogModuleManager: Shutting down and abandoning module ProfilerService (127)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module TaskGraph (126)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module SteamVR (123)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module OculusInput (120)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (119)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module CableComponent (118)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (117)
+[2016.08.21-21.34.40:756][272]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (116)
+[2016.08.21-21.34.40:759][272]LogModuleManager: Shutting down and abandoning module HTML5Networking (115)
+[2016.08.21-21.34.40:759][272]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.08.21-21.34.40:759][272]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.08.21-21.34.40:791][272]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.08.21-21.34.40:792][272]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.08.21-21.34.40:792][272]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.08.21-21.34.40:792][272]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.08.21-21.34.40:792][272]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.08.21-21.34.40:792][272]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.08.21-21.34.40:792][272]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.08.21-21.34.40:792][272]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.08.21-21.34.40:793][272]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.08.21-21.34.40:793][272]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.08.21-21.34.40:794][272]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.08.21-21.34.40:794][272]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.08.21-21.34.40:806][272]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.08.21-21.34.40:807][272]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.08.21-21.34.40:807][272]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.08.21-21.34.40:808][272]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
+[2016.08.21-21.34.40:809][272]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
+[2016.08.21-21.34.41:019][272]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
+[2016.08.21-21.34.41:020][272]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
+[2016.08.21-21.34.41:049][272]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
+[2016.08.21-21.34.41:049][272]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.08.21-21.34.41:150][272]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.08.21-21.34.41:183][272]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.08.21-21.34.41:186][272]LogDerivedDataCache: Shutdown
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.21-21.34.41:186][272]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.21-21.34.43:206][272]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.21-21.34.43:206][272]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.21-21.34.43:206][272]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.21-21.34.43:206][272]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.21-21.34.43:206][272]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.21-21.34.43:206][272]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.21-21.34.43:206][272]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.21-21.34.43:208][272]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.21-21.34.43:209][272]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.21-21.34.43:233][272]LogExit: Exiting.
+[2016.08.21-21.34.43:235][272]Log file closed, 08/21/16 17:34:43
