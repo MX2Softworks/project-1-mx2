@@ -21,8 +21,6 @@ UPaneManager::UPaneManager()
 void UPaneManager::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
 	
 }
 
@@ -32,11 +30,30 @@ void UPaneManager::TickComponent( float DeltaTime, ELevelTick TickType, FActorCo
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 
+	if (this->GetGotBaseEnemy() == true) 
+	{
+		
+		// CODE TO ADD ENEMIES BASED ON THE BASEENEMY
+
+		this->SetGotBaseEnemy(false);
+	}
 	
 }
 
 // For use in Blueprints ONLY to get the engaged enemy.
 void UPaneManager::RetrieveEngagedEnemy(AEnemy* EngagedEnemy) {
 	BaseEnemy = EngagedEnemy;
+	this->SetGotBaseEnemy(true);
+	this->GetEnemiesInBattle().Add(BaseEnemy);
 }
 
+// Getter for GotBaseEnemy
+bool UPaneManager::GetGotBaseEnemy() { return GotBaseEnemy; }
+// Setter for GotBaseEnemy
+void UPaneManager::SetGotBaseEnemy(bool bGotBaseEnemy) { GotBaseEnemy = bGotBaseEnemy; }
+
+// Getter for EnemiesInBattle
+TArray<AEnemy*> UPaneManager::GetEnemiesInBattle() { return EnemiesInBattle; }
+
+// Getter for Panes
+TArray<AEnemy*> UPaneManager::GetPanes() { return Panes; }
