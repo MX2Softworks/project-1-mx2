@@ -51,3 +51,6 @@ void AGameCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompo
 
 }
 
+// Getter and Setter for TypeIdentifier
+FString AGameCharacter::GetTypeIdentifier() { return TypeIdentifier; }
+void AGameCharacter::SetTypeIdentifier(FString bTypeIdentifier) { TypeIdentifier = bTypeIdentifier; }
