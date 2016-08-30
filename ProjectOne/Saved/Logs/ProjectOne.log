@@ -1,9 +1,9 @@
-﻿Log file open, 08/21/16 21:01:31
+﻿Log file open, 08/30/16 16:42:19
 LogInit:Display: Running engine for game: ProjectOne
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(1750101653) SRandInit(1750101655).
+LogInit:Display: RandInit(-1184099704) SRandInit(-1184099702).
 LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-LogStats: Stats thread started at 0.084891
+LogStats: Stats thread started at 0.086814
 LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
 LogInit: API Version: 2927265
 LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
@@ -29,617 +29,419 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.08.22-01.01.32:102][  0]LogInit: Selected Device Profile: [Windows]
-[2016.08.22-01.01.32:102][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.08.22-01.01.32:142][  0]LogInit: Computer: FAHAD-PC
-[2016.08.22-01.01.32:142][  0]LogInit: User: Fahad
-[2016.08.22-01.01.32:142][  0]LogInit: CPU Page size=65536, Cores=4
-[2016.08.22-01.01.32:142][  0]LogInit: High frequency timer resolution =3.215352 MHz
-[2016.08.22-01.01.32:142][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2016.08.22-01.01.32:142][  0]LogMemory: Platform Memory Stats for Windows
-[2016.08.22-01.01.32:142][  0]LogMemory: Process Physical Memory: 313.83 MB used, 313.83 MB peak
-[2016.08.22-01.01.32:142][  0]LogMemory: Process Virtual Memory: 314.80 MB used, 314.80 MB peak
-[2016.08.22-01.01.32:142][  0]LogMemory: Physical Memory: 4651.49 MB used, 8174.67 MB total
-[2016.08.22-01.01.32:142][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
-[2016.08.22-01.01.32:216][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.08.22-01.01.32:674][  0]LogD3D11RHI: D3D11 adapters:
-[2016.08.22-01.01.32:706][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2016.08.22-01.01.32:706][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
-[2016.08.22-01.01.32:708][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2016.08.22-01.01.32:708][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
-[2016.08.22-01.01.32:708][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.08.22-01.01.32:713][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.08.22-01.01.32:713][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2016.08.22-01.01.32:713][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
-[2016.08.22-01.01.32:713][  0]LogD3D11RHI:      Driver Date: 4-27-2016
-[2016.08.22-01.01.32:713][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.08.22-01.01.32:726][  0]LogD3D11RHI: Async texture creation enabled
-[2016.08.22-01.01.33:190][  0]LogShaderCompilers: Guid format shader working directory is -48 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/1424/).
-[2016.08.22-01.01.33:191][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/EE4D26B240FB2F1614F6308E32018478/'.
-[2016.08.22-01.01.33:191][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.08.22-01.01.34:412][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.08.22-01.01.34:424][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.08.22-01.01.34:432][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.08.22-01.01.34:443][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.08.22-01.01.34:450][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.08.22-01.01.34:454][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.08.22-01.01.34:458][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.08.22-01.01.34:463][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.08.22-01.01.34:467][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.08.22-01.01.34:472][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.08.22-01.01.34:476][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.08.22-01.01.34:485][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.08.22-01.01.34:485][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.08.22-01.01.34:486][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.08.22-01.01.34:507][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.08.22-01.01.34:511][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.08.22-01.01.34:515][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.08.22-01.01.34:518][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.08.22-01.01.34:523][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.08.22-01.01.34:523][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.08.22-01.01.34:651][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.08.22-01.01.34:725][  0]LogDerivedDataCache: Loaded boot cache 0.07s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
-[2016.08.22-01.01.34:725][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
-[2016.08.22-01.01.34:725][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.08.22-01.01.34:725][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.08.22-01.01.34:725][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.08.22-01.01.34:725][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.08.22-01.01.34:741][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.08.22-01.01.34:754][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.08.22-01.01.34:972][  0]LogInit: Selected Device Profile: [Windows]
-[2016.08.22-01.01.34:973][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.08.22-01.01.35:042][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2016.08.22-01.01.35:198][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.08.22-01.01.35:198][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.08.22-01.01.35:198][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2016.08.22-01.01.35:943][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
-[2016.08.22-01.01.35:943][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
-[2016.08.22-01.01.35:943][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.08.22-01.01.35:953][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.08.22-01.01.36:195][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.08.22-01.01.36:195][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.08.22-01.01.38:362][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
-[2016.08.22-01.01.38:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
-[2016.08.22-01.01.38:362][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
-[2016.08.22-01.01.38:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
-[2016.08.22-01.01.38:363][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
-[2016.08.22-01.01.38:363][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
-[2016.08.22-01.01.51:586][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.08.22-01.01.51:654][  0]LogTemp:Warning: No World
-[2016.08.22-01.01.52:033][  0]LogAssetRegistry: FAssetRegistry took 0.0217 seconds to start up
-[2016.08.22-01.01.52:314][  0]SourceControl: Info Source control is disabled
-[2016.08.22-01.01.53:102][  0]SourceControl: Info Source control is disabled
-[2016.08.22-01.01.53:151][  0]SourceControl: Info Source control is disabled
-[2016.08.22-01.01.53:193][  0]SourceControl: Info Source control is disabled
-[2016.08.22-01.01.53:747][  0]LogHMD: Failed to initialize OpenVR with code 108
-[2016.08.22-01.01.53:957][  0]LogEngine: Initializing Engine...
-[2016.08.22-01.01.55:259][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.08.22-01.01.55:272][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.08.22-01.01.55:284][  0]LogInit: FAudioDevice initialized.
-[2016.08.22-01.01.55:329][  0]LogDerivedDataCache: Saved boot cache 0.04s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
-[2016.08.22-01.01.55:338][  0]LogInit: Texture streaming: Enabled
-[2016.08.22-01.01.55:377][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.08.22-01.01.55:377][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.08.22-01.01.55:492][  0]LogInit: Transaction tracking system initialized
-[2016.08.22-01.01.55:599][  0]BlueprintLog: New page: Editor Load
-[2016.08.22-01.01.55:874][  0]LocalizationService: Info Localization service is disabled
-[2016.08.22-01.01.56:427][  0]LogConsoleResponse:Display: 
-[2016.08.22-01.01.58:428][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2016.08.22-01.01.58:428][  0]LogCook:Display: Mobile HDR setting 1
-[2016.08.22-01.01.58:428][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.08.22-01.01.58:933][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/' took 0.02s
-[2016.08.22-01.01.58:994][  0]SourceControl: Info Source control is disabled
-[2016.08.22-01.01.58:995][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.08.22-01.01.58:995][  0]LightingResults: New page: Lighting Build
-[2016.08.22-01.01.58:999][  0]MapCheck: New page: Map Check
-[2016.08.22-01.01.58:999][  0]LightingResults: New page: Lighting Build
-[2016.08.22-01.01.59:631][  0]LogTemp:Warning: No World
-[2016.08.22-01.01.59:646][  0]LogTemp:Warning: No World
-[2016.08.22-01.01.59:657][  0]LogTemp:Warning: No World
-[2016.08.22-01.01.59:892][  0]LogAIModule: Creating AISystem for world OverworldLevel
-[2016.08.22-01.02.00:148][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.08.22-01.02.00:148][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.08.22-01.02.00:263][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 114.775ms to complete.
-[2016.08.22-01.02.00:263][  0]LogFileHelpers: Loading map 'OverworldLevel' took 1.268
-[2016.08.22-01.02.00:640][  0]LogCollectionManager: Loaded 1 collections in 0.004279 seconds
-[2016.08.22-01.02.00:694][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Collections/' took 0.01s
-[2016.08.22-01.02.00:694][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Developers/Fahad/Collections/' took 0.01s
-[2016.08.22-01.02.00:694][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Collections/' took 0.01s
-[2016.08.22-01.02.00:694][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000006 seconds
-[2016.08.22-01.02.00:694][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
-[2016.08.22-01.02.00:703][  0]LogContentBrowser: Native class hierarchy populated in 0.0085 seconds. Added 1990 classes and 347 folders.
-[2016.08.22-01.02.00:708][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.08.22-01.02.00:708][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.08.22-01.02.00:710][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0018 seconds. Added 12 classes and 0 folders.
-[2016.08.22-01.02.00:718][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0017 seconds. Added 0 classes and 0 folders.
-[2016.08.22-01.02.00:784][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0019 seconds. Added 1 classes and 2 folders.
-[2016.08.22-01.02.05:001][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0018 seconds. Added 0 classes and 0 folders.
-[2016.08.22-01.02.05:379][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.08.22-01.02.05:390][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.08.22-01.02.05:458][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
-[2016.08.22-01.02.05:459][  0]LogLoad: Full Startup: 34.58 seconds (BP compile: 0.49 seconds)
-[2016.08.22-01.02.05:459][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.08.22-01.02.05:459][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.08.22-01.02.05:467][  0]LogOcInput: OculusInput pre-init called
-[2016.08.22-01.02.06:144][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.08.22-01.02.06:495][  0]LogRenderer: Reallocating scene render targets to support 1248x636 (Frame:2).
-[2016.08.22-01.02.06:581][  1]LogAssetRegistry: Asset discovery search completed in 14.5703 seconds
-[2016.08.22-01.02.06:581][  1]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000002 seconds (found 0 objects)
-[2016.08.22-01.02.06:581][  1]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000027 seconds (updated 0 objects)
-[2016.08.22-01.03.08:818][ 40]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_0.png)
-[2016.08.22-01.03.08:896][ 40]LogTexture:Display: Building textures: sluagh_idle_0 (AutoDXT)
-[2016.08.22-01.03.09:023][ 40]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_1.png)
-[2016.08.22-01.03.09:041][ 40]LogTexture:Display: Building textures: sluagh_idle_1 (AutoDXT)
-[2016.08.22-01.03.09:078][ 40]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_2.png)
-[2016.08.22-01.03.09:088][ 40]LogTexture:Display: Building textures: sluagh_idle_2 (AutoDXT)
-[2016.08.22-01.03.11:667][301]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0020 seconds. Added 1 classes and 2 folders.
-[2016.08.22-01.03.16:610][681]LogSavePackage: Save=19.47ms
-[2016.08.22-01.03.16:610][681]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_0DFC9ED024C34264FA3979E92A29B428E.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_0.uasset'
-[2016.08.22-01.03.16:613][681]LogSavePackage: Total save time: 23.06ms
-[2016.08.22-01.03.16:613][681]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_0.uasset
-[2016.08.22-01.03.20:823][ 35]LogSavePackage: Save=19.75ms
-[2016.08.22-01.03.20:823][ 35]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_17E5005EC43560105FFB566BC2831FB86.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_1.uasset'
-[2016.08.22-01.03.20:827][ 35]LogSavePackage: Total save time: 24.25ms
-[2016.08.22-01.03.20:827][ 35]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_1.uasset
-[2016.08.22-01.03.24:788][361]LogSavePackage: Save=18.91ms
-[2016.08.22-01.03.24:788][361]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_2A160A89446B09804D37A4ABF0C850A52.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_2.uasset'
-[2016.08.22-01.03.24:792][361]LogSavePackage: Total save time: 22.61ms
-[2016.08.22-01.03.24:792][361]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_2.uasset
-[2016.08.22-01.03.40:127][854]LogSavePackage: Save=6.17ms
-[2016.08.22-01.03.40:127][854]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_0_SpriteD3A755CD40472BD4E4E098A90D657244.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Sprites/sluagh_idle_0_Sprite.uasset'
-[2016.08.22-01.03.40:131][854]LogSavePackage: Total save time: 9.59ms
-[2016.08.22-01.03.40:131][854]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Sprites/sluagh_idle_0_Sprite.uasset
-[2016.08.22-01.03.40:155][854]LogSavePackage: Save=6.51ms
-[2016.08.22-01.03.40:155][854]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_1_Sprite814778884860FCFB54E96EAB5C60CECB.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Sprites/sluagh_idle_1_Sprite.uasset'
-[2016.08.22-01.03.40:159][854]LogSavePackage: Total save time: 10.15ms
-[2016.08.22-01.03.40:159][854]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Sprites/sluagh_idle_1_Sprite.uasset
-[2016.08.22-01.03.40:183][854]LogSavePackage: Save=5.78ms
-[2016.08.22-01.03.40:183][854]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_2_SpriteADD08DC54AEB9015357F7581B1F68358.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Sprites/sluagh_idle_2_Sprite.uasset'
-[2016.08.22-01.03.40:186][854]LogSavePackage: Total save time: 9.37ms
-[2016.08.22-01.03.40:186][854]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Sprites/sluagh_idle_2_Sprite.uasset
-[2016.08.22-01.03.49:334][702]LogRenderer: Reallocating scene render targets to support 1528x800 (Frame:7168).
-[2016.08.22-01.12.06:273][335]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/OverworldLevel' took 0.015
-[2016.08.22-01.12.06:302][335]LogSavePackage: Save=1.64ms
-[2016.08.22-01.12.06:302][335]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_2_Sprite_Auto1612F662A4EE2350A1C264FA09519082A.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_2_Sprite_Auto1.uasset'
-[2016.08.22-01.12.06:303][335]LogSavePackage: Total save time: 3.88ms
-[2016.08.22-01.12.06:304][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_2_Sprite_Auto1.uasset
-[2016.08.22-01.12.06:309][335]LogSavePackage: Save=1.28ms
-[2016.08.22-01.12.06:309][335]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_0_Sprite_Auto1750DBF6A4AB9CCD4CEF68FBD4C736038.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_0_Sprite_Auto1.uasset'
-[2016.08.22-01.12.06:312][335]LogSavePackage: Total save time: 3.67ms
-[2016.08.22-01.12.06:312][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_0_Sprite_Auto1.uasset
-[2016.08.22-01.12.06:317][335]LogSavePackage: Save=1.32ms
-[2016.08.22-01.12.06:317][335]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_1_Sprite_Auto1618281044902CD8925332E9A73758BAC.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Sprite_Auto1.uasset'
-[2016.08.22-01.12.06:319][335]LogSavePackage: Total save time: 2.94ms
-[2016.08.22-01.12.06:319][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Sprite_Auto1.uasset
-[2016.08.22-01.12.06:321][335]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Sprites/sluagh_idle_3_Sprite] ([1] browsable assets)...
-[2016.08.22-01.12.06:337][335]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Sprites/sluagh_idle_3_Sprite.sluagh_idle_3_Sprite]
-[2016.08.22-01.12.06:337][335]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Sprites/sluagh_idle_3_Sprite]
-[2016.08.22-01.12.06:346][335]LogSavePackage: Save=6.59ms
-[2016.08.22-01.12.06:346][335]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_3_Sprite_Auto11F2103B942967B669480FEA5226DBB32.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Sprites/sluagh_idle_3_Sprite_Auto1.uasset'
-[2016.08.22-01.12.06:348][335]LogSavePackage: Total save time: 8.71ms
-[2016.08.22-01.12.06:348][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Sprites/sluagh_idle_3_Sprite_Auto1.uasset
-[2016.08.22-01.12.06:350][335]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Sprites/sluagh_idle] ([1] browsable assets)...
-[2016.08.22-01.12.06:362][335]OBJ SavePackage:     Rendered thumbnail for [PaperFlipbook /Game/Assets/Sprites/sluagh_idle.sluagh_idle]
-[2016.08.22-01.12.06:363][335]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Sprites/sluagh_idle]
-[2016.08.22-01.12.06:370][335]LogSavePackage: Save=4.89ms
-[2016.08.22-01.12.06:370][335]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_Auto1F853A48F4651C94EDAE797B199D188AD.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Sprites/sluagh_idle_Auto1.uasset'
-[2016.08.22-01.12.06:372][335]LogSavePackage: Total save time: 7.21ms
-[2016.08.22-01.12.06:372][335]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Sprites/sluagh_idle_Auto1.uasset
-[2016.08.22-01.12.06:372][335]LogFileHelpers: Auto-saving content packages took 0.097
-[2016.08.22-01.22.06:961][302]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/OverworldLevel' took 0.008
-[2016.08.22-01.22.19:490][877]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_0.png)
-[2016.08.22-01.22.19:499][877]LogTexture:Display: Building textures: sluagh_idle_0 (AutoDXT)
-[2016.08.22-01.22.19:529][877]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_1.png)
-[2016.08.22-01.22.19:539][877]LogTexture:Display: Building textures: sluagh_idle_1 (AutoDXT)
-[2016.08.22-01.22.19:567][877]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_2.png)
-[2016.08.22-01.22.19:577][877]LogTexture:Display: Building textures: sluagh_idle_2 (AutoDXT)
-[2016.08.22-01.22.19:607][877]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_3.png)
-[2016.08.22-01.22.19:619][877]LogTexture:Display: Building textures: sluagh_idle_3 (AutoDXT)
-[2016.08.22-01.22.19:648][877]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_4.png)
-[2016.08.22-01.22.19:661][877]LogTexture:Display: Building textures: sluagh_idle_4 (AutoDXT)
-[2016.08.22-01.32.10:830][954]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/OverworldLevel' took 0.017
-[2016.08.22-01.32.10:833][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_2] ([1] browsable assets)...
-[2016.08.22-01.32.10:840][954]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Assets/Textures/sluagh_idle_2.sluagh_idle_2]
-[2016.08.22-01.32.10:840][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_2]
-[2016.08.22-01.32.10:866][954]LogSavePackage: Save=5.07ms
-[2016.08.22-01.32.10:866][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_2_Auto2860BFD814C574650E48BE7B434DC417A.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_2_Auto2.uasset'
-[2016.08.22-01.32.10:870][954]LogSavePackage: Total save time: 10.03ms
-[2016.08.22-01.32.10:870][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_2_Auto2.uasset
-[2016.08.22-01.32.10:873][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_1] ([1] browsable assets)...
-[2016.08.22-01.32.10:880][954]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Assets/Textures/sluagh_idle_1.sluagh_idle_1]
-[2016.08.22-01.32.10:880][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_1]
-[2016.08.22-01.32.10:887][954]LogSavePackage: Save=5.00ms
-[2016.08.22-01.32.10:887][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_1_Auto27FA058FF4B899FEBF56E4383A86FE227.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Auto2.uasset'
-[2016.08.22-01.32.10:891][954]LogSavePackage: Total save time: 9.00ms
-[2016.08.22-01.32.10:891][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Auto2.uasset
-[2016.08.22-01.32.10:893][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_0] ([1] browsable assets)...
-[2016.08.22-01.32.10:900][954]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Assets/Textures/sluagh_idle_0.sluagh_idle_0]
-[2016.08.22-01.32.10:900][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_0]
-[2016.08.22-01.32.10:956][954]LogSavePackage: Save=16.40ms
-[2016.08.22-01.32.10:956][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_0_Auto2FE1156604EE4583B37E10591199E4D02.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_0_Auto2.uasset'
-[2016.08.22-01.32.10:959][954]LogSavePackage: Total save time: 19.94ms
-[2016.08.22-01.32.10:959][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_0_Auto2.uasset
-[2016.08.22-01.32.10:963][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_2_Sprite] ([1] browsable assets)...
-[2016.08.22-01.32.10:975][954]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_2_Sprite.sluagh_idle_2_Sprite]
-[2016.08.22-01.32.10:975][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_2_Sprite]
-[2016.08.22-01.32.11:003][954]LogSavePackage: Save=6.45ms
-[2016.08.22-01.32.11:003][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_2_Sprite_Auto2638132DA4FB4E723F849749F023DDF7D.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_2_Sprite_Auto2.uasset'
-[2016.08.22-01.32.11:006][954]LogSavePackage: Total save time: 9.67ms
-[2016.08.22-01.32.11:006][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_2_Sprite_Auto2.uasset
-[2016.08.22-01.32.11:010][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_0_Sprite] ([1] browsable assets)...
-[2016.08.22-01.32.11:023][954]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_0_Sprite.sluagh_idle_0_Sprite]
-[2016.08.22-01.32.11:023][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_0_Sprite]
-[2016.08.22-01.32.11:110][954]LogSavePackage: Save=83.63ms
-[2016.08.22-01.32.11:110][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_0_Sprite_Auto280C0AB5A4703002F1BE270ADF118537F.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_0_Sprite_Auto2.uasset'
-[2016.08.22-01.32.11:123][954]LogSavePackage: Total save time: 97.04ms
-[2016.08.22-01.32.11:123][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_0_Sprite_Auto2.uasset
-[2016.08.22-01.32.11:126][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_1_Sprite] ([1] browsable assets)...
-[2016.08.22-01.32.11:157][954]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_1_Sprite.sluagh_idle_1_Sprite]
-[2016.08.22-01.32.11:157][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_1_Sprite]
-[2016.08.22-01.32.11:167][954]LogSavePackage: Save=6.53ms
-[2016.08.22-01.32.11:167][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_1_Sprite_Auto2B7EE26C540C2312FC7BC3686986E2BFC.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Sprite_Auto2.uasset'
-[2016.08.22-01.32.11:179][954]LogSavePackage: Total save time: 18.76ms
-[2016.08.22-01.32.11:180][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Sprite_Auto2.uasset
-[2016.08.22-01.32.11:182][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_3_Sprite] ([1] browsable assets)...
-[2016.08.22-01.32.11:196][954]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_3_Sprite.sluagh_idle_3_Sprite]
-[2016.08.22-01.32.11:196][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_3_Sprite]
-[2016.08.22-01.32.11:205][954]LogSavePackage: Save=5.98ms
-[2016.08.22-01.32.11:205][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_3_Sprite_Auto2CB936E29459485158FA99CA44284061C.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_3_Sprite_Auto2.uasset'
-[2016.08.22-01.32.11:207][954]LogSavePackage: Total save time: 8.21ms
-[2016.08.22-01.32.11:207][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_3_Sprite_Auto2.uasset
-[2016.08.22-01.32.11:209][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_4] ([1] browsable assets)...
-[2016.08.22-01.32.11:216][954]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Assets/Textures/sluagh_idle_4.sluagh_idle_4]
-[2016.08.22-01.32.11:216][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_4]
-[2016.08.22-01.32.11:232][954]LogSavePackage: Save=13.67ms
-[2016.08.22-01.32.11:232][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_4_Auto220FDF2DD4CE2E62828C9BDA711230559.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_4_Auto2.uasset'
-[2016.08.22-01.32.11:236][954]LogSavePackage: Total save time: 18.21ms
-[2016.08.22-01.32.11:236][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_4_Auto2.uasset
-[2016.08.22-01.32.11:239][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_3] ([1] browsable assets)...
-[2016.08.22-01.32.11:245][954]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Assets/Textures/sluagh_idle_3.sluagh_idle_3]
-[2016.08.22-01.32.11:246][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_3]
-[2016.08.22-01.32.11:253][954]LogSavePackage: Save=5.73ms
-[2016.08.22-01.32.11:254][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_3_Auto24B9CBD3B41E9F28D5C64B79E016B3DC2.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_3_Auto2.uasset'
-[2016.08.22-01.32.11:257][954]LogSavePackage: Total save time: 9.22ms
-[2016.08.22-01.32.11:257][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_3_Auto2.uasset
-[2016.08.22-01.32.11:259][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_4_Sprite] ([1] browsable assets)...
-[2016.08.22-01.32.11:271][954]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_4_Sprite.sluagh_idle_4_Sprite]
-[2016.08.22-01.32.11:271][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_4_Sprite]
-[2016.08.22-01.32.11:279][954]LogSavePackage: Save=6.08ms
-[2016.08.22-01.32.11:279][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_4_Sprite_Auto2907C266F47D5E071601274A45562A2FE.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_4_Sprite_Auto2.uasset'
-[2016.08.22-01.32.11:319][954]LogSavePackage: Total save time: 46.24ms
-[2016.08.22-01.32.11:319][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_4_Sprite_Auto2.uasset
-[2016.08.22-01.32.11:322][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle] ([1] browsable assets)...
-[2016.08.22-01.32.11:333][954]OBJ SavePackage:     Rendered thumbnail for [PaperFlipbook /Game/Assets/Textures/sluagh_idle.sluagh_idle]
-[2016.08.22-01.32.11:333][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle]
-[2016.08.22-01.32.11:347][954]LogSavePackage: Save=11.13ms
-[2016.08.22-01.32.11:347][954]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_Auto238200BD041A0AFE442FE04B1200C3244.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_Auto2.uasset'
-[2016.08.22-01.32.11:349][954]LogSavePackage: Total save time: 13.72ms
-[2016.08.22-01.32.11:349][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_Auto2.uasset
-[2016.08.22-01.32.11:349][954]LogFileHelpers: Auto-saving content packages took 0.519
-[2016.08.22-01.36.53:232][277]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/Art/sluagh_idle_1.png)
-[2016.08.22-01.36.55:576][277]LogTexture:Display: Building textures: sluagh_idle_1 (AutoDXT)
-[2016.08.22-01.36.59:276][538]LogRenderer: Reallocating scene render targets to support 1528x928 (Frame:150650).
-[2016.08.22-01.38.00:049][378]LogSavePackage: Save=5.19ms
-[2016.08.22-01.38.00:050][378]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle1137DAEC46AE9631E677C08C1F458E94.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle.uasset'
-[2016.08.22-01.38.00:053][378]LogSavePackage: Total save time: 8.63ms
-[2016.08.22-01.38.00:053][378]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle.uasset
-[2016.08.22-01.42.11:884][981]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/OverworldLevel' took 0.008
-[2016.08.22-01.42.11:887][981]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_1] ([1] browsable assets)...
-[2016.08.22-01.42.11:913][981]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Assets/Textures/sluagh_idle_1.sluagh_idle_1]
-[2016.08.22-01.42.11:913][981]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_1]
-[2016.08.22-01.42.11:939][981]LogSavePackage: Save=23.36ms
-[2016.08.22-01.42.11:939][981]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_1_Auto38880DCC04605377C39D111A977F7F907.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Auto3.uasset'
-[2016.08.22-01.42.11:943][981]LogSavePackage: Total save time: 27.72ms
-[2016.08.22-01.42.11:943][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_1_Auto3.uasset
-[2016.08.22-01.42.11:945][981]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle] ([1] browsable assets)...
-[2016.08.22-01.42.11:957][981]OBJ SavePackage:     Rendered thumbnail for [PaperFlipbook /Game/Assets/Textures/sluagh_idle.sluagh_idle]
-[2016.08.22-01.42.11:957][981]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle]
-[2016.08.22-01.42.12:019][981]LogSavePackage: Save=5.00ms
-[2016.08.22-01.42.12:019][981]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_Auto3A623FA854523E0B90BE85EB8A46E6CBA.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_Auto3.uasset'
-[2016.08.22-01.42.12:021][981]LogSavePackage: Total save time: 61.36ms
-[2016.08.22-01.42.12:021][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_Auto3.uasset
-[2016.08.22-01.42.12:024][981]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_5_Sprite] ([1] browsable assets)...
-[2016.08.22-01.42.12:035][981]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_5_Sprite.sluagh_idle_5_Sprite]
-[2016.08.22-01.42.12:035][981]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_5_Sprite]
-[2016.08.22-01.42.12:043][981]LogSavePackage: Save=5.57ms
-[2016.08.22-01.42.12:043][981]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_5_Sprite_Auto300B58731441EDB11E76D6D9BEF952E15.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_5_Sprite_Auto3.uasset'
-[2016.08.22-01.42.12:045][981]LogSavePackage: Total save time: 7.59ms
-[2016.08.22-01.42.12:045][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_5_Sprite_Auto3.uasset
-[2016.08.22-01.42.12:047][981]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_6_Sprite] ([1] browsable assets)...
-[2016.08.22-01.42.12:059][981]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_6_Sprite.sluagh_idle_6_Sprite]
-[2016.08.22-01.42.12:059][981]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_6_Sprite]
-[2016.08.22-01.42.12:066][981]LogSavePackage: Save=5.51ms
-[2016.08.22-01.42.12:067][981]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_6_Sprite_Auto3E6CC17CB43E123673133F3BEADFB5B47.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_6_Sprite_Auto3.uasset'
-[2016.08.22-01.42.12:068][981]LogSavePackage: Total save time: 7.67ms
-[2016.08.22-01.42.12:069][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_6_Sprite_Auto3.uasset
-[2016.08.22-01.42.12:071][981]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Textures/sluagh_idle_7_Sprite] ([1] browsable assets)...
-[2016.08.22-01.42.12:082][981]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/Assets/Textures/sluagh_idle_7_Sprite.sluagh_idle_7_Sprite]
-[2016.08.22-01.42.12:082][981]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Textures/sluagh_idle_7_Sprite]
-[2016.08.22-01.42.12:096][981]LogSavePackage: Save=6.65ms
-[2016.08.22-01.42.12:096][981]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_7_Sprite_Auto384723C6D46506694B28A7E86C75E4620.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_7_Sprite_Auto3.uasset'
-[2016.08.22-01.42.12:117][981]LogSavePackage: Total save time: 32.57ms
-[2016.08.22-01.42.12:117][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle_7_Sprite_Auto3.uasset
-[2016.08.22-01.42.12:123][981]LogSavePackage: Save=1.31ms
-[2016.08.22-01.42.12:124][981]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle2_Auto305E2D9F340FF417D4E1FD1BC3A7AC4A5.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle2_Auto3.uasset'
-[2016.08.22-01.42.12:125][981]LogSavePackage: Total save time: 3.10ms
-[2016.08.22-01.42.12:125][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Autosaves/Game/Assets/Textures/sluagh_idle2_Auto3.uasset
-[2016.08.22-01.42.12:125][981]LogFileHelpers: Auto-saving content packages took 0.240
-[2016.08.22-01.43.35:548][910]LogSavePackage: Save=5.49ms
-[2016.08.22-01.43.35:548][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idleAEE3C64B47B28A8976523EBAB414BD8E.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle.uasset'
-[2016.08.22-01.43.35:551][910]LogSavePackage: Total save time: 44.87ms
-[2016.08.22-01.43.35:551][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle.uasset
-[2016.08.22-01.43.35:559][910]LogSavePackage: Save=1.28ms
-[2016.08.22-01.43.35:559][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle2EC1AC92F40365E7A4E2D29B7A70B182B.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle2.uasset'
-[2016.08.22-01.43.35:568][910]LogSavePackage: Total save time: 10.76ms
-[2016.08.22-01.43.35:569][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle2.uasset
-[2016.08.22-01.43.35:605][910]LogSavePackage: Save=23.54ms
-[2016.08.22-01.43.35:605][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_0E7BE62564CD6BAC00952BD8DA3299FE8.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_0.uasset'
-[2016.08.22-01.43.35:608][910]LogSavePackage: Total save time: 27.21ms
-[2016.08.22-01.43.35:609][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_0.uasset
-[2016.08.22-01.43.35:632][910]LogSavePackage: Save=5.82ms
-[2016.08.22-01.43.35:632][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_0_Sprite88030F784979E9EA3FEAEA947719EF8B.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_0_Sprite.uasset'
-[2016.08.22-01.43.35:635][910]LogSavePackage: Total save time: 9.30ms
-[2016.08.22-01.43.35:635][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_0_Sprite.uasset
-[2016.08.22-01.43.35:666][910]LogSavePackage: Save=18.39ms
-[2016.08.22-01.43.35:667][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_1126E3E304A77FD48E4DEAE8E7A5004C4.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_1.uasset'
-[2016.08.22-01.43.35:674][910]LogSavePackage: Total save time: 26.64ms
-[2016.08.22-01.43.35:674][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_1.uasset
-[2016.08.22-01.43.35:698][910]LogSavePackage: Save=5.83ms
-[2016.08.22-01.43.35:698][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_1_Sprite08BFCB7742289AEF9F8DB28C6F8FA90A.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_1_Sprite.uasset'
-[2016.08.22-01.43.35:701][910]LogSavePackage: Total save time: 9.37ms
-[2016.08.22-01.43.35:701][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_1_Sprite.uasset
-[2016.08.22-01.43.35:733][910]LogSavePackage: Save=18.60ms
-[2016.08.22-01.43.35:733][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_2224F576D4E38140DED645E997B6BCEEC.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_2.uasset'
-[2016.08.22-01.43.35:736][910]LogSavePackage: Total save time: 22.10ms
-[2016.08.22-01.43.35:736][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_2.uasset
-[2016.08.22-01.43.35:759][910]LogSavePackage: Save=5.67ms
-[2016.08.22-01.43.35:759][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_2_Sprite2C026FB942F4E28D1B5F0BBE6E43AB4D.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_2_Sprite.uasset'
-[2016.08.22-01.43.35:762][910]LogSavePackage: Total save time: 9.04ms
-[2016.08.22-01.43.35:763][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_2_Sprite.uasset
-[2016.08.22-01.43.35:807][910]LogSavePackage: Save=30.71ms
-[2016.08.22-01.43.35:807][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_3E7D8A80744750545B6FBDB80120B3F96.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_3.uasset'
-[2016.08.22-01.43.35:810][910]LogSavePackage: Total save time: 34.09ms
-[2016.08.22-01.43.35:810][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_3.uasset
-[2016.08.22-01.43.35:837][910]LogSavePackage: Save=8.61ms
-[2016.08.22-01.43.35:837][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_3_SpriteE88101764261B662CFDDB781D1B9B65A.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_3_Sprite.uasset'
-[2016.08.22-01.43.35:840][910]LogSavePackage: Total save time: 12.50ms
-[2016.08.22-01.43.35:840][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_3_Sprite.uasset
-[2016.08.22-01.43.35:882][910]LogSavePackage: Save=18.64ms
-[2016.08.22-01.43.35:882][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_448A6738E44C4034CD42352AF90EA3CB6.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_4.uasset'
-[2016.08.22-01.43.35:885][910]LogSavePackage: Total save time: 22.14ms
-[2016.08.22-01.43.35:885][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_4.uasset
-[2016.08.22-01.43.35:908][910]LogSavePackage: Save=5.52ms
-[2016.08.22-01.43.35:908][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_4_Sprite50D6E0B14A09380272D2A7A873A1B2FE.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_4_Sprite.uasset'
-[2016.08.22-01.43.35:919][910]LogSavePackage: Total save time: 16.66ms
-[2016.08.22-01.43.35:919][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_4_Sprite.uasset
-[2016.08.22-01.43.35:943][910]LogSavePackage: Save=5.60ms
-[2016.08.22-01.43.35:943][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_5_SpriteE82BEDA040389D4C37378B8210570F05.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_5_Sprite.uasset'
-[2016.08.22-01.43.35:946][910]LogSavePackage: Total save time: 9.05ms
-[2016.08.22-01.43.35:946][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_5_Sprite.uasset
-[2016.08.22-01.43.35:969][910]LogSavePackage: Save=6.00ms
-[2016.08.22-01.43.35:970][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_6_Sprite49F592DC409B01FE89A321BC19446D84.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_6_Sprite.uasset'
-[2016.08.22-01.43.35:978][910]LogSavePackage: Total save time: 15.22ms
-[2016.08.22-01.43.35:978][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_6_Sprite.uasset
-[2016.08.22-01.43.36:002][910]LogSavePackage: Save=5.88ms
-[2016.08.22-01.43.36:002][910]LogSavePackage: Moving '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/sluagh_idle_7_Sprite307366BB4B17800890734AAC8D48DA85.tmp' to '../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_7_Sprite.uasset'
-[2016.08.22-01.43.36:005][910]LogSavePackage: Total save time: 9.39ms
-[2016.08.22-01.43.36:005][910]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Assets/Textures/sluagh_idle_7_Sprite.uasset
-[2016.08.22-01.43.36:277][910]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.08.22-01.43.36:277][910]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.08.22-01.43.36:829][911]Cmd: QUIT_EDITOR
-[2016.08.22-01.43.37:314][911]LogExit: Preparing to exit.
-[2016.08.22-01.43.38:824][911]LogExit: Editor shut down
-[2016.08.22-01.43.38:828][911]LogExit: Transaction tracking system shut down
-[2016.08.22-01.43.40:836][911]LogObj: Freed 0b from 0 cluster array pools.
-[2016.08.22-01.43.40:836][911]LogExit: Object subsystem successfully closed.
-[2016.08.22-01.43.41:228][911]LogD3D11RHI: Shutdown
-[2016.08.22-01.43.41:228][911]LogD3D11RHI: CleanupD3DDevice
-[2016.08.22-01.43.41:516][911]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.08.22-01.43.41:602][911]LogDerivedDataCache: Shutdown
-[2016.08.22-01.43.42:211][911]LogModuleManager: Shutting down and abandoning module TextureEditor (206)
-[2016.08.22-01.43.42:228][911]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (205)
-[2016.08.22-01.43.42:241][911]LogModuleManager: Shutting down and abandoning module CrashTracker (204)
-[2016.08.22-01.43.42:241][911]LogModuleManager: Shutting down and abandoning module SuperSearch (203)
-[2016.08.22-01.43.42:241][911]LogModuleManager: Shutting down and abandoning module WidgetCarousel (202)
-[2016.08.22-01.43.42:241][911]LogModuleManager: Shutting down and abandoning module AddContentDialog (201)
-[2016.08.22-01.43.42:272][911]LogModuleManager: Shutting down and abandoning module GameplayTags (200)
-[2016.08.22-01.43.42:272][911]LogModuleManager: Shutting down and abandoning module EditorWidgets (199)
-[2016.08.22-01.43.42:272][911]LogModuleManager: Shutting down and abandoning module CollectionManager (198)
-[2016.08.22-01.43.42:282][911]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
-[2016.08.22-01.43.42:283][911]LogModuleManager: Shutting down and abandoning module StatsViewer (196)
-[2016.08.22-01.43.42:285][911]LogModuleManager: Shutting down and abandoning module FoliageEdit (195)
-[2016.08.22-01.43.42:285][911]LogModuleManager: Shutting down and abandoning module LandscapeEditor (194)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module ActorPickerMode (193)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module GeometryMode (192)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module TextureAlignMode (191)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module BspMode (190)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module PlacementMode (189)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module AutomationWorker (188)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module CharacterAI (187)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module SmartSnapping (186)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module ViewportSnapping (185)
-[2016.08.22-01.43.42:286][911]LogModuleManager: Shutting down and abandoning module LogVisualizer (184)
-[2016.08.22-01.43.42:308][911]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (183)
-[2016.08.22-01.43.42:311][911]LogModuleManager: Shutting down and abandoning module IntroTutorials (182)
-[2016.08.22-01.43.42:317][911]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (181)
-[2016.08.22-01.43.42:317][911]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (180)
-[2016.08.22-01.43.42:334][911]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (179)
-[2016.08.22-01.43.42:334][911]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (178)
-[2016.08.22-01.43.42:918][911]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (177)
-[2016.08.22-01.43.42:918][911]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (176)
-[2016.08.22-01.43.42:918][911]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (175)
-[2016.08.22-01.43.42:918][911]LogModuleManager: Shutting down and abandoning module MergeActors (174)
-[2016.08.22-01.43.42:932][911]LogModuleManager: Shutting down and abandoning module SizeMap (173)
-[2016.08.22-01.43.42:944][911]LogModuleManager: Shutting down and abandoning module TreeMap (172)
-[2016.08.22-01.43.42:945][911]LogModuleManager: Shutting down and abandoning module ReferenceViewer (171)
-[2016.08.22-01.43.42:953][911]LogModuleManager: Shutting down and abandoning module LocalizationService (170)
-[2016.08.22-01.43.42:954][911]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (169)
-[2016.08.22-01.43.42:955][911]LogModuleManager: Shutting down and abandoning module HardwareTargeting (168)
-[2016.08.22-01.43.42:955][911]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (167)
-[2016.08.22-01.43.42:971][911]LogModuleManager: Shutting down and abandoning module UndoHistory (166)
-[2016.08.22-01.43.42:982][911]LogModuleManager: Shutting down and abandoning module UserFeedback (165)
-[2016.08.22-01.43.42:982][911]LogModuleManager: Shutting down and abandoning module XmlParser (164)
-[2016.08.22-01.43.42:983][911]LogModuleManager: Shutting down and abandoning module Blutility (163)
-[2016.08.22-01.43.42:995][911]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (162)
-[2016.08.22-01.43.42:995][911]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (161)
-[2016.08.22-01.43.42:995][911]LogModuleManager: Shutting down and abandoning module InputBindingEditor (160)
-[2016.08.22-01.43.43:009][911]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (159)
-[2016.08.22-01.43.43:009][911]LogModuleManager: Shutting down and abandoning module SettingsEditor (158)
-[2016.08.22-01.43.43:020][911]LogModuleManager: Shutting down and abandoning module ProjectLauncher (157)
-[2016.08.22-01.43.43:043][911]LogModuleManager: Shutting down and abandoning module SessionFrontend (156)
-[2016.08.22-01.43.43:051][911]LogModuleManager: Shutting down and abandoning module ProfilerClient (155)
-[2016.08.22-01.43.43:052][911]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (154)
-[2016.08.22-01.43.43:052][911]LogModuleManager: Shutting down and abandoning module DeviceManager (153)
-[2016.08.22-01.43.43:095][911]LogModuleManager: Shutting down and abandoning module AutomationController (152)
-[2016.08.22-01.43.43:120][911]LogModuleManager: Shutting down and abandoning module AutomationWindow (151)
-[2016.08.22-01.43.43:128][911]LogModuleManager: Shutting down and abandoning module Layers (150)
-[2016.08.22-01.43.43:132][911]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (149)
-[2016.08.22-01.43.43:132][911]LogModuleManager: Shutting down and abandoning module DetailCustomizations (148)
-[2016.08.22-01.43.43:144][911]LogModuleManager: Shutting down and abandoning module PackagesDialog (147)
-[2016.08.22-01.43.43:144][911]LogModuleManager: Shutting down and abandoning module Persona (146)
-[2016.08.22-01.43.43:156][911]LogModuleManager: Shutting down and abandoning module Kismet (145)
-[2016.08.22-01.43.43:157][911]LogModuleManager: Shutting down and abandoning module GraphEditor (144)
-[2016.08.22-01.43.43:196][911]LogModuleManager: Shutting down and abandoning module ClassViewer (143)
-[2016.08.22-01.43.43:211][911]LogModuleManager: Shutting down and abandoning module Toolbox (142)
-[2016.08.22-01.43.43:224][911]LogModuleManager: Shutting down and abandoning module ModuleUI (141)
-[2016.08.22-01.43.43:225][911]LogModuleManager: Shutting down and abandoning module MovieSceneTools (140)
-[2016.08.22-01.43.43:226][911]LogModuleManager: Shutting down and abandoning module OutputLog (139)
-[2016.08.22-01.43.43:226][911]LogModuleManager: Shutting down and abandoning module GammaUI (138)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module Documentation (137)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (136)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module AnalyticsET (135)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module Analytics (134)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module PortalServices (133)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module PortalRpc (132)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module MessagingRpc (131)
-[2016.08.22-01.43.43:227][911]LogModuleManager: Shutting down and abandoning module AITestSuite (130)
-[2016.08.22-01.43.43:267][911]LogModuleManager: Shutting down and abandoning module GameplayDebugger (129)
-[2016.08.22-01.43.43:267][911]LogModuleManager: Shutting down and abandoning module AIModule (128)
-[2016.08.22-01.43.43:267][911]LogModuleManager: Shutting down and abandoning module ProfilerService (127)
-[2016.08.22-01.43.43:299][911]LogModuleManager: Shutting down and abandoning module TaskGraph (126)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module SteamVR (123)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module OculusInput (120)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (119)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module CableComponent (118)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (117)
-[2016.08.22-01.43.43:312][911]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (116)
-[2016.08.22-01.43.43:321][911]LogModuleManager: Shutting down and abandoning module HTML5Networking (115)
-[2016.08.22-01.43.43:321][911]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
-[2016.08.22-01.43.43:321][911]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
-[2016.08.22-01.43.43:324][911]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
-[2016.08.22-01.43.43:337][911]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
-[2016.08.22-01.43.43:350][911]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
-[2016.08.22-01.43.43:355][911]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
-[2016.08.22-01.43.43:355][911]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
-[2016.08.22-01.43.43:374][911]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
-[2016.08.22-01.43.43:393][911]LogModuleManager: Shutting down and abandoning module SourceControl (106)
-[2016.08.22-01.43.43:403][911]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
-[2016.08.22-01.43.43:425][911]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
-[2016.08.22-01.43.43:425][911]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
-[2016.08.22-01.43.43:425][911]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
-[2016.08.22-01.43.43:425][911]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
-[2016.08.22-01.43.43:426][911]LogModuleManager: Shutting down and abandoning module HotReload (100)
-[2016.08.22-01.43.43:461][911]LogModuleManager: Shutting down and abandoning module MainFrame (99)
-[2016.08.22-01.43.43:461][911]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
-[2016.08.22-01.43.43:469][911]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
-[2016.08.22-01.43.43:470][911]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
-[2016.08.22-01.43.43:563][911]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
-[2016.08.22-01.43.43:564][911]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
-[2016.08.22-01.43.43:564][911]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
-[2016.08.22-01.43.43:564][911]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
-[2016.08.22-01.43.43:664][911]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
-[2016.08.22-01.43.43:664][911]LogModuleManager: Shutting down and abandoning module Paper2D (90)
-[2016.08.22-01.43.43:664][911]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
-[2016.08.22-01.43.43:669][911]LogModuleManager: Shutting down and abandoning module Media (88)
-[2016.08.22-01.43.43:669][911]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
-[2016.08.22-01.43.43:703][911]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
-[2016.08.22-01.43.43:703][911]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
-[2016.08.22-01.43.43:703][911]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
-[2016.08.22-01.43.43:703][911]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
-[2016.08.22-01.43.43:703][911]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
-[2016.08.22-01.43.43:703][911]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
-[2016.08.22-01.43.43:703][911]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
-[2016.08.22-01.43.43:727][911]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
-[2016.08.22-01.43.43:727][911]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
-[2016.08.22-01.43.43:744][911]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
-[2016.08.22-01.43.43:744][911]LogModuleManager: Shutting down and abandoning module MessageLog (76)
-[2016.08.22-01.43.43:744][911]LogModuleManager: Shutting down and abandoning module Sequencer (75)
-[2016.08.22-01.43.43:763][911]LogModuleManager: Shutting down and abandoning module AssetTools (74)
-[2016.08.22-01.43.43:785][911]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
-[2016.08.22-01.43.43:811][911]LogModuleManager: Shutting down and abandoning module UMG (72)
-[2016.08.22-01.43.43:826][911]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
-[2016.08.22-01.43.43:851][911]LogModuleManager: Shutting down and abandoning module Slate (70)
-[2016.08.22-01.43.43:851][911]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
-[2016.08.22-01.43.43:864][911]LogModuleManager: Shutting down and abandoning module SessionServices (68)
-[2016.08.22-01.43.43:864][911]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
-[2016.08.22-01.43.43:865][911]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
-[2016.08.22-01.43.43:865][911]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
-[2016.08.22-01.43.43:865][911]LogModuleManager: Shutting down and abandoning module Networking (63)
-[2016.08.22-01.43.43:865][911]LogModuleManager: Shutting down and abandoning module Core (62)
-[2016.08.22-01.43.43:865][911]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
-[2016.08.22-01.43.43:865][911]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
-[2016.08.22-01.43.43:880][911]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
-[2016.08.22-01.43.43:897][911]LogModuleManager: Shutting down and abandoning module CookingStats (58)
-[2016.08.22-01.43.43:897][911]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
-[2016.08.22-01.43.43:897][911]LogDerivedDataCache: Shutdown
-[2016.08.22-01.43.43:897][911]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
-[2016.08.22-01.43.43:915][911]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
-[2016.08.22-01.43.43:933][911]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
-[2016.08.22-01.43.43:951][911]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
-[2016.08.22-01.43.43:951][911]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
-[2016.08.22-01.43.43:960][911]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
-[2016.08.22-01.43.43:968][911]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
-[2016.08.22-01.43.43:969][911]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
-[2016.08.22-01.43.43:969][911]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
-[2016.08.22-01.43.43:969][911]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
-[2016.08.22-01.43.43:969][911]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
-[2016.08.22-01.43.43:976][911]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
-[2016.08.22-01.43.43:981][911]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
-[2016.08.22-01.43.43:985][911]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
-[2016.08.22-01.43.43:985][911]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
-[2016.08.22-01.43.44:012][911]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
-[2016.08.22-01.43.44:013][911]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
-[2016.08.22-01.43.44:013][911]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.08.22-01.43.44:013][911]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.08.22-01.43.44:013][911]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.08.22-01.43.44:013][911]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.08.22-01.43.44:013][911]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.08.22-01.43.44:040][911]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.08.22-01.43.44:046][911]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.08.22-01.43.44:054][911]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.08.22-01.43.44:063][911]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.08.22-01.43.44:063][911]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.08.22-01.43.44:064][911]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.08.22-01.43.44:064][911]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.08.22-01.43.44:064][911]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.08.22-01.43.44:064][911]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.08.22-01.43.45:065][911]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.08.22-01.43.45:086][911]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.08.22-01.43.45:103][911]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.08.22-01.43.45:103][911]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.08.22-01.43.45:104][911]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.08.22-01.43.45:104][911]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.08.22-01.43.45:104][911]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.08.22-01.43.45:117][911]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.08.22-01.43.45:136][911]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.08.22-01.43.45:136][911]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.08.22-01.43.45:145][911]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.08.22-01.43.45:145][911]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.08.22-01.43.45:145][911]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.08.22-01.43.45:145][911]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.08.22-01.43.45:153][911]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.08.22-01.43.45:157][911]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.08.22-01.43.45:164][911]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.08.22-01.43.45:213][911]LogExit: Exiting.
-[2016.08.22-01.43.45:240][911]Log file closed, 08/21/16 21:43:45
+[2016.08.30-20.42.19:577][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.30-20.42.19:577][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.30-20.42.19:610][  0]LogInit: Computer: FAHAD-PC
+[2016.08.30-20.42.19:610][  0]LogInit: User: Fahad
+[2016.08.30-20.42.19:610][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.30-20.42.19:610][  0]LogInit: High frequency timer resolution =3.215353 MHz
+[2016.08.30-20.42.19:611][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.08.30-20.42.19:611][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.30-20.42.19:611][  0]LogMemory: Process Physical Memory: 313.86 MB used, 313.86 MB peak
+[2016.08.30-20.42.19:611][  0]LogMemory: Process Virtual Memory: 314.84 MB used, 314.84 MB peak
+[2016.08.30-20.42.19:611][  0]LogMemory: Physical Memory: 4667.91 MB used, 8174.67 MB total
+[2016.08.30-20.42.19:611][  0]LogMemory: Virtual Memory: 651.88 MB used, 134217728.00 MB total
+[2016.08.30-20.42.19:710][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.30-20.42.20:214][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.30-20.42.20:250][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.08.30-20.42.20:250][  0]LogD3D11RHI:       4007MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.08.30-20.42.20:252][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.30-20.42.20:252][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.08.30-20.42.20:252][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.30-20.42.20:258][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.30-20.42.20:258][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.08.30-20.42.20:258][  0]LogD3D11RHI:   Driver Version: 10.18.13.6510 (internal 10.18.13.6510)
+[2016.08.30-20.42.20:258][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.30-20.42.20:258][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.30-20.42.20:270][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.30-20.42.20:766][  0]LogShaderCompilers: Guid format shader working directory is -49 characters bigger than the processId version (../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Intermediate/Shaders/WorkingDirectory/11020/).
+[2016.08.30-20.42.20:766][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Fahad/AppData/Local/Temp/UnrealShaderWorkingDir/AF1349CB4D2C31AB514DDCA33DA03A42/'.
+[2016.08.30-20.42.20:766][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.30-20.42.22:438][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.30-20.42.22:445][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.30-20.42.22:452][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.30-20.42.22:461][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.30-20.42.22:468][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.30-20.42.22:472][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.30-20.42.22:478][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.30-20.42.22:486][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.30-20.42.22:499][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.30-20.42.22:503][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.30-20.42.22:525][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.30-20.42.22:536][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.30-20.42.22:536][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.30-20.42.22:538][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.30-20.42.22:558][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.30-20.42.22:561][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.30-20.42.22:565][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.30-20.42.22:570][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.30-20.42.22:580][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.30-20.42.22:580][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.30-20.42.22:775][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.30-20.42.22:855][  0]LogDerivedDataCache: Loaded boot cache 0.08s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.30-20.42.22:855][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.08.30-20.42.22:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.30-20.42.22:855][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.30-20.42.22:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.30-20.42.22:855][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.30-20.42.22:877][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.30-20.42.22:890][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Fahad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.30-20.42.23:131][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.30-20.42.23:132][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.30-20.42.23:219][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.08.30-20.42.23:388][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.30-20.42.23:388][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.30-20.42.23:388][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.30-20.42.23:812][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.08.30-20.42.23:812][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.08.30-20.42.23:812][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.30-20.42.23:823][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.30-20.42.24:228][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.30-20.42.24:228][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.30-20.42.26:874][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.30-20.42.26:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.30-20.42.26:875][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.30-20.42.26:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.30-20.42.26:875][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.08.30-20.42.26:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.08.30-20.42.43:176][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.30-20.42.43:247][  0]LogTemp:Warning: No World
+[2016.08.30-20.42.43:566][  0]LogAssetRegistry: FAssetRegistry took 0.0220 seconds to start up
+[2016.08.30-20.42.43:927][  0]SourceControl: Info Source control is disabled
+[2016.08.30-20.42.44:462][  0]SourceControl: Info Source control is disabled
+[2016.08.30-20.42.44:501][  0]SourceControl: Info Source control is disabled
+[2016.08.30-20.42.44:560][  0]SourceControl: Info Source control is disabled
+[2016.08.30-20.42.44:971][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2016.08.30-20.42.45:068][  0]LogEngine: Initializing Engine...
+[2016.08.30-20.42.46:335][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.30-20.42.46:350][  0]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.30-20.42.46:362][  0]LogInit: FAudioDevice initialized.
+[2016.08.30-20.42.46:426][  0]LogDerivedDataCache: Saved boot cache 0.06s 65MB C:/Users/Fahad/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.08.30-20.42.46:435][  0]LogInit: Texture streaming: Enabled
+[2016.08.30-20.42.46:512][  0]LogInit: Transaction tracking system initialized
+[2016.08.30-20.42.46:617][  0]BlueprintLog: New page: Editor Load
+[2016.08.30-20.42.47:458][  0]LocalizationService: Info Localization service is disabled
+[2016.08.30-20.42.47:800][  0]LogConsoleResponse:Display: 
+[2016.08.30-20.42.48:230][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.30-20.42.48:230][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.30-20.42.48:230][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.08.30-20.42.48:333][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/' took 0.02s
+[2016.08.30-20.42.48:333][  0]SourceControl: Info Source control is disabled
+[2016.08.30-20.42.48:333][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Levels/OverworldLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.30-20.42.48:334][  0]LightingResults: New page: Lighting Build
+[2016.08.30-20.42.48:337][  0]MapCheck: New page: Map Check
+[2016.08.30-20.42.48:337][  0]LightingResults: New page: Lighting Build
+[2016.08.30-20.42.49:003][  0]LogTemp:Warning: No World
+[2016.08.30-20.42.49:019][  0]LogTemp:Warning: No World
+[2016.08.30-20.42.49:030][  0]LogTemp:Warning: No World
+[2016.08.30-20.42.49:268][  0]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.30-20.42.49:280][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.30-20.42.49:280][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.30-20.42.49:392][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 111.473ms to complete.
+[2016.08.30-20.42.49:392][  0]LogFileHelpers: Loading map 'OverworldLevel' took 1.059
+[2016.08.30-20.42.49:508][  0]LogCollectionManager: Loaded 0 collections in 0.003347 seconds
+[2016.08.30-20.42.49:551][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Saved/Collections/' took 0.01s
+[2016.08.30-20.42.49:551][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Developers/Fahad/Collections/' took 0.01s
+[2016.08.30-20.42.49:551][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/Content/Collections/' took 0.01s
+[2016.08.30-20.42.49:551][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.08.30-20.42.49:561][  0]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 1991 classes and 347 folders.
+[2016.08.30-20.42.49:565][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.08.30-20.42.49:566][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.30-20.42.49:567][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0018 seconds. Added 12 classes and 0 folders.
+[2016.08.30-20.42.49:578][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2016.08.30-20.42.49:600][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2016.08.30-20.42.50:032][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2016.08.30-20.42.50:091][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.30-20.42.50:097][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.30-20.42.50:128][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
+[2016.08.30-20.42.50:128][  0]LogLoad: Full Startup: 31.77 seconds (BP compile: 0.50 seconds)
+[2016.08.30-20.42.50:128][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.30-20.42.50:128][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.30-20.42.50:137][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.30-20.42.50:137][  0]LogOcInput: OculusInput pre-init called
+[2016.08.30-20.42.50:218][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.08.30-20.42.50:402][  0]LogRenderer: Reallocating scene render targets to support 1248x636 (Frame:2).
+[2016.08.30-20.42.50:466][  1]LogAssetRegistry: Asset discovery search completed in 6.9229 seconds
+[2016.08.30-20.42.50:466][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.08.30-20.42.50:466][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000029 seconds (updated 0 objects)
+[2016.08.30-20.43.00:245][ 86]Recompiling ProjectOne...
+[2016.08.30-20.43.00:245][ 86]Launching UnrealBuildTool... [C:/Program Files/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe ProjectOne -ModuleWithSuffix ProjectOne 6546 Win64 Development -editorrecompile -canskiplink "C:/Users/Fahad/Desktop/MX2 Game Suite/GitHub Directory/project-1-mx2/ProjectOne/ProjectOne.uproject"  -2015]
+[2016.08.30-20.43.00:250][ 86]Warning: Starting HotReload took  0.2s.
+[2016.08.30-20.43.02:327][295]CompilerResultsLog: New page: Compilation - Aug 30, 2016, 11:43:02 AM
+[2016.08.30-20.43.02:327][295]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.30-20.43.02:327][295]CompilerResultsLog: Info Target is up to date
+[2016.08.30-20.43.02:327][295]LogMainFrame: MainFrame: Module compiling took 2.089 seconds
+[2016.08.30-20.43.06:546][791]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.30-20.43.06:546][791]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.30-20.43.06:546][791]PIE: New page: PIE session: OverworldLevel (Aug 30, 2016, 11:43:06 AM)
+[2016.08.30-20.43.06:547][791]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_OverworldLevel
+[2016.08.30-20.43.06:563][791]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016311s)
+[2016.08.30-20.43.06:564][791]LogAIModule: Creating AISystem for world OverworldLevel
+[2016.08.30-20.43.06:564][791]LogPlayLevel: PIE: World Init took: (0.000839s)
+[2016.08.30-20.43.06:564][791]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/OverworldLevel.OverworldLevel to /Game/Levels/UEDPIE_0_OverworldLevel.OverworldLevel (0.017735s)
+[2016.08.30-20.43.06:608][791]LogInit: XAudio2 using 'Speakers (5- Logitech USB Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.30-20.43.06:616][791]LogInit: FAudioDevice initialized.
+[2016.08.30-20.43.06:667][791]LogWorld: Game class is 'BattleGameMode_BP_C'
+[2016.08.30-20.43.06:671][791]LogWorld: Bringing World /Game/Levels/UEDPIE_0_OverworldLevel.OverworldLevel up for play (max tick rate 0) at 2016.08.30-16.43.06
+[2016.08.30-20.43.06:672][791]LogWorld: Bringing up level for play took: 0.003645
+[2016.08.30-20.43.06:691][791]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0020 seconds. Added 9 classes and 0 folders.
+[2016.08.30-20.43.06:692][791]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_OverworldLevel 0.944
+[2016.08.30-20.43.06:693][791]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: got player controller successfully
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.30-20.43.10:913][285]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.30-20.43.10:997][295]LogTemp:Warning: Round: 6	Entity: Beck
+[2016.08.30-20.43.10:998][295]LogTemp:Warning: Entity #:0: Entity Name: Beck
+[2016.08.30-20.43.10:998][295]LogTemp:Warning: Entity #:1: Entity Name: Sluagh
+[2016.08.30-20.43.10:998][295]LogTemp:Warning: Entity #:2: Entity Name: Sluagh2
+[2016.08.30-20.43.10:998][295]LogTemp:Warning: Entity #:3: Entity Name: Beck
+[2016.08.30-20.43.10:998][295]LogTemp:Warning: Entity #:4: Entity Name: Sluagh
+[2016.08.30-20.43.10:998][295]LogTemp:Warning: Entity #:5: Entity Name: Sluagh2
+[2016.08.30-20.43.10:998][295]LogTemp:Warning: Entity #:6: Entity Name: Beck
+[2016.08.30-20.43.12:181][433]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Round: 6	Entity: Sluagh
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Entity #:0: Entity Name: Sluagh
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Entity #:1: Entity Name: Sluagh2
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Entity #:2: Entity Name: Beck
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Entity #:3: Entity Name: Sluagh
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Entity #:4: Entity Name: Sluagh2
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Entity #:5: Entity Name: Beck
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Entity #:6: Entity Name: Sluagh
+[2016.08.30-20.43.12:182][433]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.30-20.43.13:194][553]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.30-20.43.20:711][424]LogBlueprintUserMessages: [BattleGameMode_BP_C_0] Animation
+[2016.08.30-20.43.20:711][424]LogTemp:Warning: Round: 6	Entity: Sluagh2
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Entity #:0: Entity Name: Sluagh2
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Entity #:1: Entity Name: Beck
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Entity #:2: Entity Name: Sluagh
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Entity #:3: Entity Name: Sluagh2
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Entity #:4: Entity Name: Beck
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Entity #:5: Entity Name: Sluagh
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Entity #:6: Entity Name: Sluagh2
+[2016.08.30-20.43.20:712][424]LogTemp:Warning: Sluagh Timer Active.
+[2016.08.30-20.43.21:727][544]LogBlueprintUserMessages: [AttackBroadcaster_BP] Attack Time Set
+[2016.08.30-20.43.23:412][746]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.30-20.43.23:448][746]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel' with GeneratedClass '/Game/Levels/OverworldLevel.OverworldLevel_C' with ClassGeneratedBy '/Game/Levels/OverworldLevel.OverworldLevel:PersistentLevel.OverworldLevel'
+[2016.08.30-20.48.59:677][ 53]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.30-20.48.59:870][ 54]Cmd: QUIT_EDITOR
+[2016.08.30-20.49.00:217][ 54]LogExit: Preparing to exit.
+[2016.08.30-20.49.01:409][ 54]LogExit: Editor shut down
+[2016.08.30-20.49.01:414][ 54]LogExit: Transaction tracking system shut down
+[2016.08.30-20.49.01:529][ 54]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.30-20.49.01:529][ 54]LogExit: Object subsystem successfully closed.
+[2016.08.30-20.49.01:538][ 54]LogD3D11RHI: Shutdown
+[2016.08.30-20.49.01:538][ 54]LogD3D11RHI: CleanupD3DDevice
+[2016.08.30-20.49.01:595][ 54]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.30-20.49.01:696][ 54]LogDerivedDataCache: Shutdown
+[2016.08.30-20.49.01:696][ 54]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (206)
+[2016.08.30-20.49.01:696][ 54]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (205)
+[2016.08.30-20.49.01:696][ 54]LogModuleManager: Shutting down and abandoning module CrashTracker (204)
+[2016.08.30-20.49.01:696][ 54]LogModuleManager: Shutting down and abandoning module SuperSearch (203)
+[2016.08.30-20.49.01:696][ 54]LogModuleManager: Shutting down and abandoning module WidgetCarousel (202)
+[2016.08.30-20.49.01:696][ 54]LogModuleManager: Shutting down and abandoning module AddContentDialog (201)
+[2016.08.30-20.49.01:697][ 54]LogModuleManager: Shutting down and abandoning module GameplayTags (200)
+[2016.08.30-20.49.01:697][ 54]LogModuleManager: Shutting down and abandoning module EditorWidgets (199)
+[2016.08.30-20.49.01:697][ 54]LogModuleManager: Shutting down and abandoning module CollectionManager (198)
+[2016.08.30-20.49.01:697][ 54]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2016.08.30-20.49.01:697][ 54]LogModuleManager: Shutting down and abandoning module StatsViewer (196)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module FoliageEdit (195)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module LandscapeEditor (194)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module ActorPickerMode (193)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module GeometryMode (192)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module TextureAlignMode (191)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module BspMode (190)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module PlacementMode (189)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module AutomationWorker (188)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module CharacterAI (187)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module SmartSnapping (186)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module ViewportSnapping (185)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module LogVisualizer (184)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (183)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module IntroTutorials (182)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (181)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (180)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (179)
+[2016.08.30-20.49.01:698][ 54]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (178)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (177)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (176)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (175)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module MergeActors (174)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module SizeMap (173)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module TreeMap (172)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module ReferenceViewer (171)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module LocalizationService (170)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (169)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module HardwareTargeting (168)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (167)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module UndoHistory (166)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module UserFeedback (165)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module XmlParser (164)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module Blutility (163)
+[2016.08.30-20.49.01:743][ 54]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (162)
+[2016.08.30-20.49.01:744][ 54]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (161)
+[2016.08.30-20.49.01:744][ 54]LogModuleManager: Shutting down and abandoning module InputBindingEditor (160)
+[2016.08.30-20.49.01:745][ 54]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (159)
+[2016.08.30-20.49.01:745][ 54]LogModuleManager: Shutting down and abandoning module SettingsEditor (158)
+[2016.08.30-20.49.01:745][ 54]LogModuleManager: Shutting down and abandoning module ProjectLauncher (157)
+[2016.08.30-20.49.01:745][ 54]LogModuleManager: Shutting down and abandoning module SessionFrontend (156)
+[2016.08.30-20.49.01:745][ 54]LogModuleManager: Shutting down and abandoning module ProfilerClient (155)
+[2016.08.30-20.49.01:745][ 54]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (154)
+[2016.08.30-20.49.01:745][ 54]LogModuleManager: Shutting down and abandoning module DeviceManager (153)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module AutomationController (152)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module AutomationWindow (151)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module Layers (150)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (149)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module DetailCustomizations (148)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module PackagesDialog (147)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module Persona (146)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module Kismet (145)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module GraphEditor (144)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module ClassViewer (143)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module Toolbox (142)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module ModuleUI (141)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module MovieSceneTools (140)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module OutputLog (139)
+[2016.08.30-20.49.01:787][ 54]LogModuleManager: Shutting down and abandoning module GammaUI (138)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module Documentation (137)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (136)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module AnalyticsET (135)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module Analytics (134)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module PortalServices (133)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module PortalRpc (132)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module MessagingRpc (131)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module AITestSuite (130)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module GameplayDebugger (129)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module AIModule (128)
+[2016.08.30-20.49.01:788][ 54]LogModuleManager: Shutting down and abandoning module ProfilerService (127)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module TaskGraph (126)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module SteamVR (123)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module OculusInput (120)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (119)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module CableComponent (118)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (117)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (116)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module HTML5Networking (115)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.08.30-20.49.01:889][ 54]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.08.30-20.49.01:890][ 54]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.08.30-20.49.01:890][ 54]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.08.30-20.49.01:891][ 54]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
+[2016.08.30-20.49.01:891][ 54]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
+[2016.08.30-20.49.02:056][ 54]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
+[2016.08.30-20.49.02:057][ 54]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
+[2016.08.30-20.49.02:057][ 54]LogModuleManager: Shutting down and abandoning module ProjectOne (93)
+[2016.08.30-20.49.02:057][ 54]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.08.30-20.49.02:157][ 54]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.08.30-20.49.02:158][ 54]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.08.30-20.49.02:160][ 54]LogDerivedDataCache: Shutdown
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.30-20.49.02:160][ 54]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.30-20.49.02:161][ 54]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.30-20.49.03:162][ 54]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.30-20.49.03:162][ 54]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.30-20.49.03:162][ 54]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.30-20.49.03:162][ 54]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.30-20.49.03:162][ 54]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.30-20.49.03:162][ 54]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.30-20.49.03:163][ 54]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.30-20.49.03:164][ 54]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.30-20.49.03:165][ 54]LogExit: Exiting.
+[2016.08.30-20.49.03:166][ 54]Log file closed, 08/30/16 16:49:03
