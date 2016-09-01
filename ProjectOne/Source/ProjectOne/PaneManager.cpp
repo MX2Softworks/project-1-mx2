@@ -30,10 +30,24 @@ void UPaneManager::TickComponent( float DeltaTime, ELevelTick TickType, FActorCo
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 
+	// Populates the EnemiesInBattle before arranging them on the Panes
 	if (this->GetGotBaseEnemy() == true) 
 	{
 		
-		
+		switch (HashIt(this->GetBaseEnemy()->GetTypeIdentifier())) {
+		case EEnemyType::eSluagh:
+			{
+			int32 EnemiesToAdd = FMath::RandRange(0, 4);
+			for (int32 i = 0; i < EnemiesToAdd; i++) {
+
+				// Percentages with if statements
+
+			}
+			}
+			break;
+		default:
+			break;
+		}
 		// CODE TO ADD ENEMIES BASED ON THE BASEENEMY
 
 		this->SetGotBaseEnemy(false);
@@ -46,6 +60,11 @@ void UPaneManager::RetrieveEngagedEnemy(AEnemy* EngagedEnemy) {
 	BaseEnemy = EngagedEnemy;
 	this->SetGotBaseEnemy(true);
 	this->GetEnemiesInBattle().Add(BaseEnemy);
+}
+
+EEnemyType UPaneManager::HashIt(FString bTypeIdentifier) {
+	if (bTypeIdentifier == "Sluagh") return EEnemyType::eSluagh;
+	return EEnemyType::eNotSluagh;
 }
 
 // Getter for GotBaseEnemy

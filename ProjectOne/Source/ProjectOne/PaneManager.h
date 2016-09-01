@@ -12,6 +12,13 @@
 #include "PaneManager.generated.h"
 
 
+UENUM(BlueprintType)
+enum class EEnemyType : uint8
+{
+	eSluagh UMETA(DisplayName = "Sluagh"),
+	eNotSluagh UMETA(DisplayName = "NotSluagh")
+};
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class PROJECTONE_API UPaneManager : public UActorComponent
 {
@@ -30,6 +37,9 @@ public:
 	// Saves the enemy that was engaged upon
 	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
 	void RetrieveEngagedEnemy(AEnemy* EngagedEnemy);
+
+	// Return the enum equilvalent of the type identifier to be used in the switch.
+	EEnemyType HashIt(FString bTypeIdentifier);
 
 
 	/// GETTERS
