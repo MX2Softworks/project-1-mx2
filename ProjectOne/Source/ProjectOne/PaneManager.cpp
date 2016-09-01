@@ -33,6 +33,7 @@ void UPaneManager::TickComponent( float DeltaTime, ELevelTick TickType, FActorCo
 	if (this->GetGotBaseEnemy() == true) 
 	{
 		
+		
 		// CODE TO ADD ENEMIES BASED ON THE BASEENEMY
 
 		this->SetGotBaseEnemy(false);
@@ -57,3 +58,8 @@ TArray<AEnemy*> UPaneManager::GetEnemiesInBattle() { return EnemiesInBattle; }
 
 // Getter for Panes
 TArray<AEnemy*> UPaneManager::GetPanes() { return Panes; }
+
+// Getter for BaseEnemy
+AEnemy* UPaneManager::GetBaseEnemy() { return BaseEnemy; }
+// Setter for BaseEnemy
+void UPaneManager::SetBaseEnemy(AEnemy* bBaseEnemy) { BaseEnemy = bBaseEnemy; }

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Pawn.h"
+#include <string>
 #include "GameCharacter.generated.h"
 
 //delegate that will broadcast event for each character's attack.
@@ -39,6 +40,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Attack")
 	void SetIsAttacking(bool isAttacking);
 
+	// Getter and Setter for TypeIdentifier
+	UFUNCTION(BlueprintCallable, Category = "GameCharacter")
+	FString GetTypeIdentifier();
+	UFUNCTION(BlueprintCallable, Category = "GameCharacter")
+	void SetTypeIdentifier(FString bTypeIdentifier);
+
 	// Inheritable function that contains the attack of a character
 	UFUNCTION(BlueprintCallable, Category="Attack")
 	virtual bool Attack();
@@ -56,4 +63,7 @@ private:
 	// IsAttacking is used as a flag to tell the manager and other classes that an attack is active
 	UPROPERTY(EditAnywhere)
 	bool bIsAttacking = false;
+
+	// String to label what type each character is
+	FString TypeIdentifier;
 };

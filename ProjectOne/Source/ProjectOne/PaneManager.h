@@ -46,12 +46,20 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
 	TArray<AEnemy*> GetPanes();
 
+	// Getter for BaseEnemy
+	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
+	AEnemy* GetBaseEnemy();
+
 
 	/// SETTERS
 
 	// Setter for GotBaseEnemy
 	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
 	void SetGotBaseEnemy(bool bGotBaseEnemy);
+
+	// Setter for BaseEnemy
+	UFUNCTION(BlueprintCallable, Category = "Pane Manager")
+	void SetBaseEnemy(AEnemy* bBaseEnemy);
 
 
 private:
