@@ -7,6 +7,7 @@
 ASluagh::ASluagh()
 {
 	SetPreferredPane(1);
+	SetTypeIdentifier("Sluagh");
 }
 
 //Getters and setters for AttackTime_1
