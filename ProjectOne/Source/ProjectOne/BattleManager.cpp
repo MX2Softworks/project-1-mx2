@@ -76,40 +76,7 @@ int32 UBattleManager::GetTurnCounter() { return TurnCounter; };
 */
 TArray<AGameCharacter*> UBattleManager::CalculateTurnOrder()
 {
-	//makes a 2d timeline where each frame is the entities that go during that time.
-	/*TArray<TArray<AGameCharacter*>> Timeline; 
-	TArray<AGameCharacter*> TempArray; 
-	int32 EntitySpeed; 
-	TempArray.Init(nullptr, 1);
-	Timeline.Init(TempArray, 10);
-	for (AGameCharacter* Entity : EntitiesComingIn)
-	{
-		if (Entity != nullptr)
-		{
-			EntitySpeed = Entity->GetSpeed(); 
-			for (int32 Index = 0; Index < Timeline.Num(); Index++)
-			{
-				if ((Index + ((RoundCounter - 1)*Timeline.Num())) == 0) {}
-				else if ((Index + ((RoundCounter - 1)*Timeline.Num())) % EntitySpeed == 0)
-				{
-					TArray<AGameCharacter*> Frame = Timeline[Index];
-					Frame.Emplace(Entity);
-					Timeline[Index] = Frame; 
-				}
-				
-			}
-		}
-	}
-
-	//adds to turn order. 
-	TurnOrder.Reset(1); 
-	for (TArray<AGameCharacter*> Frame : Timeline)
-	{
-		for (AGameCharacter* Entity : Frame)
-		{
-			TurnOrder.Add(Entity);
-		}
-	}*/
+	//Creates a turn order for a single time frame by going through the list of all entities and seeing if the remainder of the round counter / their speed is 0 
 
 	int32 EntitySpeed = 0; 
 	TurnOrder.Reset(1);
@@ -118,11 +85,7 @@ TArray<AGameCharacter*> UBattleManager::CalculateTurnOrder()
 		if (Entity != nullptr)
 		{
 			EntitySpeed = Entity->GetSpeed(); 
-			if (RoundCounter % EntitySpeed == 0)
-			{
-				TurnOrder.Emplace(Entity);
-				GEngine->AddOnScreenDebugMessage(-1, 6.f, FColor::Yellow, FString::Printf(TEXT("Added %s"), *Entity->GetName()));
-			}
+			if (RoundCounter % EntitySpeed == 0){ TurnOrder.Emplace(Entity); }
 		}
 	}
 	TurnOrder.Add(nullptr); 
@@ -230,12 +193,6 @@ TArray<AGameCharacter*> UBattleManager::PopulateTurnOrderWidgetArray()
 			}
 		}
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::Red, FString::Printf(TEXT("==============================")));
-	for (int I = 0; I < TurnOrderWidgetArray.Num(); I++)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Entity #:%d: Entity Name: %s"), I, *TurnOrderWidgetArray[I]->GetName());
-	}
-	GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::Red, FString::Printf(TEXT("==============================")));
 	return TurnOrderWidgetArray;
 }
 
@@ -285,7 +242,6 @@ void UBattleManager::TickComponent( float DeltaTime, ELevelTick TickType, FActor
 					AMainCharacter* MC = Cast<AMainCharacter>(TurnOrder[TurnCounter]); 
 					check(MC);
 					MC->ResetFear();	
-					///switch gamestate to Attack
 				}
 			}
 			CombatPhase = ECombatPhase::Action;

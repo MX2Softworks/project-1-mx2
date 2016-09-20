@@ -3,7 +3,10 @@
 #pragma once
 
 #include "GameCharacter.h"
+#include "Weapon.h"
+#include "Melee.h"
 #include "MainCharacter.generated.h"
+
 
 /**
  * 
@@ -35,6 +38,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="Fear")
 	void ResetFear(); 
+
+	UFUNCTION(BlueprintCallable, Category = "Debug")
+	void DebugMakeMeleeWeapon(); 
 
 private:
 

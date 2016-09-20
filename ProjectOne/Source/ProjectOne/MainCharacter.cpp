@@ -3,6 +3,7 @@
 #include "ProjectOne.h"
 #include "MainCharacter.h"
 
+
 //setter and getter for current fear
 float AMainCharacter::GetCurrentFear(){ return CurrentFear; }
 void AMainCharacter::SetCurrentFear(float NewFear){ CurrentFear = NewFear; }
@@ -16,6 +17,10 @@ void AMainCharacter::ResetFear() {
 
 	CurrentFear = MaxFear; 
 	return; 
+}
+
+void AMainCharacter::DebugMakeMeleeWeapon() {
+
 }
 
 // Called when the game starts or when spawned
